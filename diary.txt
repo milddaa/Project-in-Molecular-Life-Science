@@ -1,0 +1,3 @@
+2018-02-20
+
+The first step in the project is to extract the feature from the dataset and prepare it for SVM analysis. In order to do this, a code was written which converts the text file with protein sequences into a more convenient format -  a dictionary, where the keys are the IDs of protein sequences, and the values are lists with first items being the sequences and the second items - the features.
