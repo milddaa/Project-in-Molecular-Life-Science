@@ -1,3 +1,44 @@
 2018-02-20
 
 The first step in the project is to extract the feature from the dataset and prepare it for SVM analysis. In order to do this, a code was written which converts the text file with protein sequences into a more convenient format -  a dictionary, where the keys are the IDs of protein sequences, and the values are lists with first items being the sequences and the second items - the features.
+
+2018-02-21
+
+The input vector for SVM should be two lists: one containing all the features and one all the labels, as shown in the example below:
+
+
+e.g. A window of three amino acids, considering there are only 5 amino acids in total. Label is for the second position.
+
+X = [0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]
+
+y = [1]
+
+
+In order to achieve this notation, I first did the following steps:
+
+1. Wrote a code which takes in a text file with protein sequences and returns a set with unique amino acids present. This was to check how many amino acids there are in my dataset which will be useful when building a dictionary and creating binary encodings for each of the amino acids (code: amino_acid_count.py). The answer turned out to be 20, and the set was: {'S', 'N', 'R', 'M', 'F', 'H', 'D', 'W', 'Q', 'I', '\n', 'A', 'V', 'G', 'Y', 'P', 'K', 'C', 'L', 'T', 'E'}.
+
+2. Wrote a code which contains amino acid dictionary (keys are amino acids, denoted by letters, and values are lists of 20 binary numbers, unique for each amino acid) and a function which, when given a protein sequence, consults this dictionary, and returns a list containing sublists with binary encodings for each amino acid. So for example, an input sequence 'AC' would return [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]] (code: amino_acid_encodings.py).
+
+This outcome is good if window size is only one amino acid. However, we want the code to also take window size as input, and return a list with sublists, where each sublist contains encodings for amino acids in that window. So for example, if the window size is one, the outcome would be exactly the same as earlier but if it is 3, the sublist would contain three times as many numbers. I then did the following:
+
+3. Wrote a function which takes a sequence and window size as inputs and returns a list of windows (code: window_list.py). So for example, an input of 'ACWQEVR' and window size 2 would return this list ['AC', 'CW', 'WQ', 'QE', 'EV', 'VR'] and if the window size was 5, this list ['ACWQE', 'CWQEV', 'WQEVR'].
+
+4. Wrote a function, which takes this list of windows and, after consulting the dictionary, creates a big list containing sublists (nested lists), each representing a window, and containing encodings for each amino acid in the sequence. An input of ['AC', 'CD'] would return [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]. Code: encodings_window_size.py
+
+5. Merged function in steps 3 and 4 to create a function which takes a sequence and window size as inputs and turns into a form compatible with SVM input.
+An input of 'ACD' and window size 1 would return: [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+An input of 'ACD' and window size 3 would return: [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+Code: encodings_final.py
+
+By using this function, it should be possible to take the protein sequences from the values in the dataset dictionary and turn them into this form, compatible with training on SVM. Each of the nested lists should also have a corresponding label (0 or 1, which denote exposed or burried) in a different list. If the nested list only contains encodings for one amino acid, it should correspond to the state of that amino acid; if it contains encodings for a window of aminoacids, it should correspond to the state of the central amino acid.
+
+6. Wrote a function which takes a sequence (with E and B as letters) and window size as inputs, converts it to a list of windows (using the window_list function I wrote earlier) and uses this list to take the central residue of each window (unless it's 1, then it just takes the item as it is) and makes a new list in which this residue is denoted by a binary label (1 or 0). So an input sequence of 'EBBEBEB' and window size 3 would return: [1, 1, 0, 1, 0] because the window list would be ['EBB', 'BBE', 'BEB', 'EBE', 'BEB'], and the same input sequence with window size 1 would return [0, 1, 1, 0, 1, 0, 1] because the list would be ['E', 'B', 'B', 'E', 'B', 'E', 'B']. Code: labels.py
+
+By doing these steps, I now have two major functions: one which takes a protein sequence and based on window size turns it into lists of features with one-hot encodings (X=[[1,0,0,....],[0,1,0...],...]) (code: encodings_final.py) and one which takes a label sequence (e.g.'EEBBEB') and based on window size turns it into a list of binary classes for each central residue in a window (Y-[0,1,0,0...]) (code: labels.py). I now want to merge them into one function which takes a list in a form of ['SEQUENCE','EEBBEBBE'] and based on window size returns two lists: X and Y. Then this function can be used to iterate over all the values in the dataset dictionary and merge all of these smaller X and Y lists into big X and Y lists containing information about the entire dataset, which can be used as input for SVM.
+
+The merged function can be found in code: two_lists.py. If an input is ['ACDEQY','EBBEBE'] with the window size 1, the output is ([[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]], [0, 1, 1, 0, 1, 0]).
+
+The final function which takes a dictionary and window size as inputs, iterates over dictionary values and returns two big lists, can be found in two_lists_iteration.py. If the input dictionary is my_dict={'ID1':['ACD','EBB'],'ID2':['QRA','BBE']} and the window size is 1, the function will return: [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 1, 1, 1, 1, 0]).
+
+
