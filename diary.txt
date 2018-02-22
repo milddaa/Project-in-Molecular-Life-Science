@@ -41,4 +41,21 @@ The merged function can be found in code: two_lists.py. If an input is ['ACDEQY'
 
 The final function which takes a dictionary and window size as inputs, iterates over dictionary values and returns two big lists, can be found in two_lists_iteration.py. If the input dictionary is my_dict={'ID1':['ACD','EBB'],'ID2':['QRA','BBE']} and the window size is 1, the function will return: [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [0, 1, 1, 1, 1, 0]).
 
+2018-02-22
+
+Looked for relevant publications for my project (exposed and buried residues in membrane proteins).
+
+1.  Helms, V., Hayat, S., & Metzger, J. (2010). Predicting the burial/exposure status of transmembrane residues in helical membrane proteins. In Structural Bioinformatics of Membrane Proteins (pp. 151-164). Springer, Vienna.
+
+2. Park, Y., Hayat, S., & Helms, V. (2007). Prediction of the burial status of transmembrane residues of helical membrane proteins. BMC bioinformatics, 8(1), 302.
+
+3. Wang, C., Li, S., Xi, L., Liu, H., & Yao, X. (2011). Accurate prediction of the burial status of transmembrane residues of α-helix membrane protein by incorporating the structural and physicochemical features. Amino acids, 40(3), 991-1002.
+
+4. Illergård, K., Callegari, S., & Elofsson, A. (2010). MPRAP: An accessibility predictor for a-helical transmem-brane proteins that performs well inside and outside the membrane. BMC bioinformatics, 11(1), 333.
+
+5. Yuan, Z., Zhang, F., Davis, M. J., Bodén, M., & Teasdale, R. D. (2006). Predicting the solvent accessibility of transmembrane residues from protein sequence. Journal of proteome research, 5(5), 1063-1070.
+
+The first article reviews the different prediction methods and seems to give a general overview of the field which might be useful for the project. The second and third article describe state-of-art burial status prediction methods. The last two articles describe methods which predict the burial state indirectly, by evaluating the solvent accessibility to the residue.
+
+
 
