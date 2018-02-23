@@ -57,5 +57,11 @@ Looked for relevant publications for my project (exposed and buried residues in 
 
 The first article reviews the different prediction methods and seems to give a general overview of the field which might be useful for the project. The second and third article describe state-of-art burial status prediction methods. The last two articles describe methods which predict the burial state indirectly, by evaluating the solvent accessibility to the residue.
 
+2018-02-23
+
+
+Attended the journal club for deep learning and wrote a plan for the project.
+
+
 
 
