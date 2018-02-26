@@ -59,9 +59,10 @@ The first article reviews the different prediction methods and seems to give a g
 
 2018-02-23
 
-
 Attended the journal club for deep learning and wrote a plan for the project.
 
+2018-02-24
 
+Read the article “Predicting the burial/exposure status of transmembrane residues in helical membrane proteins” as a preparation for the oral presentation and worked on a code which creates the SVM_input (SVM_input.py). The problem of first and last residues when creating window list still remains and will have to be tackled tomorrow.
 
 

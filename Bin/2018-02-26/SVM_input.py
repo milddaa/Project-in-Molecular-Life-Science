@@ -1,4 +1,12 @@
-f = open('test.txt','r')
+"Define the window size and name of the file with the sequences and features for training"
+
+window=7
+name= "testdataset.txt"
+
+
+"Open the text file with sequences and features and create a dictionary from it."
+
+f = open(name,'r')
 lines = f.readlines()
 key_list=[]
 value_list=[]
@@ -10,6 +18,9 @@ for x in lines:
 value_list=[value_list[i:i+2] for i in range (0, len(value_list),2)]
 f.close()
 my_dict={x:y for x, y in zip(key_list,value_list)}
+
+
+"Amino acid and label dictionaries:"
 
 amino_acids={'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
 'C':[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -33,6 +44,8 @@ amino_acids={'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'Y':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
 
 dictA={'E':0, 'B':1}
+
+"Function to create an SVM input from dictionary."
 
 def two_lists_iteration(input_dict, wind_sz):
     X_list_all=[]
@@ -75,5 +88,43 @@ def two_lists_iteration(input_dict, wind_sz):
         Y_list_all.extend(Y_list)
     return (X_list_all, Y_list_all)
     
-print (two_lists_iteration(my_dict,1))
-        
+SVM_input = two_lists_iteration(my_dict,window)
+X_array=SVM_input[0]
+Y_array=SVM_input[1]
+
+"Train the SVM with the created arrays as inputs to create a model called clf."
+
+from sklearn import svm
+clf = svm.SVC()
+clf.fit(X_array, Y_array)
+
+"Try the model on this dataset:"
+
+f2 = open('test.txt','r')
+lines2 = f2.readlines()
+key_list2=[]
+value_list2=[]
+for x in lines2:
+    if x[0] == ">":
+        key_list2.append(x.strip())
+    else:
+        value_list2.append(x.strip())
+value_list2=[value_list2[i:i+2] for i in range (0, len(value_list2),2)]
+f2.close()
+my_dict2={x:y for x, y in zip(key_list2,value_list2)}
+
+SVM_input2 = two_lists_iteration(my_dict2,window)
+X_array2=SVM_input2[0]
+Y_array2=SVM_input2[1]
+
+
+"Calculate the percentage of correctly predicted features."
+import numpy as np
+Y_array2=np.asarray(Y_array2)
+predicted_array=clf.predict(X_array2)
+count=0
+for x in range (len(Y_array)):
+    if Y_array[x]==predicted_array[0]:
+        count+=1
+correct_predictions=count/len(Y_array)*100
+print (correct_predictions)
