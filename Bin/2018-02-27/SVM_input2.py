@@ -1,6 +1,6 @@
 "Define the window size and name of the file for training and name of the file for testing."
 
-window=3
+window=15
 name_training= "traindataset.txt"
 name_testing="testdataset.txt"
 
@@ -98,11 +98,12 @@ def two_lists_iteration(input_dict, wind_sz):
     return (X_list_all, Y_list_all)
 
 
-"Call out the function for the training dictionary and define the first item as X_array and the second item as Y_array."    
+"Call out the function for the training dictionary and define the first item (list of amino acid encodings) as X_array and the second item (list of label encodings) as Y_array."    
 
 SVM_input = two_lists_iteration(my_dict,window)
 X_array=SVM_input[0]
 Y_array=SVM_input[1]
+
 
 "Train the SVM with the created arrays as inputs to create a model called clf."
 
@@ -110,7 +111,7 @@ from sklearn import svm
 clf = svm.SVC()
 clf.fit(X_array, Y_array)
 
-"Call out the function for the testing dictionary and define the first item as X_array and the second item as Y_array."
+"Call out the function for the testing dictionary and define the first item as X_array2 and the second item as Y_array2."
 
 SVM_input2 = two_lists_iteration(my_dict2,window)
 X_array2=SVM_input2[0]
@@ -121,8 +122,10 @@ import numpy as np
 Y_array2=np.asarray(Y_array2)
 predicted_array=clf.predict(X_array2)
 count=0
-for x in range (len(Y_array)):
-    if Y_array[x]==predicted_array[0]:
+for x in range (len(Y_array2)):
+    if Y_array2[x]==predicted_array[x]:
         count+=1
-correct_predictions=count/len(Y_array)*100
+correct_predictions=count/len(Y_array2)*100
+print (Y_array2)
+print (predicted_array)
 print (correct_predictions)

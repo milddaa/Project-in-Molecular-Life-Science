@@ -31,8 +31,7 @@ def two_lists_iteration(input_dict, wind_sz):
     X_list_all=[]
     Y_list_all=[]
     for x in input_dict.values():
-        window_list1=[]
-        window_list2=[]
+        window_list=[]
         seq=x[0]
         "Adding tails to the sequence based on window size in order to capture all the elements when window size is bigger than 1."
         add_tails="B"*int(wind_sz/2)
@@ -44,11 +43,11 @@ def two_lists_iteration(input_dict, wind_sz):
         for x in range (len(seq)):
             window=seq[x:x+wind_sz]
             if len(window)==wind_sz:
-                window_list1.append(window)
-        print (window_list1)
+                window_list.append(window)
+        print (window_list)
         "-Then it will create a list with nested lists with encoded amino acids for each window."
         X_list=[]
-        for x in window_list1:
+        for x in window_list:
             new_list=[]
             for y in x:
                 new_list.extend(amino_acids[y])
