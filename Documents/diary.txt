@@ -61,8 +61,15 @@ The first article reviews the different prediction methods and seems to give a g
 
 Attended the journal club for deep learning and wrote a plan for the project.
 
-2018-02-24
+2018-02-26
 
 Read the article “Predicting the burial/exposure status of transmembrane residues in helical membrane proteins” as a preparation for the oral presentation and worked on a code which creates the SVM_input (SVM_input.py). The problem of first and last residues when creating window list still remains and will have to be tackled tomorrow.
+
+2018-02-27
+
+The problem with creating a list of all the possible windows is the fact that features of the last residues are not taken into account. In order to correct for that, I wrote a code which adds a certain number of letters B, which do not stand for any amino acid and would be encoded by zeros in the dictionary. The number of Bs depends on the window size and was defined as int(wind_sz/2) (e.g. if window size is 7, the number of Bs added to each end of the sequence would be 3). The input sequence ‘AGH’ with window size 3 would be subsequently transformed into ‘BAGHB’ and would yield a window list ['BAG', 'AGH', 'GHB’]. Code can be found in updated_window_list.py. This new feature was added to the function which iterates over a dictionary of sequences and labels and creates two lists suitable for SVM input (encoded amino acids and labels) (Code: input_updated.py). In this function, the part which creates a list of encoded labels subsequently does not need to be as complicated as before. Since the new list of amino acid windows takes into account all the residues, it all the labels will be taken into account. Thus there is no need to create a window list first and is enough to just create a list of labels (encoded by 0 or 1) (a short trial code can be found in label_encodings.py).
+
+Worked on a function which does the training on one dataset, performs prediction on another dataset and counts the number of correct predictions (SVM_input2.py).
+
 
 

@@ -1,5 +1,5 @@
-my_dict={'ID1':['ACD','EBB'],
-        'ID2':['QRA','BBE']}
+my_dict={'ID1':['ACDEF','EBBEB'],
+        'ID2':['QRAEF','BBEBE']}
         
 "Dictionary of amino acid encodings. An artificial amino acid is also encoded which is called B."
 
@@ -37,6 +37,7 @@ def two_lists_iteration(input_dict, wind_sz):
         "Adding tails to the sequence based on window size in order to capture all the elements when window size is bigger than 1."
         add_tails="B"*int(wind_sz/2)
         seq=add_tails+seq+add_tails
+        print (seq)
         lab=x[1]
         "This part of function will create list X, which contains the encoded amino acids."
         "-First it will create a list of windows in the sequence based on the window size."
@@ -44,6 +45,7 @@ def two_lists_iteration(input_dict, wind_sz):
             window=seq[x:x+wind_sz]
             if len(window)==wind_sz:
                 window_list1.append(window)
+        print (window_list1)
         "-Then it will create a list with nested lists with encoded amino acids for each window."
         X_list=[]
         for x in window_list1:
@@ -52,24 +54,12 @@ def two_lists_iteration(input_dict, wind_sz):
                 new_list.extend(amino_acids[y])
             X_list.append(new_list)
         "This part of function will create a list Y, which contains all the labels"
-        "-First it will create a list of windows in the label sequence based on the window size."
-        for x in range (len(lab)):
-            window=lab[x:x+wind_sz]
-            if len(window)==wind_sz:
-                window_list2.append(window)
-        "-Then it will create a list with labels for central residues in each window, encoded by binary number."
         Y_list=[]
-        for x in window_list2:
-            if wind_sz != 1:
-                central_number=int(wind_sz/2)
-                central_residue=x[central_number]
-                Y_list.append(dictA[central_residue])
-            else:
-                Y_list.append(dictA[x])
+        for x in lab:
+            Y_list.append(dictA[x])
         "As a final step, the function will append the two lists to the major one."
         X_list_all.extend(X_list)
         Y_list_all.extend(Y_list)
     return (X_list_all, Y_list_all)
     
 print (two_lists_iteration(my_dict,3))
-        
