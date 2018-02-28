@@ -71,5 +71,10 @@ The problem with creating a list of all the possible windows is the fact that fe
 
 Worked on a function which does the training on one dataset, performs prediction on another dataset and counts the number of correct predictions (SVM_input2.py).
 
+2018-02-28
+
+Prepared for the oral presentation of an article.
+
+
 
 
