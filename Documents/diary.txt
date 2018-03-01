@@ -75,6 +75,8 @@ Worked on a function which does the training on one dataset, performs prediction
 
 Prepared for the oral presentation of an article.
 
+2018-02-29
 
+Listened to oral presentations of four other people (Kyle, Kajetan, Daryl and Sharmishtaa) as well as presented my own. Wrote evaluations for the presentations.
 
 
