@@ -82,3 +82,10 @@ Listened to oral presentations of four other people (Kyle, Kajetan, Daryl and Sh
 2018-03-02
 
 A program which takes in a sequence and feature and creates an input vector for SVM is in the folder Codes/2018-02-27 and is called SVM_input2.py. The two datasets used in the code are in the Datasets folder, however the names of the files can be specified in the first section of the code.
+
+2018-03-05
+
+Today I was reading some literature on burial status prediction methods to gain more insight into the field and prepare for the presentation. Helped me get the general overview of the available methods (Beuming and Weinstein, Yuan, TMX and the novel Wang et al method). 
+
+
+
