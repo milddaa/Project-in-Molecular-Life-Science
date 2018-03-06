@@ -87,5 +87,8 @@ A program which takes in a sequence and feature and creates an input vector for 
 
 Today I was reading some literature on burial status prediction methods to gain more insight into the field and prepare for the presentation. Helped me get the general overview of the available methods (Beuming and Weinstein, Yuan, TMX and the novel Wang et al method). 
 
+2018-03-06
+
+Continuation on literature studies and final touches on the presentation based on the feedback I received during evaluations.
 
 
