@@ -91,4 +91,23 @@ Today I was reading some literature on burial status prediction methods to gain 
 
 Continuation on literature studies and final touches on the presentation based on the feedback I received during evaluations.
 
+2018-03-08
+
+After the presentation, continued working with the code:
+
+1. Wrote a code which does cross-validation on a dataset and returns an average cross-validation score (Cross_val.py). To do: run this program on the complete dataset with different window sizes as inputs and record average score for each input. 
+
+Information about cross validation:
+
+The cross validation score by default is the accuracy of the prediction, although it can be set to measure other things.
+
+Changing the window size and calculating the cross validation score each time to choose the best window size is one of the ways to optimize the model. Another method would be to change other parameters in the SVC function, such as gamma, kernel type. The kernel can be linear, radial, etc. Gamma is the kernel coefficient which configures the sensitivity to differences in feature values. If you set it too high, you risk overfitting.
+
+2. Next, I need to write a code which takes in the full dataset as an input, creates a model, takes a dataset of other random proteins, parses it, predicts their features and transforms the predicted output in a specific form which should look like this:
+>ID
+Seq
+Topology 
+
+Wrote this function, it is stored in: Model_and_prediction.py
+The datasets used can be found in folder Datasets.
 
