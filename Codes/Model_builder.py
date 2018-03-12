@@ -1,10 +1,8 @@
-"Define the window size and name of the file."
+############ DEFINITIONS AND DICTIONARIES ###########
 
-window=1
-name_training= "buried_exposed_alpha+beta.3line.txt"
+name_training= "../Datasets/buried_exposed_alpha+beta.3line.txt"
 
-
-"Amino acid and label dictionaries. Amino acid dictionary contains an artificial amino acid B, which is encoded by zeros."
+window_size=1
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -30,8 +28,7 @@ amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 
 dictA={'E':0, 'B':1}
 
-
-"Open the text file with sequences and features, which will be used for training, and create a dictionary from it."
+################### STAGE 1. PARSER ##################
 
 f = open(name_training,'r')
 lines = f.readlines()
@@ -46,55 +43,41 @@ value_list=[value_list[i:i+2] for i in range (0, len(value_list),2)]
 f.close()
 my_dict={x:y for x, y in zip(key_list,value_list)}
 
+############## STAGE 2. SVM INPUT MAKER #############
 
-"Function to create an SVM input from dictionary."
-
-def two_lists_iteration(input_dict, wind_sz):
+def SVM_input(input_dictionary, window_size):
     X_list_all=[]
     Y_list_all=[]
-    for x in input_dict.values():
+    for x in input_dictionary.values():
         window_list=[]
         seq=x[0]
-        "Adding tails of Bs to the sequence based on window size in order to capture the first and last residues of the sequence."
-        add_tails="B"*int(wind_sz/2)
+        add_tails="B"*int(window_size/2)
         seq=add_tails+seq+add_tails
         lab=x[1]
-        "This part of function will create list X, which contains the encoded amino acids."
-        "-First it will create a list of windows in the sequence based on the window size."
         for x in range (len(seq)):
-            window=seq[x:x+wind_sz]
-            if len(window)==wind_sz:
+            window=seq[x:x+window_size]
+            if len(window)==window_size:
                 window_list.append(window)
-        "-Then it will create a list with nested lists with encoded amino acids for each window."
         X_list=[]
         for x in window_list:
             new_list=[]
             for y in x:
                 new_list.extend(amino_acids[y])
             X_list.append(new_list)
-        "This part of function will create a list Y, which contains all the labels"
         Y_list=[]
         for x in lab:
             Y_list.append(dictA[x])
-        "As a final step, the function will append the two lists to the major one."
         X_list_all.extend(X_list)
         Y_list_all.extend(Y_list)
     return (X_list_all, Y_list_all)
     
-    
-"Call out the function for the training dictionary and define the first item (list of amino acid encodings) as X_array and the second item (list of label encodings) as Y_array."    
+X_array, Y_array = SVM_input (my_dict, window_size)
 
-SVM_input = two_lists_iteration(my_dict,window)
-X_array=SVM_input[0]
-Y_array=SVM_input[1]
-
-"Cross validation"
+############## STAGE 3. MODEL BUILDER #############
 
 from sklearn import svm
-import numpy as np
 clf = svm.SVC()
-from sklearn.model_selection import cross_val_score
+clf.fit(X_array, Y_array)
 
-cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
-average_score = np.mean(cross_val_scores)
-print (average_score)
+import pickle
+pickle.dump(clf, open ("Model.sav",'wb'))

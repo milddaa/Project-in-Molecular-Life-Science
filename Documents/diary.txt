@@ -111,3 +111,28 @@ Topology
 Wrote this function, it is stored in: Model_and_prediction.py
 The datasets used can be found in folder Datasets.
 
+2018-03-12
+
+I decided to reorganize my code to make it more structured.
+
+The model builder and predictor is now split into two separate files:
+
+1. Model_builder.py
+
+Builds a model and saves it using the Pickle package.
+
+2. Predictor.py
+
+Loads the saved model using the Pickle package and uses it to predict the feature for sequences in FASTA format.
+
+Also, the following codes were written:
+
+3. Cross_val.py
+
+Checks different window sizes and returns cross validation scores for each window size.
+
+
+
+
+
+
