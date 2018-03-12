@@ -131,8 +131,9 @@ Also, the following codes were written:
 
 Checks different window sizes and returns cross validation scores for each window size.
 
+Tried running it on the full file of 230 sequences but it took a very long time just to get 3 different window sizes tested, so I decided to run it on small but still representative dataset of 50 proteins.
 
+4. Grid_search.py (unfinished)
 
-
-
+Trying out different parameters to optimize the model. 
 

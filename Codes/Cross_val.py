@@ -1,6 +1,6 @@
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_training= "../Datasets/buried_exposed_alpha+beta.3line.txt"
+name_training= "../Datasets/50_proteins.txt"
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -73,7 +73,7 @@ def SVM_input(input_dictionary, window_size):
 cross_val_score_list=[]
 window_size_list=list(range(1,51,2))
 
-for x in range (1, 10, 2):
+for x in range (1, 16, 2):
     
     window_size=x
     
