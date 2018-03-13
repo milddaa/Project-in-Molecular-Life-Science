@@ -1,8 +1,11 @@
+from sklearn import svm
+import pickle
+
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_training= "../Datasets/buried_exposed_alpha+beta.3line.txt"
+name_training= "../Datasets/training_dataset.txt"
 
-window_size=1
+window_size=19
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -75,9 +78,7 @@ X_array, Y_array = SVM_input (my_dict, window_size)
 
 ############## STAGE 3. MODEL BUILDER #############
 
-from sklearn import svm
-clf = svm.SVC()
+clf = svm.LinearSVC(C=0.3)
 clf.fit(X_array, Y_array)
 
-import pickle
 pickle.dump(clf, open ("Model.sav",'wb'))

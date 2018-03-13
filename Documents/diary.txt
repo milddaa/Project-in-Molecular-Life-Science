@@ -137,3 +137,7 @@ Tried running it on the full file of 230 sequences but it took a very long time 
 
 Trying out different parameters to optimize the model. 
 
+2018-03-13
+
+Wrote a code Cross_val_parameters.py which runs the cross validation on linear SVC with different C-scores and window sizes. The highest prediction accuracy was obtained at window size 19 and C-score of 0.3. These parameters were selected to build the model.
+

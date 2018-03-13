@@ -1,6 +1,10 @@
+import numpy as np
+from sklearn import svm
+from sklearn.model_selection import cross_val_score
+
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_training= "../Datasets/50_proteins.txt"
+name_training= "../Datasets/training_dataset.txt"
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -68,33 +72,14 @@ def SVM_input(input_dictionary, window_size):
         X_list_all.extend(X_list)
         Y_list_all.extend(Y_list)
     return (X_list_all, Y_list_all)
-        
+
+############## STAGE 3. CROSS VALIDATION. #############        
     
-cross_val_score_list=[]
-window_size_list=list(range(1,51,2))
-
-for x in range (1, 16, 2):
-    
-    window_size=x
-    
-    X_array, Y_array = SVM_input (my_dict, window_size)
-
-    ############## STAGE 3. MODEL BUILDER. BASED ON WINDOW SIZE #############
-
-    from sklearn import svm
-    clf = svm.SVC()
-    clf.fit(X_array, Y_array)
-
-    ############## STAGE 4. CROSS VALIDATION. BASED ON WINDOW SIZE #############
-
-    from sklearn.model_selection import cross_val_score
-    import numpy as np
-    cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
-    average_score = np.mean(cross_val_scores)
-    cross_val_score_list.append(average_score)
-
-score_dictionary={}
-for x in range (len(window_size_list)):
-     score_dictionary[window_size_list[x]] = cross_val_score_list[x]   
- 
-print (score_dictionary)
+for c_score in (0.1, 0.3, 1, 3, 10, 30, 100):
+         for window_size in range (1, 30, 2):
+             X_array, Y_array = SVM_input (my_dict, window_size)
+             clf = svm.LinearSVC(C=c_score)
+             clf.fit(X_array, Y_array)
+             cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
+             average_score = np.mean(cross_val_scores)
+             print (c_score, window_size, average_score)
