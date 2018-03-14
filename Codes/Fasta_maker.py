@@ -44,7 +44,7 @@ my_dict={x:y for x, y in zip(key_list,value_list)}
 ################### STAGE 2. FASTA MAKER ##################
 
 for x in range(len(key_list)):
-    name=key_list[x]
+    name=key_list[x].split('>')[1]
     fasta_file=open(name+'.fasta','w')
     fasta_file.write (key_list[x]+'\n')
     fasta_file.write (value_list[x][0])

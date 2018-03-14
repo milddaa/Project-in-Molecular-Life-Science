@@ -1,0 +1,257 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d1bgsc_.d.1.1.2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P00648|RNBR_BACAM Ribonuclease OS=Bacillus amyloliquefaciens...  232     1e-77
+  sp|P35078|RN_BACCI Ribonuclease OS=Bacillus circulans OX=1397 P...  222     3e-74
+  sp|P48068|RN_BACPU Ribonuclease OS=Bacillus pumilus OX=1408 PE=...  199     8e-65
+  sp|P00649|RN_BACIN Ribonuclease OS=Bacillus intermedius OX=1400...  199     9e-65
+  sp|P37203|RN_BACCO Ribonuclease OS=Bacillus coagulans OX=1398 P...  195     1e-63
+
+
+> sp|P00648|RNBR_BACAM Ribonuclease OS=Bacillus amyloliquefaciens 
+OX=1390 PE=1 SV=2
+Length=157
+
+ Score = 232 bits (592),  Expect = 1e-77, Method: Compositional matrix adjust.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+            AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE
+Sbjct  48   AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  107
+
+Query  61   GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR
+Sbjct  108  GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  157
+
+
+> sp|P35078|RN_BACCI Ribonuclease OS=Bacillus circulans OX=1397 
+PE=1 SV=1
+Length=110
+
+ Score = 222 bits (565),  Expect = 3e-74, Method: Compositional matrix adjust.
+ Identities = 107/110 (97%), Positives = 108/110 (98%), Gaps = 0/110 (0%)
+
+Query  1    AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+            AQVINTFDGVADYL TYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE
+Sbjct  1    AQVINTFDGVADYLLTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+
+Query  61   GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            GKLP KSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHY+TFTKIR
+Sbjct  61   GKLPAKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYKTFTKIR  110
+
+
+> sp|P48068|RN_BACPU Ribonuclease OS=Bacillus pumilus OX=1408 PE=3 
+SV=1
+Length=162
+
+ Score = 199 bits (507),  Expect = 8e-65, Method: Compositional matrix adjust.
+ Identities = 91/108 (84%), Positives = 100/108 (93%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  55   VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  114
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TFT+IR
+Sbjct  115  LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFTRIR  162
+
+
+> sp|P00649|RN_BACIN Ribonuclease OS=Bacillus intermedius OX=1400 
+PE=1 SV=3
+Length=162
+
+ Score = 199 bits (507),  Expect = 9e-65, Method: Compositional matrix adjust.
+ Identities = 91/108 (84%), Positives = 100/108 (93%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  55   VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  114
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TFT+IR
+Sbjct  115  LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFTRIR  162
+
+
+> sp|P37203|RN_BACCO Ribonuclease OS=Bacillus coagulans OX=1398 
+PE=1 SV=1
+Length=109
+
+ Score = 195 bits (495),  Expect = 1e-63, Method: Compositional matrix adjust.
+ Identities = 90/108 (83%), Positives = 99/108 (92%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  2    VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  61
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TF +IR
+Sbjct  62   LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFARIR  109
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.407    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999036928
+Results from round 2
+
+
+Query= d1bgsc_.d.1.1.2
+
+Length=110
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P00648|RNBR_BACAM Ribonuclease OS=Bacillus amyloliquefaciens...  219     2e-72
+  sp|P35078|RN_BACCI Ribonuclease OS=Bacillus circulans OX=1397 P...  209     2e-69
+  sp|P00649|RN_BACIN Ribonuclease OS=Bacillus intermedius OX=1400...  207     9e-68
+  sp|P48068|RN_BACPU Ribonuclease OS=Bacillus pumilus OX=1408 PE=...  206     2e-67
+  sp|P37203|RN_BACCO Ribonuclease OS=Bacillus coagulans OX=1398 P...  198     6e-65
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P00648|RNBR_BACAM Ribonuclease OS=Bacillus amyloliquefaciens 
+OX=1390 PE=1 SV=2
+Length=157
+
+ Score = 219 bits (557),  Expect = 2e-72, Method: Composition-based stats.
+ Identities = 110/110 (100%), Positives = 110/110 (100%), Gaps = 0/110 (0%)
+
+Query  1    AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+            AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE
+Sbjct  48   AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  107
+
+Query  61   GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR
+Sbjct  108  GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  157
+
+
+> sp|P35078|RN_BACCI Ribonuclease OS=Bacillus circulans OX=1397 
+PE=1 SV=1
+Length=110
+
+ Score = 209 bits (533),  Expect = 2e-69, Method: Composition-based stats.
+ Identities = 107/110 (97%), Positives = 108/110 (98%), Gaps = 0/110 (0%)
+
+Query  1    AQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+            AQVINTFDGVADYL TYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE
+Sbjct  1    AQVINTFDGVADYLLTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNRE  60
+
+Query  61   GKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            GKLP KSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHY+TFTKIR
+Sbjct  61   GKLPAKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYKTFTKIR  110
+
+
+> sp|P00649|RN_BACIN Ribonuclease OS=Bacillus intermedius OX=1400 
+PE=1 SV=3
+Length=162
+
+ Score = 207 bits (527),  Expect = 9e-68, Method: Composition-based stats.
+ Identities = 91/108 (84%), Positives = 100/108 (93%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  55   VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  114
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TFT+IR
+Sbjct  115  LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFTRIR  162
+
+
+> sp|P48068|RN_BACPU Ribonuclease OS=Bacillus pumilus OX=1408 PE=3 
+SV=1
+Length=162
+
+ Score = 206 bits (525),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 91/108 (84%), Positives = 100/108 (93%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  55   VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  114
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TFT+IR
+Sbjct  115  LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFTRIR  162
+
+
+> sp|P37203|RN_BACCO Ribonuclease OS=Bacillus coagulans OX=1398 
+PE=1 SV=1
+Length=109
+
+ Score = 198 bits (504),  Expect = 6e-65, Method: Composition-based stats.
+ Identities = 90/108 (83%), Positives = 99/108 (92%), Gaps = 0/108 (0%)
+
+Query  3    VINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGK  62
+            VINTFDGVADYL  Y +LPDNYITKS+A ALGWVASKGNLA+VAPGKSIGGD+FSNREG+
+Sbjct  2    VINTFDGVADYLIRYKRLPDNYITKSQASALGWVASKGNLAEVAPGKSIGGDVFSNREGR  61
+
+Query  63   LPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR  110
+            LP  SGRTWREADINY SGFRN+DR++YSSDWLIYKTTDHY TF +IR
+Sbjct  62   LPSASGRTWREADINYVSGFRNADRLVYSSDWLIYKTTDHYATFARIR  109
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.140    0.435    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4999036928
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

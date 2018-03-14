@@ -1,0 +1,3417 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d1k7sn_.c.92.2.1
+
+Length=262
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD ...  536     0.0  
+  sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bac...  65.9    3e-11
+  sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding...  59.3    6e-09
+  sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein Y...  51.6    2e-06
+  sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein ...  45.8    2e-04
+
+
+> sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD 
+OS=Escherichia coli (strain K12) OX=83333 GN=fhuD PE=1 SV=3
+Length=296
+
+ Score = 536 bits (1382),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 261/262 (99%), Positives = 261/262 (99%), Gaps = 0/262 (0%)
+
+Query  1    GIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+             IDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL
+Sbjct  32   AIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  91
+
+Query  61   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA
+Sbjct  92   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  151
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ
+Sbjct  152  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  211
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  240
+            GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA
+Sbjct  212  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  271
+
+Query  241  VWFYGATLSAMHFVRVLDNAIG  262
+            VWFYGATLSAMHFVRVLDNAIG
+Sbjct  272  VWFYGATLSAMHFVRVLDNAIG  293
+
+
+> sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfmC PE=2 SV=1
+Length=315
+
+ Score = 65.9 bits (159),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 63/236 (27%), Positives = 107/236 (45%), Gaps = 15/236 (6%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVID---VGLRTEPNLEL  60
+            P R+V LE   ++ +  LGI P G+AD  N +  +    L  S ID   VG R+EPNLE+
+Sbjct  58   PKRVVVLELSFLDAVHNLGITPVGIADD-NKKDMI--KKLVGSSIDYTSVGTRSEPNLEV  114
+
+Query  61   LTEMKPSFMVWSAGYGPSP-EMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            ++ +KP  ++  A    +  + L +IAP       +      +   S T +A  LN +  
+Sbjct  115  ISSLKPDLIIADAERHKNIYKQLKKIAPTIELKSREATYDETI--DSFTTIAKALNKEDE  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAW  179
+             +  LA+++  I  +K    K   R ++L         L    +S   EI    G  +A 
+Sbjct  173  GKEKLAEHKKVINDLKAELPKDENRNIVLGVARADSFQL-HTSSSYDGEIFKMLGFTHAV  231
+
+Query  180  QGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDM-DALMATPLWQAMPFVRAGR  234
+            + +  +     VS+++L+   D D+L    +  K + D     PLW+ +  V+ G+
+Sbjct  232  KSDNAYQ---EVSLEQLSKI-DPDILFISANEGKTIVDEWKTNPLWKNLKAVKNGQ  283
+
+
+> sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding 
+lipoprotein YhfQ OS=Bacillus subtilis (strain 168) OX=224308 
+GN=yhfQ PE=1 SV=1
+Length=323
+
+ Score = 59.3 bits (142),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 62/254 (24%), Positives = 110/254 (43%), Gaps = 19/254 (7%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLP--DSVIDVGLRTEPNLELL  61
+            P R+V LE   ++ LL LGI P GVAD    +  +++  L   D    VG R++P++E +
+Sbjct  49   PKRVVVLELGFIDTLLDLGITPVGVADDNKAKQLINKDVLKKIDGYTSVGTRSQPSMEKI  108
+
+Query  62   TEMKPSFMVW-SAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+              +KP  ++  +  +    + L +IAP    N  +      +   SLT +A  +  +   
+Sbjct  109  ASLKPDLIIADTTRHKKVYDQLKKIAPTIALNNLNADYQDTIDA-SLT-IAKAVGKEKEM  166
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDP---RHMLVFGPNSLFQEILDEYGIPN  177
+            E  L  +E+ +   K +        LL+    D    R    F  + L  ++   Y I  
+Sbjct  167  EKKLTAHEEKLSETKQKISANSQSVLLIGNTNDTIMARDENFF-TSRLLTQVGYRYAIST  225
+
+Query  178  AWQGETNFWGST---AVSIDRLAAYKDVDVLCFDHDNSKDMDALMATP-----LWQAMPF  229
+            +   +++  G +    +++++L    D DV+      + D+DA    P     LW+ +  
+Sbjct  226  SGNSDSSNGGDSVNMKMTLEQLLKT-DPDVIILMTGKTDDLDADGKRPIEKNVLWKKLKA  284
+
+Query  230  VRAGRFQRVP-AVW  242
+            V+ G    V  AVW
+Sbjct  285  VKNGHVYHVDRAVW  298
+
+
+> sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein 
+YfiY OS=Bacillus subtilis (strain 168) OX=224308 GN=yfiY PE=1 
+SV=1
+Length=325
+
+ Score = 51.6 bits (122),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 66/277 (24%), Positives = 117/277 (42%), Gaps = 41/277 (15%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEP---PLPDS---VIDVGLRTEP  56
+            +P RIV L     E LLALGI P G       + W  +P    L D    V +VGL TEP
+Sbjct  53   NPKRIVVLTNEGTEALLALGIKPVGAV-----KSWKGDPWYDYLKDDMKGVKNVGLETEP  107
+
+Query  57   NLELLTEMKPSFMVWSAGYGPSP-EMLARIAPGRGFNFSDGKQPLAMA-RKSLTEMADLL  114
+            N+E + E+KP  ++ +        + L  IAP     F+   + LA   + +LT  A+ +
+Sbjct  108  NVEAIAELKPDLIIGNKVRQEKIYDQLNAIAPTV---FA---ESLAGNWKDNLTLYANAV  161
+
+Query  115  NLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYG  174
+            N     +  +A ++  +  +K +   +  + + +   +     + +  +S    ILD+ G
+Sbjct  162  NKADKGKEVIADFDKRVSDLKNKLGDQTNKTVSVVRFLSGESRIYY-TDSFPGIILDQLG  220
+
+Query  175  IP---------NAWQGETNFWGSTAVSIDRLAAYKDVDVL---CFDHDNSKD----MDAL  218
+                          + +  F   +  SI  +    D DVL    +  DN+K+     +  
+Sbjct  221  FKRPEKQVELFKKQKDQFTFSTDSKESIPDM----DADVLFYFTYKADNAKENEKWANQW  276
+
+Query  219  MATPLWQAMPFVRAGRFQRV-PAVWFYGATLSAMHFV  254
+             ++ LW+ +  V++G    V   VW     + A +++
+Sbjct  277  TSSSLWKNLKAVKSGNAHEVDDVVWTTAGGIKAANYL  313
+
+
+> sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein 
+OS=Dickeya dadantii (strain 3937) OX=198628 GN=cbrA PE=3 SV=1
+Length=305
+
+ Score = 45.8 bits (107),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 61/253 (24%), Positives = 107/253 (42%), Gaps = 35/253 (14%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPD-------SVIDVGLRTEP  56
+            P R++ L     +  +ALGI P GV D+     W SE P+          V  VGL T+P
+Sbjct  35   PQRVITLFQGATDTAVALGITPAGVVDS-----W-SEKPMYRYLRQALAGVPHVGLETQP  88
+
+Query  57   NLELLTEMKPSFMVWSAGYGPSPE-MLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLN  115
+            +LE +  +KP  +V S       E +L++IAP    +       +   +K++  M   L 
+Sbjct  89   SLEDIVLLKPDAIVASRFRHQRLEPLLSQIAPVVMLD------EIYQFKKTVQVMGQALQ  142
+
+Query  116  LQSAAETHLAQYEDFIRSMKPRFVKR--GARPLLLTTL-IDPRHMLVFGPNSLFQEILDE  172
+             Q+ A+  L  ++  +  ++ +  ++  G  P  ++ L I   H+  + P S    +L E
+Sbjct  143  RQAVADQLLQNWQLRVNGLREQLQRKFGGDWPPTVSILDIREDHIRSYLPGSFPGSVLSE  202
+
+Query  173  YGIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCF-------DHDNSKDMDALMATPLWQ  225
+             G    W   +      ++ +    +   VD   F            ++ ++L+  PLWQ
+Sbjct  203  LGF--GWSDASRAQPGVSLKLTNKESIPVVDADIFFIFLRSESPSVQRNYESLIRHPLWQ  260
+
+Query  226  AMPFVRAGRFQRV  238
+             +   RA R  +V
+Sbjct  261  QL---RAPRRNQV  270
+
+
+
+Lambda      K        H        a         alpha
+   0.323    0.139    0.433    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19935754713
+Results from round 2
+
+
+Query= d1k7sn_.c.92.2.1
+
+Length=262
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD ...  397     7e-138
+  sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bac...  250     8e-80 
+  sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding...  244     1e-77 
+  sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein ...  241     1e-76 
+  sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein Y...  240     4e-76 
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P15028|FECB_ECOLI Fe(3+) dicitrate-binding periplasmic prote...  126     1e-32
+  sp|P94421|YCLQ_BACSU Uncharacterized ABC transporter solute-bin...  106     2e-25
+  sp|P11460|FATB_VIBA7 Ferric-anguibactin-binding protein FatB OS...  94.5    3e-21
+  sp|P0AEL6|FEPB_ECOLI Ferrienterobactin-binding periplasmic prot...  88.7    3e-19
+  sp|P0AEL7|FEPB_ECOL6 Ferrienterobactin-binding periplasmic prot...  88.7    3e-19
+  sp|P37580|FHUD_BACSU Iron(3+)-hydroxamate-binding protein FhuD ...  85.2    4e-18
+  sp|P40409|FEUA_BACSU Iron-uptake system-binding protein OS=Baci...  69.4    2e-12
+  sp|Q6GHV3|ISDE_STAAR High-affinity heme uptake system protein I...  64.4    8e-11
+  sp|Q2YX92|ISDE_STAAB High-affinity heme uptake system protein I...  64.4    9e-11
+  sp|Q7A150|ISDE_STAAW High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q6GA82|ISDE_STAAS High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q7A652|ISDE_STAAN High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q99UX1|ISDE_STAAM High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|A6QG34|ISDE_STAAE High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q5HGV1|ISDE_STAAC High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q2FZE6|ISDE_STAA8 High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|Q2FHU8|ISDE_STAA3 High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|A7X153|ISDE_STAA1 High-affinity heme uptake system protein I...  64.1    1e-10
+  sp|P54941|YXEB_BACSU Iron(3+)-hydroxamate-binding protein YxeB ...  63.3    3e-10
+  sp|O34805|YVRC_BACSU Uncharacterized ABC transporter substrate-...  61.7    8e-10
+  sp|P37028|BTUF_ECOLI Vitamin B12-binding protein OS=Escherichia...  60.2    2e-09
+  sp|Q8X8Z0|BTUF_ECO57 Vitamin B12-binding protein OS=Escherichia...  59.8    3e-09
+  sp|Q83MD7|BTUF_SHIFL Vitamin B12-binding protein OS=Shigella fl...  59.4    4e-09
+  sp|Q8CWD2|BTUF_ECOL6 Vitamin B12-binding protein OS=Escherichia...  57.5    2e-08
+  sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=B...  57.9    3e-08
+  sp|Q6LUR6|BTUF_PHOPR Vitamin B12-binding protein OS=Photobacter...  56.4    5e-08
+  sp|C3LQF3|BTUF_VIBCM Vitamin B12-binding protein OS=Vibrio chol...  54.4    2e-07
+  sp|Q9KPI6|BTUF_VIBCH Vitamin B12-binding protein OS=Vibrio chol...  54.4    2e-07
+  sp|A5F5P5|BTUF_VIBC3 Vitamin B12-binding protein OS=Vibrio chol...  54.4    2e-07
+  sp|Q5PD47|BTUF_SALPA Vitamin B12-binding protein OS=Salmonella ...  54.0    3e-07
+  sp|Q8DEM7|BTUF_VIBVU Vitamin B12-binding protein OS=Vibrio vuln...  52.9    7e-07
+  sp|Q87SE7|BTUF_VIBPA Vitamin B12-binding protein OS=Vibrio para...  52.1    1e-06
+  sp|Q57T49|BTUF_SALCH Vitamin B12-binding protein OS=Salmonella ...  52.1    1e-06
+  sp|Q8ZRP7|BTUF_SALTY Vitamin B12-binding protein OS=Salmonella ...  51.7    2e-06
+  sp|Q8Z9B2|BTUF_SALTI Vitamin B12-binding protein OS=Salmonella ...  50.2    6e-06
+  sp|Q6D1Z3|BTUF_PECAS Vitamin B12-binding protein OS=Pectobacter...  49.4    1e-05
+  sp|Q57550|Y085_METJA Uncharacterized lipoprotein MJ0085 OS=Meth...  48.6    2e-05
+  sp|C6DC28|BTUF_PECCP Vitamin B12-binding protein OS=Pectobacter...  48.3    3e-05
+  sp|Q9HQ20|BTUFA_HALSA Cobalamin-binding protein OS=Halobacteriu...  47.9    4e-05
+  sp|B0R5G2|BTUFA_HALS3 Cobalamin-binding protein OS=Halobacteriu...  47.9    4e-05
+  sp|Q7N842|BTUF_PHOLL Vitamin B12-binding protein OS=Photorhabdu...  47.5    4e-05
+  sp|Q56991|HMUT_YERPE Hemin-binding periplasmic protein HmuT OS=...  47.5    5e-05
+
+
+> sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD 
+OS=Escherichia coli (strain K12) OX=83333 GN=fhuD PE=1 SV=3
+Length=296
+
+ Score = 397 bits (1019),  Expect = 7e-138, Method: Composition-based stats.
+ Identities = 261/262 (99%), Positives = 261/262 (99%), Gaps = 0/262 (0%)
+
+Query  1    GIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+             IDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL
+Sbjct  32   AIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  91
+
+Query  61   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA
+Sbjct  92   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  151
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ
+Sbjct  152  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  211
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  240
+            GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA
+Sbjct  212  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  271
+
+Query  241  VWFYGATLSAMHFVRVLDNAIG  262
+            VWFYGATLSAMHFVRVLDNAIG
+Sbjct  272  VWFYGATLSAMHFVRVLDNAIG  293
+
+
+> sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfmC PE=2 SV=1
+Length=315
+
+ Score = 250 bits (637),  Expect = 8e-80, Method: Composition-based stats.
+ Identities = 64/253 (25%), Positives = 110/253 (43%), Gaps = 16/253 (6%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVID---VGLRTEPNLEL  60
+            P R+V LE   ++ +  LGI P G+AD  N +  +    L  S ID   VG R+EPNLE+
+Sbjct  58   PKRVVVLELSFLDAVHNLGITPVGIADD-NKKDMI--KKLVGSSIDYTSVGTRSEPNLEV  114
+
+Query  61   LTEMKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            ++ +KP  ++  A    +  + L +IAP       +      +   S T +A  LN +  
+Sbjct  115  ISSLKPDLIIADAERHKNIYKQLKKIAPTIELKSREATYDETI--DSFTTIAKALNKEDE  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAW  179
+             +  LA+++  I  +K    K   R ++L         L    +S   EI    G  +A 
+Sbjct  173  GKEKLAEHKKVINDLKAELPKDENRNIVLGVARADSFQL-HTSSSYDGEIFKMLGFTHAV  231
+
+Query  180  QGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDM-DALMATPLWQAMPFVRAGRFQRV  238
+            + +  +     VS+++L+   D D+L    +  K + D     PLW+ +  V+ G+    
+Sbjct  232  KSDNAYQ---EVSLEQLSKI-DPDILFISANEGKTIVDEWKTNPLWKNLKAVKNGQVYDA  287
+
+Query  239  PA-VWFYGATLSA  250
+                W     + +
+Sbjct  288  DRDTWTRFRGIKS  300
+
+
+> sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding 
+lipoprotein YhfQ OS=Bacillus subtilis (strain 168) OX=224308 
+GN=yhfQ PE=1 SV=1
+Length=323
+
+ Score = 244 bits (622),  Expect = 1e-77, Method: Composition-based stats.
+ Identities = 62/266 (23%), Positives = 112/266 (42%), Gaps = 19/266 (7%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLP--DSVIDVGLRTEPNLELL  61
+            P R+V LE   ++ LL LGI P GVAD    +  +++  L   D    VG R++P++E +
+Sbjct  49   PKRVVVLELGFIDTLLDLGITPVGVADDNKAKQLINKDVLKKIDGYTSVGTRSQPSMEKI  108
+
+Query  62   TEMKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+              +KP  ++          + L +IAP    N  +      +   SLT +A  +  +   
+Sbjct  109  ASLKPDLIIADTTRHKKVYDQLKKIAPTIALNNLNADYQDTIDA-SLT-IAKAVGKEKEM  166
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDP---RHMLVFGPNSLFQEILDEYGIPN  177
+            E  L  +E+ +   K +        LL+    D    R    F  + L  ++   Y I  
+Sbjct  167  EKKLTAHEEKLSETKQKISANSQSVLLIGNTNDTIMARDENFF-TSRLLTQVGYRYAIST  225
+
+Query  178  AWQGETNFWGST---AVSIDRLAAYKDVDVLCFDHDNSKDMDALMATP-----LWQAMPF  229
+            +   +++  G +    +++++L    D DV+      + D+DA    P     LW+ +  
+Sbjct  226  SGNSDSSNGGDSVNMKMTLEQLLKT-DPDVIILMTGKTDDLDADGKRPIEKNVLWKKLKA  284
+
+Query  230  VRAGRFQRVP-AVWFYGATLSAMHFV  254
+            V+ G    V  AVW    ++   + +
+Sbjct  285  VKNGHVYHVDRAVWSLRRSVDGANAI  310
+
+
+> sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein 
+OS=Dickeya dadantii (strain 3937) OX=198628 GN=cbrA PE=3 SV=1
+Length=305
+
+ Score = 241 bits (614),  Expect = 1e-76, Method: Composition-based stats.
+ Identities = 61/270 (23%), Positives = 110/270 (41%), Gaps = 33/270 (12%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPD-------SVIDVGLRTEP  56
+            P R++ L     +  +ALGI P GV D+     W SE P+          V  VGL T+P
+Sbjct  35   PQRVITLFQGATDTAVALGITPAGVVDS-----W-SEKPMYRYLRQALAGVPHVGLETQP  88
+
+Query  57   NLELLTEMKPSFMVWSAGYGPSPE-MLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLN  115
+            +LE +  +KP  +V S       E +L++IAP    +       +   +K++  M   L 
+Sbjct  89   SLEDIVLLKPDAIVASRFRHQRLEPLLSQIAPVVMLD------EIYQFKKTVQVMGQALQ  142
+
+Query  116  LQSAAETHLAQYEDFIRSMKPRFVKR--GARPLLLTTL-IDPRHMLVFGPNSLFQEILDE  172
+             Q+ A+  L  ++  +  ++ +  ++  G  P  ++ L I   H+  + P S    +L E
+Sbjct  143  RQAVADQLLQNWQLRVNGLREQLQRKFGGDWPPTVSILDIREDHIRSYLPGSFPGSVLSE  202
+
+Query  173  YGIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCF-------DHDNSKDMDALMATPLWQ  225
+             G    W   +      ++ +    +   VD   F            ++ ++L+  PLWQ
+Sbjct  203  LGF--GWSDASRAQPGVSLKLTNKESIPVVDADIFFIFLRSESPSVQRNYESLIRHPLWQ  260
+
+Query  226  AMPFVRAGRFQRVPAV-WFYGATLSAMHFV  254
+             +   R  +   V  V W     +   + +
+Sbjct  261  QLRAPRRNQVWVVNGVTWSLSGGILGANMM  290
+
+
+> sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein 
+YfiY OS=Bacillus subtilis (strain 168) OX=224308 GN=yfiY PE=1 
+SV=1
+Length=325
+
+ Score = 240 bits (613),  Expect = 4e-76, Method: Composition-based stats.
+ Identities = 63/273 (23%), Positives = 111/273 (41%), Gaps = 33/273 (12%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPD---SVIDVGLRTEPNLE  59
+            +P RIV L     E LLALGI P G   +     W     L D    V +VGL TEPN+E
+Sbjct  53   NPKRIVVLTNEGTEALLALGIKPVGAVKSWKGDPWY--DYLKDDMKGVKNVGLETEPNVE  110
+
+Query  60   LLTEMKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQS  118
+             + E+KP  ++ +        + L  IAP        G       + +LT  A+ +N   
+Sbjct  111  AIAELKPDLIIGNKVRQEKIYDQLNAIAPTVFAESLAGNW-----KDNLTLYANAVNKAD  165
+
+Query  119  AAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIP--  176
+              +  +A ++  +  +K +   +  + + +   +     + +  +S    ILD+ G    
+Sbjct  166  KGKEVIADFDKRVSDLKNKLGDQTNKTVSVVRFLSGESRIYY-TDSFPGIILDQLGFKRP  224
+
+Query  177  -------NAWQGETNFWGSTAVSIDRLAAYKDVDVLC---FDHDNSKD----MDALMATP  222
+                      + +  F   +  SI  +    D DVL    +  DN+K+     +   ++ 
+Sbjct  225  EKQVELFKKQKDQFTFSTDSKESIPDM----DADVLFYFTYKADNAKENEKWANQWTSSS  280
+
+Query  223  LWQAMPFVRAGRFQRV-PAVWFYGATLSAMHFV  254
+            LW+ +  V++G    V   VW     + A +++
+Sbjct  281  LWKNLKAVKSGNAHEVDDVVWTTAGGIKAANYL  313
+
+
+> sp|P15028|FECB_ECOLI Fe(3+) dicitrate-binding periplasmic protein 
+OS=Escherichia coli (strain K12) OX=83333 GN=fecB PE=2 
+SV=3
+Length=300
+
+ Score = 126 bits (316),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 43/251 (17%), Positives = 92/251 (37%), Gaps = 10/251 (4%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSE-PPLPDSVIDVGLRTEPNLELLT  62
+            P RIV LE    + L A+ ++P G+AD  + +  + E          VG R +P+LE + 
+Sbjct  37   PQRIVVLELSFADALAAVDVIPIGIADDNDAKRILPEVRAHLKPWQSVGTRAQPSLEAIA  96
+
+Query  63   EMKPSFMVWSAGYGP-SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             +KP  ++  +         L +IAP       +     A   +S   + +++  +   +
+Sbjct  97   ALKPDLIIADSSRHAGVYIALQQIAPVLLLKSRNETY--AENLQSAAIIGEMVGKKREMQ  154
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+              L Q+++ +     +  K     +   T  + +   +    +    +L   G+      
+Sbjct  155  ARLEQHKERMAQWASQLPKGTR--VAFGTSREQQF-NLHTQETWTGSVLASLGLNVPAAM  211
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA-  240
+                    ++ +++L A     +L   +     +      PLWQ +   +  +   V + 
+Sbjct  212  AGASMP--SIGLEQLLAVNPAWLLVAHYREESIVKRWQQDPLWQMLTAAQKQQVASVDSN  269
+
+Query  241  VWFYGATLSAM  251
+             W     + A 
+Sbjct  270  TWARMRGIFAA  280
+
+
+> sp|P94421|YCLQ_BACSU Uncharacterized ABC transporter solute-binding 
+protein YclQ OS=Bacillus subtilis (strain 168) OX=224308 
+GN=yclQ PE=1 SV=1
+Length=317
+
+ Score = 106 bits (264),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 49/257 (19%), Positives = 99/257 (39%), Gaps = 13/257 (5%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDS-VIDVGLRTEPNLELL  61
+            +P ++V  ++  ++ L  LG+    VA      L        D    DVG   EP+ + +
+Sbjct  53   NPKKVVVFDFGSLDTLDKLGLDDI-VAGLPKQVLPKYLSKFKDDKYADVGSLKEPDFDKV  111
+
+Query  62   TEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             E+ P  ++ SA    S +  ++IAP         K   +  +     +  + + +   +
+Sbjct  112  AELDPDLIIISARQSESYKEFSKIAPTIYLGVDTAKYMES-FKSDAETIGKIFDKEDKVK  170
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+              LA  +  I  +K +  ++  +  L+    D + +  FGP S +  I D +G+  A Q 
+Sbjct  171  DELANIDHSIADVK-KTAEKLNKNGLVIMANDGK-ISAFGPKSRYGLIHDVFGVAPADQN  228
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCF-----DHDNSKDMDALMATPLWQAMPFVRAGRFQ  236
+                    +VS + ++   + D L           +     ++     + +  V+ G   
+Sbjct  229  IKASTHGQSVSYEYISKT-NPDYLFVIDRGTAIGETSSTKQVVENDYVKNVNAVKNGHVI  287
+
+Query  237  RVP-AVWF-YGATLSAM  251
+             +  A W+  G  L +M
+Sbjct  288  YLDSATWYLSGGGLESM  304
+
+
+> sp|P11460|FATB_VIBA7 Ferric-anguibactin-binding protein FatB 
+OS=Vibrio anguillarum (strain ATCC 68554 / 775) OX=882102 GN=fatB 
+PE=1 SV=1
+Length=322
+
+ Score = 94.5 bits (233),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 51/268 (19%), Positives = 111/268 (41%), Gaps = 15/268 (6%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+ AL+   V+ L  L +   G+               PD + D+G   +PN+E +  
+Sbjct  55   PQRVAALDMNEVDFLDQLNVPIAGMVKDFVPHFLEKYKNTPD-ISDLGAIVQPNMEKIYA  113
+
+Query  64   MKPSFMVWSAGYGPSPEMLARIAPGRGF--NFSDGK-QPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++ +  +    E L+++AP   F  +F +     + + ++ + ++ ++ N Q+ A
+Sbjct  114  LKPDLVLMTPLHANQYEELSKLAPTVHFDIDFRNSHGHHVDIIKQHVIDLGEIFNKQTLA  173
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            +  +A+ +  +  ++    +R  + L++  + +      FG  S +  + D  G+  A  
+Sbjct  174  QKKVAEIDAKVDEVQALTAERSEKALVV--MHNNGSFSSFGIESRYGFVFDVLGVKPAST  231
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMD-------ALMATPLWQAMPFVRAG  233
+                      +S        + D+L +  D +  M+         +A PL +     + G
+Sbjct  232  EIAASLHGQPIS-SEFINQANPDIL-YIIDRTAVMEGKPVIDAEHLANPLLRQTKAWKNG  289
+
+Query  234  RFQRVPAVWFYGATLSAMHFVRVLDNAI  261
+            +   V A  +Y  + S      V+D+ I
+Sbjct  290  KVIFVDADAWYITSASITSLKIVIDDII  317
+
+
+> sp|P0AEL6|FEPB_ECOLI Ferrienterobactin-binding periplasmic protein 
+OS=Escherichia coli (strain K12) OX=83333 GN=fepB PE=1 
+SV=1
+Length=318
+
+ Score = 88.7 bits (218),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 59/276 (21%), Positives = 99/276 (36%), Gaps = 35/276 (13%)
+
+Query  4    PNRIVALEWLPVELLLAL--------GIVPYG-VADTINY-RLW---VSEPPLPDSVIDV  50
+            P RIV+        LLA+           P   VAD   + R W     E  L    I  
+Sbjct  46   PQRIVSTSVTLTGSLLAIDAPVIASGATTPNNRVADDQGFLRQWSKVAKERKLQRLYIG-  104
+
+Query  51   GLRTEPNLELLTEMKPSFMVWSAGYGPS----PEMLARIAPGRGFNFSDGKQPLAMARKS  106
+                EP+ E +    P  ++ SA  G S     + L+ IAP    N           +  
+Sbjct  105  ----EPSAEAVAAQMPDLILISATGGDSALALYDQLSTIAPTLIIN-----YDDKSWQSL  155
+
+Query  107  LTEMADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLF  166
+            LT++ ++   +  A   +AQ++  + + K +          +          ++ P S  
+Sbjct  156  LTQLGEITGHEKQAAERIAQFDKQLAAAKEQIKLPPQPVTAIVYTAAAHSANLWTPESAQ  215
+
+Query  167  QEILDEYGIP--------NAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDAL  218
+             ++L++ G          NA Q +        +  + LAA  + + L     + KD DA+
+Sbjct  216  GQMLEQLGFTLAKLPAGLNASQSQGKRHDIIQLGGENLAAGLNGESLFLFAGDQKDADAI  275
+
+Query  219  MATPLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFV  254
+             A PL   +P V+  +   +    F     SAM  +
+Sbjct  276  YANPLLAHLPAVQNKQVYALGTETFRLDYYSAMQVL  311
+
+
+> sp|P0AEL7|FEPB_ECOL6 Ferrienterobactin-binding periplasmic protein 
+OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=fepB PE=3 SV=1
+Length=318
+
+ Score = 88.7 bits (218),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 59/276 (21%), Positives = 99/276 (36%), Gaps = 35/276 (13%)
+
+Query  4    PNRIVALEWLPVELLLAL--------GIVPYG-VADTINY-RLW---VSEPPLPDSVIDV  50
+            P RIV+        LLA+           P   VAD   + R W     E  L    I  
+Sbjct  46   PQRIVSTSVTLTGSLLAIDAPVIASGATTPNNRVADDQGFLRQWSKVAKERKLQRLYIG-  104
+
+Query  51   GLRTEPNLELLTEMKPSFMVWSAGYGPS----PEMLARIAPGRGFNFSDGKQPLAMARKS  106
+                EP+ E +    P  ++ SA  G S     + L+ IAP    N           +  
+Sbjct  105  ----EPSAEAVAAQMPDLILISATGGDSALALYDQLSTIAPTLIIN-----YDDKSWQSL  155
+
+Query  107  LTEMADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLF  166
+            LT++ ++   +  A   +AQ++  + + K +          +          ++ P S  
+Sbjct  156  LTQLGEITGHEKQAAERIAQFDKQLAAAKEQIKLPPQPVTAIVYTAAAHSANLWTPESAQ  215
+
+Query  167  QEILDEYGIP--------NAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDAL  218
+             ++L++ G          NA Q +        +  + LAA  + + L     + KD DA+
+Sbjct  216  GQMLEQLGFTLAKLPAGLNASQSQGKRHDIIQLGGENLAAGLNGESLFLFAGDQKDADAI  275
+
+Query  219  MATPLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFV  254
+             A PL   +P V+  +   +    F     SAM  +
+Sbjct  276  YANPLLAHLPAVQNKQVYALGTETFRLDYYSAMQVL  311
+
+
+> sp|P37580|FHUD_BACSU Iron(3+)-hydroxamate-binding protein FhuD 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=fhuD PE=1 SV=1
+Length=315
+
+ Score = 85.2 bits (209),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 43/248 (17%), Positives = 95/248 (38%), Gaps = 17/248 (7%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+V +          LGI   G  + +    +       + V ++G  T  ++E + +
+Sbjct  58   PKRVVVMADGYYGYFKTLGINVVGAPENVFKNPYYKGK--TNGVENIGDGT--SVEKVID  113
+
+Query  64   MKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            + P  ++     G   + L +IAP         K       + L E A +   +  AE  
+Sbjct  114  LNPDLIIVWTTQGADIKKLEKIAPTVAV-----KYDKLDNIEQLKEFAKMTGTEDKAEKW  168
+
+Query  124  LAQYEDFIRSMKPRFVKR-GARPLLLTTLIDPRHMLVFGPN--SLFQEILDEYGIP----  176
+            LA+++  + + K +  K  G + + +      + + VFG +       I  + G+     
+Sbjct  169  LAKWDKKVAAAKTKIKKAVGDKTISIMQTN-GKDIYVFGKDFGRGGSIIYKDLGLQATKL  227
+
+Query  177  NAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQ  236
+               +      G T++S+++L  +    +      +  D   +  + +W+ +  V+ G   
+Sbjct  228  TKEKAIDQGPGYTSISLEKLPDFAGDYIFAGPWQSGGDDGGVFESSIWKNLNAVKNGHVY  287
+
+Query  237  RVPAVWFY  244
+            ++  + FY
+Sbjct  288  KMDPIGFY  295
+
+
+> sp|P40409|FEUA_BACSU Iron-uptake system-binding protein OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=feuA PE=1 SV=1
+Length=317
+
+ Score = 69.4 bits (168),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 39/230 (17%), Positives = 84/230 (37%), Gaps = 20/230 (9%)
+
+Query  41   PPLPDSVIDVGLRTEPNLELLTEMKPSFMVWS-AGYGPSPEMLARIAPGRGFNFSDGKQP  99
+              + D     G + EPN+E + EMKP  ++ S      + + ++        +       
+Sbjct  91   KDITDKAEPTGEKMEPNIEKILEMKPDVILASTKFPEKTLQKISTAGTTIPVSHISSNW-  149
+
+Query  100  LAMARKSLTEMADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLV  159
+                ++++  +A L   +  A+  +A YE  ++ +K +   +      L   I   ++ +
+Sbjct  150  ----KENMMLLAQLTGKEKKAKKIIADYEQDLKEIKTKINDKAKDSKALVIRIRQGNIYI  205
+
+Query  160  FGPNSLFQEILD-EYGI--PNAWQGETNFWGSTAVSIDRLAAYKDVDVLCF------DHD  210
+            +     F   L  + G+  PN  +       S+   +  +    + D +        + D
+Sbjct  206  YPEQVYFNSTLYGDLGLKAPNEVKAAKAQELSSLEKLSEM----NPDHIFVQFSDDENAD  261
+
+Query  211  NSKDMDALMATPLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFVRVLDNA  260
+                +  L   P+W+++  V+      V +V       +A   VR L  A
+Sbjct  262  KPDALKDLEKNPIWKSLKAVKEDHVY-VNSVDPLAQGGTAWSKVRFLKAA  310
+
+
+> sp|Q6GHV3|ISDE_STAAR High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 64.4 bits (155),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 47/251 (19%), Positives = 92/251 (37%), Gaps = 30/251 (12%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDM-----DALMATPLWQAMPFVRA  232
+              + +   + S+  + + L       +L   H  S+++            +W+    V+ 
+Sbjct  200  VIKVKDRQYISS--NTENLLNINPDIILRLPHGMSEEVKKMFQKEFKQNDIWKHFKAVKN  257
+
+Query  233  GRFQRVPAVWF  243
+                 +  V F
+Sbjct  258  NHVYDLEEVPF  268
+
+
+> sp|Q2YX92|ISDE_STAAB High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) 
+OX=273036 GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 64.4 bits (155),  Expect = 9e-11, Method: Composition-based stats.
+ Identities = 45/248 (18%), Positives = 90/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ + VK+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAVKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q7A150|ISDE_STAAW High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MW2) OX=196620 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q6GA82|ISDE_STAAS High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q7A652|ISDE_STAAN High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain N315) OX=158879 GN=isdE 
+PE=1 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q99UX1|ISDE_STAAM High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 
+GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|A6QG34|ISDE_STAAE High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Newman) OX=426430 GN=isdE 
+PE=1 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q5HGV1|ISDE_STAAC High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain COL) OX=93062 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q2FZE6|ISDE_STAA8 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain NCTC 8325) OX=93061 GN=isdE 
+PE=1 SV=2
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|Q2FHU8|ISDE_STAA3 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain USA300) OX=367830 GN=isdE 
+PE=3 SV=2
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|A7X153|ISDE_STAA1 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Mu3 / ATCC 700698) OX=418127 
+GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 64.1 bits (154),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 47/252 (19%), Positives = 92/252 (37%), Gaps = 32/252 (13%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGAR----PLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+                   D + S+K +   + A+    P +L  +  P   LV    S   +++   G  N
+Sbjct  144  EL----NDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGEN  199
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCF----DHDNSKDM--DALMATPLWQAMPFVR  231
+              + +   + S+  + + L    + D++        +  K M         +W+    V+
+Sbjct  200  VIKVKDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVK  256
+
+Query  232  AGRFQRVPAVWF  243
+                  +  V F
+Sbjct  257  NNHVYDLEEVPF  268
+
+
+> sp|P54941|YXEB_BACSU Iron(3+)-hydroxamate-binding protein YxeB 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=yxeB PE=1 SV=2
+Length=321
+
+ Score = 63.3 bits (152),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 37/244 (15%), Positives = 83/244 (34%), Gaps = 26/244 (11%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPP-LPDSVIDVGLRTEP-NLELL  61
+            P RIV   +     LL++G    G         W  + P L   + +V    +P ++E +
+Sbjct  56   PKRIVTDFYAG--ELLSVGANVVG------SGSWSFDNPFLKSKLKNVKDVGDPISVEKV  107
+
+Query  62   TEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             E++P  +V       + + L +IAP     ++  K        +++   D+   +  A+
+Sbjct  108  MELQPDLIV--VMNEENVDKLKKIAPTVVIPYNTAKN----VEDTVSMFGDIAGAKDQAK  161
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFG----PNSLFQEILDEYGIPN  177
+            + +A +     + K +      +        +      +          Q + +  G+  
+Sbjct  162  SFMADFNKKAEAAKKKIAGVIDKDATFGIYENTDKGEFWVFNDNGGRGGQAVYNALGLKA  221
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKD--VDVLCFD----HDNSKDMDALMATPLWQAMPFVR  231
+              + E +      +         +   D +          SK +D L  + +W+ +  V+
+Sbjct  222  PEKIEQDVIKKGEMKQLSQEVIPEYAADYMFITDYNPKGESKTLDKLENSSIWKNLDAVK  281
+
+Query  232  AGRF  235
+              R 
+Sbjct  282  HNRV  285
+
+
+> sp|O34805|YVRC_BACSU Uncharacterized ABC transporter substrate-binding 
+lipoprotein YvrC OS=Bacillus subtilis (strain 168) 
+OX=224308 GN=yvrC PE=3 SV=1
+Length=314
+
+ Score = 61.7 bits (148),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 43/246 (17%), Positives = 88/246 (36%), Gaps = 25/246 (10%)
+
+Query  3    DPNRIVALEWLPVELLLALGI--VPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P +IV+L     E+  ALG+     GV     Y      P     V  VG     N+E 
+Sbjct  56   EPKKIVSLMPSNTEITYALGLGDKVVGVTTNDTY------PKEVKKVEKVG-DMNVNVEK  108
+
+Query  61   LTEMKPSFMVWS----AGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL  116
+            +  +KP  ++      +    + + L     G      +  Q  +   KS+  + +    
+Sbjct  109  VISLKPDLVLAHESSMSASADAIKQLKD--AGITVLTVNDAQSFSEVYKSIEMIGEAGGA  166
+
+Query  117  QSAAETHLAQYEDFIRSMKPR---FVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEY  173
+            +  A+  +   +  ++ ++ +     K   + + +    DP  +   G ++   E+L+  
+Sbjct  167  EKKADQLVKSMKSDLKDIQEKAKTISKDEEKSVFIEVSPDPD-IYTTGKDTFMNEMLNVI  225
+
+Query  174  GIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAG  233
+               NA   +T +   T  +I +L    + D +     +     A+     W  +  V+  
+Sbjct  226  HAKNAAADQTGWVQMTDEAIVKL----NPDAIV--TTDGVKAKAVEKRDGWSEINAVKHH  279
+
+Query  234  RFQRVP  239
+            R   V 
+Sbjct  280  RVYDVD  285
+
+
+> sp|P37028|BTUF_ECOLI Vitamin B12-binding protein OS=Escherichia 
+coli (strain K12) OX=83333 GN=btuF PE=1 SV=2
+Length=266
+
+ Score = 60.2 bits (144),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 38/187 (20%), Positives = 70/187 (37%), Gaps = 13/187 (7%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A    +L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIA---NALRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINPPF--TSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTA  190
+              W   +
+Sbjct  194  VPWPQVS  200
+
+
+> sp|Q8X8Z0|BTUF_ECO57 Vitamin B12-binding protein OS=Escherichia 
+coli O157:H7 OX=83334 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 59.8 bits (143),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 38/187 (20%), Positives = 70/187 (37%), Gaps = 13/187 (7%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A    +L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATNIEQIA---NALRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINPPF--TSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTA  190
+              W   +
+Sbjct  194  VPWPQVS  200
+
+
+> sp|Q83MD7|BTUF_SHIFL Vitamin B12-binding protein OS=Shigella 
+flexneri OX=623 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 59.4 bits (142),  Expect = 4e-09, Method: Composition-based stats.
+ Identities = 38/187 (20%), Positives = 70/187 (37%), Gaps = 13/187 (7%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A    +L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIA---NALRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYVQLKAQYADKPKKRVFLQFGINPPF--TSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTA  190
+              W   +
+Sbjct  194  VPWPQVS  200
+
+
+> sp|Q8CWD2|BTUF_ECOL6 Vitamin B12-binding protein OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 57.5 bits (137),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 37/187 (20%), Positives = 69/187 (37%), Gaps = 13/187 (7%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      P     +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PLQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A    +L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIA---NALRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINPPF--TSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTA  190
+              W   +
+Sbjct  194  VPWPQVS  200
+
+
+> sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=btr PE=1 SV=1
+Length=529
+
+ Score = 57.9 bits (138),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 48/241 (20%), Positives = 85/241 (35%), Gaps = 18/241 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVA-----DTINYRLWVSEPPLPDSVIDVGLRTEPNLE  59
+             +I A     +  L+ L  +P+  A      +  Y+ + ++ P+  S      + E NL 
+Sbjct  267  KKIAAYGRGTMGHLIPLHHIPFAAALHPKWTSYYYQHYSTDIPVQLSAYRFNEKWEENLY  326
+
+Query  60   LLTEMKPSFMVW-SAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQS  118
+             L++ +P  +V   +      + L RIA        +        R    + A  L  +S
+Sbjct  327  TLSQAEPDVIVSMDSISPEEQDRLNRIAEVMYLPSEES------WRTHFLQTASFLKEES  380
+
+Query  119  AAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+             AE  LA Y+    + K           L   L      L     S+ +    + G  +A
+Sbjct  381  EAEKWLADYDQQTTAAKKTLQHVQGLRFLFLRLHKQNFYLAHN-RSVREVFFGDLGFSSA  439
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKD---MDALMATPLWQAMPFVRAGRF  235
+               +T      A+S++ +A Y+   ++ F     +       L  T  WQ +  VR  R 
+Sbjct  440  TTADTP--SEQAISLENIANYQADCMMLFLFKEPETIAYYQQLQQTEAWQNLSAVRDNRV  497
+
+Query  236  Q  236
+             
+Sbjct  498  Y  498
+
+
+> sp|Q6LUR6|BTUF_PHOPR Vitamin B12-binding protein OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=btuF PE=3 SV=1
+Length=274
+
+ Score = 56.4 bits (134),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 37/256 (14%), Positives = 84/256 (33%), Gaps = 24/256 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R+++L     EL  A G+    +A +       +   L       G++    LE +  ++
+Sbjct  23   RVISLSPHTTELAYAAGLGDALIAASDYSDYPEAAQKLERVANYRGVK----LERIVALQ  78
+
+Query  66   PSFMVWSAGYGPSPEM--LARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G  P  EM  L ++     ++     + +A    ++ ++       + A   
+Sbjct  79   PDLILAWKGGNPPREMAKLEQLGLNVFYSNPVELEDIA---TTIEQLGQYSPEPTQAIQT  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+              Q+   I + K R      R +     +    ++     S   ++    G  N +    
+Sbjct  136  ANQFRQEISAFKTR--NENQRTVSFFYQLSDSPIITVADGSWPSQVFSLCGGRNIFGDSP  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA----MPFVRAGRFQRVP  239
+              +   +   +     +  +V+           A   T +WQ     +P V       + 
+Sbjct  194  AAYPQVS---EEQVVVRQPEVIFGTP------HADTKTSIWQNWQGKLPAVDNHHVFTLQ  244
+
+Query  240  AVWFYGATLSAMHFVR  255
+            A W    T   ++ ++
+Sbjct  245  ADWLNRPTPRTINAIK  260
+
+
+> sp|C3LQF3|BTUF_VIBCM Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 54.4 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 39/243 (16%), Positives = 85/243 (35%), Gaps = 22/243 (9%)
+
+Query  5    NRIVALEWLPVELLLA--LGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLT  62
+             RI++L     E+  A  LG     V++  +Y      PP    +  V      N+E + 
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSEYSDY------PPQALELERVANHQTINIEKIL  79
+
+Query  63   EMKPSFMV-WSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+             +KP  ++ W AG  P     L ++      + +     +A   ++L+  +         
+Sbjct  80   TLKPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVG  136
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            +     +   ++ ++ ++     +P+     +  + ++         E+    G  N + 
+Sbjct  137  QKAAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFA  194
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRVP  239
+                      VSI+++   K   V+        +     A   WQA +  V+  +   + 
+Sbjct  195  DSEV--PYPQVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALN  248
+
+Query  240  AVW  242
+            A W
+Sbjct  249  ADW  251
+
+
+> sp|Q9KPI6|BTUF_VIBCH Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 54.4 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 39/243 (16%), Positives = 85/243 (35%), Gaps = 22/243 (9%)
+
+Query  5    NRIVALEWLPVELLLA--LGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLT  62
+             RI++L     E+  A  LG     V++  +Y      PP    +  V      N+E + 
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSEYSDY------PPQALELERVANHQTINIEKIL  79
+
+Query  63   EMKPSFMV-WSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+             +KP  ++ W AG  P     L ++      + +     +A   ++L+  +         
+Sbjct  80   TLKPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVG  136
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            +     +   ++ ++ ++     +P+     +  + ++         E+    G  N + 
+Sbjct  137  QKAAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFA  194
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRVP  239
+                      VSI+++   K   V+        +     A   WQA +  V+  +   + 
+Sbjct  195  DSEV--PYPQVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALN  248
+
+Query  240  AVW  242
+            A W
+Sbjct  249  ADW  251
+
+
+> sp|A5F5P5|BTUF_VIBC3 Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39541 / Classical Ogawa 395 
+/ O395) OX=345073 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 54.4 bits (129),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 39/243 (16%), Positives = 85/243 (35%), Gaps = 22/243 (9%)
+
+Query  5    NRIVALEWLPVELLLA--LGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLT  62
+             RI++L     E+  A  LG     V++  +Y      PP    +  V      N+E + 
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSEYSDY------PPQALELERVANHQTINIEKIL  79
+
+Query  63   EMKPSFMV-WSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+             +KP  ++ W AG  P     L ++      + +     +A   ++L+  +         
+Sbjct  80   TLKPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVG  136
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            +     +   ++ ++ ++     +P+     +  + ++         E+    G  N + 
+Sbjct  137  QKAAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFA  194
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRVP  239
+                      VSI+++   K   V+        +     A   WQA +  V+  +   + 
+Sbjct  195  DSEV--PYPQVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALN  248
+
+Query  240  AVW  242
+            A W
+Sbjct  249  ADW  251
+
+
+> sp|Q5PD47|BTUF_SALPA Vitamin B12-binding protein OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=btuF 
+PE=3 SV=1
+Length=266
+
+ Score = 54.0 bits (128),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 46/225 (20%), Positives = 83/225 (37%), Gaps = 21/225 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL-QSAAET  122
+            P  +V   G         L  +     +  +   + +A A + L   +      Q AA+T
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVSIEQIADALRQLAVWSPQPEKAQQAAQT  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+             L +Y     ++K  +  +  + + L   ++P  +   G  S+  ++L   G  N +   
+Sbjct  139  LLNEY----AALKVEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENIFADS  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAM  227
+               W    VS +++ A +    +       K  + L     W  +
+Sbjct  193  RVPWP--QVSREQVLA-RHPQAIIVA---GKAGEILKIEQYWGNL  231
+
+
+> sp|Q8DEM7|BTUF_VIBVU Vitamin B12-binding protein OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=btuF PE=3 SV=1
+Length=273
+
+ Score = 52.9 bits (125),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 41/245 (17%), Positives = 90/245 (37%), Gaps = 26/245 (11%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     E+  A G+    +A +       +   L       G+    NLE +  +
+Sbjct  22   ERVISLAPHATEIAYAAGLGDKLIAVSEMSDYPEAAKKLEKVSNYKGI----NLEKIITL  77
+
+Query  65   KPSFMV-WSAGY-GPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMAD----LLNLQS  118
+            KP  ++ W AG      E L +      ++ +   + +    + L++ +D     LN   
+Sbjct  78   KPDLIIAWPAGNPAKELEKLEQFGFKIYYSQTKSLKDIGDNIEQLSQYSDDPQIGLNNAR  137
+
+Query  119  AAETHLAQYEDFIRSM-KPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+               THL       +++ K R+  + +   ++T              +   E+    G  N
+Sbjct  138  DYRTHLEALRAKYQNLPKTRYFYQLSDTPIITVA----------GQNWPTEVFRFCGGEN  187
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+             + G +  +    VSI+++   K    +       ++      +P  + +P ++   F +
+Sbjct  188  VFDGASAPYP--QVSIEQVI-LKRPQAMFVSPHAIQNNGMW--SPWVEEIPALKNAHFWQ  242
+
+Query  238  VPAVW  242
+            + A W
+Sbjct  243  LDADW  247
+
+
+> sp|Q87SE7|BTUF_VIBPA Vitamin B12-binding protein OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 
+GN=btuF PE=3 SV=1
+Length=275
+
+ Score = 52.1 bits (123),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 36/254 (14%), Positives = 90/254 (35%), Gaps = 20/254 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSE-PPLPDSVIDVGLRTEPNLELLTE  63
+             R+++L     E+  A      G+ D +     +S+ P     +  V       LE +  
+Sbjct  24   ERVISLAPHATEIAYA-----AGLGDKLIAVSEMSDYPKEAGELEKVSNYQGIKLERIIA  78
+
+Query  64   MKPSFMV-WSAGY-GPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            ++P  ++ W AG      E L +      ++ +   + +A   + L++ +D     S  +
+Sbjct  79   LQPDLVIAWPAGNPAKELEKLKQFGVPIYYSTTGTLEDIANNIEQLSQYSD---DPSKGQ  135
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                 + + + ++K ++       +     +  + ++     +   E+ +  G  N +  
+Sbjct  136  KAARDFREELTALKAKY--NTTEKVRYFYQLSEKPIITVAGKNWPSEVFNFCGGENVF--  191
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRVPA  240
+                     VSI+++   +  +VL        D         W+  +P +R      + +
+Sbjct  192  ANTAAPYPQVSIEQVI-TRQPEVLFTSRHAMSDDGMWAQ---WKNELPALRNNHVWSLNS  247
+
+Query  241  VWFYGATLSAMHFV  254
+             W    T   ++ +
+Sbjct  248  DWINRPTPRTLNAI  261
+
+
+> sp|Q57T49|BTUF_SALCH Vitamin B12-binding protein OS=Salmonella 
+choleraesuis (strain SC-B67) OX=321314 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 52.1 bits (123),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 45/225 (20%), Positives = 81/225 (36%), Gaps = 21/225 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  MK
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVAMK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL-QSAAET  122
+            P  +V   G         L  +     +  +   + +A   + L   +      Q AA+T
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVSIEQIADTLRQLAAWSPQPEKAQQAAQT  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+             L +Y     ++   +  +  + + L   ++P  +   G  S+  ++L   G  N +   
+Sbjct  139  LLNEY----AALNAEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADS  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAM  227
+               W    VS +++ A +    +       K  + L     W  +
+Sbjct  193  RVPWP--QVSREQVLA-RHPQAIIVA---GKAGEILKIEQYWGNL  231
+
+
+> sp|Q8ZRP7|BTUF_SALTY Vitamin B12-binding protein OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 51.7 bits (122),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 44/225 (20%), Positives = 81/225 (36%), Gaps = 21/225 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL-QSAAET  122
+            P  +V   G         L  +     +  +   + +A   + L   +      Q AA+T
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVTIEQIADTLRQLAAWSPQPEKAQQAAQT  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+             L +Y     ++   +  +  + + L   ++P  +   G  S+  ++L   G  N +   
+Sbjct  139  LLNEY----AALNAEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADS  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAM  227
+               W    VS +++ A +    +       K  + L     W  +
+Sbjct  193  RVPWP--QVSREQVLA-RHPQAIIVA---GKAGEILKIEQYWGNL  231
+
+
+> sp|Q8Z9B2|BTUF_SALTI Vitamin B12-binding protein OS=Salmonella 
+typhi OX=90370 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 50.2 bits (118),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 45/225 (20%), Positives = 82/225 (36%), Gaps = 21/225 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A  I P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAEITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL-QSAAET  122
+            P  +V   G         L  +     +  +   + +A A + L   +      Q AA+T
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVTIEQIADALRQLAAWSPQPEKAQQAAQT  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+             L +Y     ++K  +  +  + + L   ++P  +   G  S+  ++L   G  N +   
+Sbjct  139  LLKEY----AALKVEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADS  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAM  227
+               W    VS +++ A +    +       K  + L     W  +
+Sbjct  193  RVPWP--QVSREQVLA-RHPQAIIVA---GKAGEILKIEQYWGNL  231
+
+
+> sp|Q6D1Z3|BTUF_PECAS Vitamin B12-binding protein OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 
+GN=btuF PE=3 SV=1
+Length=279
+
+ Score = 49.4 bits (116),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 41/228 (18%), Positives = 76/228 (33%), Gaps = 20/228 (9%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+++L     E+  A G+    +A +     W   PP    +  V      NLE +  
+Sbjct  22   PQRVISLAPHATEMAYAAGMGEQLIAVS----AWSDYPPEAKKLEQVASWQGINLERILA  77
+
+Query  64   MKPSFMVWSAGYGPS--PEMLARIA-PGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++      P    E LA  + P    +        A    SL ++A        A
+Sbjct  78   LKPDLILAWREGNPQRPLEQLANFSIPIVYLDAKTLDDIPA----SLRQLATYSRHPEQA  133
+
+Query  121  ETHLAQYEDFIRSMK---PRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+            E     ++  I  ++    +       PL +      + +      +L  +I+   G  N
+Sbjct  134  ERAATDFQQQIGELQHADEKHKAAHTAPLRVFIQFGTQPLFTSSKATLQSQIVSLCGAEN  193
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ  225
+             +   T  W    VS +++   +    +     + K  +       WQ
+Sbjct  194  IFSDSTVPWP--QVSREQVLR-RQPQAIIIGGASDKIAN---TQAFWQ  235
+
+
+> sp|Q57550|Y085_METJA Uncharacterized lipoprotein MJ0085 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / 
+JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0085 PE=3 SV=1
+Length=373
+
+ Score = 48.6 bits (114),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 36/266 (14%), Positives = 79/266 (30%), Gaps = 23/266 (9%)
+
+Query  5    NRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEP-----PLPDSVIDVGLR---T  54
+            NRIV      + L++ L       GV DT       + P     P   ++  +G      
+Sbjct  57   NRIVCCGPGCLRLIVYLNATDKVVGVEDTEKKWTPWTRPYRIAHPELANLPTIGQGGPCP  116
+
+Query  55   EPNLELLTEMKPSFMVWSAGYGPSPEMLARIA--PGRGFNFSD-GKQPLAMARKSLTEMA  111
+            +PN E + ++KP  +  +       + L +    P    ++            KSL    
+Sbjct  117  KPNPEAIIQVKPDVIFVTYMPKDEVDALQQKTGIPVVVLSYGQLATFNNEDLFKSLELAG  176
+
+Query  112  DLLNLQSAAETHLAQYEDFIRSMKPR---FVKRGARPLLL-TTLIDPRHMLVFGPNSLFQ  167
+             +L  +  A+  +   ++    +  R           + +        H +         
+Sbjct  177  KILGKEERAKEVIEFIKNCQNDLNERTKDIPDDKKPSVYVGGIGYKGLHGIDSTECKYPP  236
+
+Query  168  EILDEYGIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMAT--PLWQ  225
+             +            E    G   V+ +++  + + D++  D    K +          + 
+Sbjct  237  FVAVN---AKNVADELGKEGHVFVTKEQILKW-NPDIIFIDEGGLKLVVEDYKRNKEFYN  292
+
+Query  226  AMPFVRAGRFQRVPAVWFYGATLSAM  251
+            ++   + G    +    FY   +   
+Sbjct  293  SLKAFKNGDVYGLLPYNFYTTNIGTA  318
+
+
+> sp|C6DC28|BTUF_PECCP Vitamin B12-binding protein OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 
+GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 48.3 bits (113),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 35/190 (18%), Positives = 64/190 (34%), Gaps = 11/190 (6%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+++L     E+  A G+    +A +     W   PP    +  V      NLE +  
+Sbjct  22   PQRVISLAPHATEMAYAAGMGEQLIAVS----AWSDYPPEAKKLEQVASWQGINLERILA  77
+
+Query  64   MKPSFMVWSAGYGPS--PEMLARIA-PGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++      P    E LA  + P    +        A    SL ++A        A
+Sbjct  78   LKPDLILAWREGNPQRPLEQLANFSIPIVYLDAKTLDDIPA----SLRQLATYSRHPEQA  133
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            E     ++  I  ++     + A  L +      + +      +L  +I+   G  N + 
+Sbjct  134  ERAATDFQQEIGRLRHTGEGQNAASLRVFIQFGTQPLFTSSQATLQSQIVSLCGAENIFS  193
+
+Query  181  GETNFWGSTA  190
+                 W   +
+Sbjct  194  DSPVPWPQVS  203
+
+
+> sp|Q9HQ20|BTUFA_HALSA Cobalamin-binding protein OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=btuF PE=1 SV=1
+Length=369
+
+ Score = 47.9 bits (112),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 45/238 (19%), Positives = 80/238 (34%), Gaps = 16/238 (7%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P R+V L     + +  LG      GV+    Y    S+     +V+  G  ++ N+E 
+Sbjct  59   EPERVVTLNPSAAQTMWELGDRDAVVGVSQFGTYLPTASQ----RTVVSGGQPSQTNVEA  114
+
+Query  61   LTEMKPSFMVW-SAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            +  + P  ++  +     +   L        F F        +  K+ T +  L    +A
+Sbjct  115  VVGLDPDLVLAPNTVRNTTVTRLRSAGITV-FQFRAATSIDGVVEKTAT-IGRLTGNCAA  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVK-RGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+            A    A+  D + ++         ARP +   L D       GPN+     ++  G  N 
+Sbjct  173  AAATTAEMRDRVAAIADAVPDTDSARPRVYYHLGDG---YTAGPNTFIGAAIEAAGGHNI  229
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQ  236
+                        +S + +   +D DV+      S D     A+ L      VR     
+Sbjct  230  AADVNTTSSYPQLS-EEVIVSQDPDVVV--TGVSADRLDATASALVAPSSVVRNTTAY  284
+
+
+> sp|B0R5G2|BTUFA_HALS3 Cobalamin-binding protein OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 GN=btuF 
+PE=3 SV=1
+Length=369
+
+ Score = 47.9 bits (112),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 45/238 (19%), Positives = 80/238 (34%), Gaps = 16/238 (7%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P R+V L     + +  LG      GV+    Y    S+     +V+  G  ++ N+E 
+Sbjct  59   EPERVVTLNPSAAQTMWELGDRDAVVGVSQFGTYLPTASQ----RTVVSGGQPSQTNVEA  114
+
+Query  61   LTEMKPSFMVW-SAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            +  + P  ++  +     +   L        F F        +  K+ T +  L    +A
+Sbjct  115  VVGLDPDLVLAPNTVRNTTVTRLRSAGITV-FQFRAATSIDGVVEKTAT-IGRLTGNCAA  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVK-RGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+            A    A+  D + ++         ARP +   L D       GPN+     ++  G  N 
+Sbjct  173  AAATTAEMRDRVAAIADAVPDTDSARPRVYYHLGDG---YTAGPNTFIGAAIEAAGGHNI  229
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQ  236
+                        +S + +   +D DV+      S D     A+ L      VR     
+Sbjct  230  AADVNTTSSYPQLS-EEVIVSQDPDVVV--TGVSADRLDATASALVAPSSVVRNTTAY  284
+
+
+> sp|Q7N842|BTUF_PHOLL Vitamin B12-binding protein OS=Photorhabdus 
+luminescens subsp. laumondii (strain DSM 15139 / CIP 105565 
+/ TT01) OX=243265 GN=btuF PE=3 SV=1
+Length=275
+
+ Score = 47.5 bits (111),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 37/214 (17%), Positives = 74/214 (35%), Gaps = 18/214 (8%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSE-PPLPDSVIDVGLRTEPNLELLT  62
+            P R+++L     EL  A      G+ D +      S+ PP    +  V      NLE + 
+Sbjct  29   PLRVISLSPSTTELAYA-----AGLGDNLIAASAYSDYPPQARKLEQVANWQGINLERII  83
+
+Query  63   EMKPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+             +KP  ++   G  P    E LA       ++     + +A   + L E +        A
+Sbjct  84   TLKPELILAWRGGNPQRPLEQLAAFGIKIFYSDPTTTEQIAQDLERLAEYSP---HPEQA  140
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPN-SLFQEILDEYGIPNAW  179
+            +    +      +++ ++     +P  L       + L      +L  E+L   G  N +
+Sbjct  141  KKSATELRQRFANLQQQYATTTPKPAFLQF---GTYPLFTTSGQTLQSEVLSICGGRNIF  197
+
+Query  180  QGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSK  213
+                  W    VS +++   +  +++       +
+Sbjct  198  ANSPVPWP--QVSREQVL-IRKPEIIVISGGQEQ  228
+
+
+> sp|Q56991|HMUT_YERPE Hemin-binding periplasmic protein HmuT OS=Yersinia 
+pestis OX=632 GN=hmuT PE=1 SV=2
+Length=279
+
+ Score = 47.5 bits (111),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 48/241 (20%), Positives = 87/241 (36%), Gaps = 19/241 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPP-LPDSVIDVGLRTEPNLELLTE  63
+             RIV +     E+  ALG       D I  R   S+ P     + DVG     N E +  
+Sbjct  27   ERIVTIGGDVTEIAYALG-----AGDEIVARDSTSQQPQAAQKLPDVGYMRTLNAEGILA  81
+
+Query  64   MKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            MKP+ ++ S    PS  +    + G       G+         +  +A  L+     +  
+Sbjct  82   MKPTMLLVSELAQPSLVLTQIASSGVNVVTVPGQTTPESVAMKINAVATALHQTEKGQKL  141
+
+Query  124  LAQYEDFIRSM-KPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+            +  Y+  + ++ K     +    +L          +  G N+    ++   G  NA QG 
+Sbjct  142  IEDYQQRLAAVNKTPLPVK----VLFVMSHGGLTPMAAGQNTAADAMIRAAGGSNAMQGF  197
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ--AMPFVRAGRFQRVPA  240
+            + +   +   +   A     D+L    D  K + +  +  +W+   M    AG+ +R+  
+Sbjct  198  SRYRPLSQEGVIASA----PDLLLITTDGVKALGS--SENIWKLPGMALTPAGKHKRLLV  251
+
+Query  241  V  241
+            V
+Sbjct  252  V  252
+
+
+
+Lambda      K        H        a         alpha
+   0.306    0.123    0.295    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0373    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19935754713
+Results from round 3
+
+
+Query= d1k7sn_.c.92.2.1
+
+Length=262
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD ...  287     8e-95
+  sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bac...  218     2e-67
+  sp|Q87SE7|BTUF_VIBPA Vitamin B12-binding protein OS=Vibrio para...  212     6e-66
+  sp|C3LQF3|BTUF_VIBCM Vitamin B12-binding protein OS=Vibrio chol...  208     5e-64
+  sp|Q9KPI6|BTUF_VIBCH Vitamin B12-binding protein OS=Vibrio chol...  208     5e-64
+  sp|A5F5P5|BTUF_VIBC3 Vitamin B12-binding protein OS=Vibrio chol...  208     5e-64
+  sp|Q6LUR6|BTUF_PHOPR Vitamin B12-binding protein OS=Photobacter...  202     6e-62
+  sp|Q8DEM7|BTUF_VIBVU Vitamin B12-binding protein OS=Vibrio vuln...  193     3e-58
+  sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein Y...  193     1e-57
+  sp|C6DC28|BTUF_PECCP Vitamin B12-binding protein OS=Pectobacter...  189     1e-56
+  sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding...  189     3e-56
+  sp|Q6D1Z3|BTUF_PECAS Vitamin B12-binding protein OS=Pectobacter...  185     2e-55
+  sp|P11460|FATB_VIBA7 Ferric-anguibactin-binding protein FatB OS...  186     2e-55
+  sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein ...  185     5e-55
+  sp|Q7N842|BTUF_PHOLL Vitamin B12-binding protein OS=Photorhabdu...  183     2e-54
+  sp|P15028|FECB_ECOLI Fe(3+) dicitrate-binding periplasmic prote...  181     2e-53
+  sp|Q6GHV3|ISDE_STAAR High-affinity heme uptake system protein I...  180     4e-53
+  sp|Q5PD47|BTUF_SALPA Vitamin B12-binding protein OS=Salmonella ...  179     4e-53
+  sp|Q57T49|BTUF_SALCH Vitamin B12-binding protein OS=Salmonella ...  179     5e-53
+  sp|Q8ZRP7|BTUF_SALTY Vitamin B12-binding protein OS=Salmonella ...  178     6e-53
+  sp|Q7A150|ISDE_STAAW High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q6GA82|ISDE_STAAS High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q7A652|ISDE_STAAN High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q99UX1|ISDE_STAAM High-affinity heme uptake system protein I...  179     8e-53
+  sp|A6QG34|ISDE_STAAE High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q5HGV1|ISDE_STAAC High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q2FZE6|ISDE_STAA8 High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q2FHU8|ISDE_STAA3 High-affinity heme uptake system protein I...  179     8e-53
+  sp|A7X153|ISDE_STAA1 High-affinity heme uptake system protein I...  179     8e-53
+  sp|Q2YX92|ISDE_STAAB High-affinity heme uptake system protein I...  178     1e-52
+  sp|P94421|YCLQ_BACSU Uncharacterized ABC transporter solute-bin...  178     3e-52
+  sp|Q8Z9B2|BTUF_SALTI Vitamin B12-binding protein OS=Salmonella ...  176     6e-52
+  sp|P37028|BTUF_ECOLI Vitamin B12-binding protein OS=Escherichia...  174     4e-51
+  sp|Q8X8Z0|BTUF_ECO57 Vitamin B12-binding protein OS=Escherichia...  173     1e-50
+  sp|Q83MD7|BTUF_SHIFL Vitamin B12-binding protein OS=Shigella fl...  172     2e-50
+  sp|Q8CWD2|BTUF_ECOL6 Vitamin B12-binding protein OS=Escherichia...  171     6e-50
+  sp|P0AEL6|FEPB_ECOLI Ferrienterobactin-binding periplasmic prot...  172     6e-50
+  sp|P0AEL7|FEPB_ECOL6 Ferrienterobactin-binding periplasmic prot...  172     6e-50
+  sp|Q57550|Y085_METJA Uncharacterized lipoprotein MJ0085 OS=Meth...  168     8e-48
+  sp|P37580|FHUD_BACSU Iron(3+)-hydroxamate-binding protein FhuD ...  165     4e-47
+  sp|O34805|YVRC_BACSU Uncharacterized ABC transporter substrate-...  161     2e-45
+  sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=B...  161     5e-44
+  sp|P40409|FEUA_BACSU Iron-uptake system-binding protein OS=Baci...  142     1e-38
+  sp|Q56991|HMUT_YERPE Hemin-binding periplasmic protein HmuT OS=...  139     7e-38
+  sp|Q9HQ20|BTUFA_HALSA Cobalamin-binding protein OS=Halobacteriu...  135     2e-35
+  sp|B0R5G2|BTUFA_HALS3 Cobalamin-binding protein OS=Halobacteriu...  135     2e-35
+  sp|P54941|YXEB_BACSU Iron(3+)-hydroxamate-binding protein YxeB ...  129     9e-34
+
+Sequences not found previously or not previously below threshold:
+
+  sp|A7MXP0|BTUF_VIBCB Vitamin B12-binding protein OS=Vibrio camp...  200     3e-61
+  sp|Q7MNT2|BTUF_VIBVY Vitamin B12-binding protein OS=Vibrio vuln...  192     5e-58
+  sp|Q66EE7|BTUF_YERPS Vitamin B12-binding protein OS=Yersinia ps...  173     1e-50
+  sp|B2K552|BTUF_YERPB Vitamin B12-binding protein OS=Yersinia ps...  173     1e-50
+  sp|A7FM05|BTUF_YERP3 Vitamin B12-binding protein OS=Yersinia ps...  173     1e-50
+  sp|A4TPX1|BTUF_YERPP Vitamin B12-binding protein OS=Yersinia pe...  173     1e-50
+  sp|Q1CLU2|BTUF_YERPN Vitamin B12-binding protein OS=Yersinia pe...  173     1e-50
+  sp|A9R1E1|BTUF_YERPG Vitamin B12-binding protein OS=Yersinia pe...  173     1e-50
+  sp|Q8ZBM3|BTUF_YERPE Vitamin B12-binding protein OS=Yersinia pe...  173     1e-50
+  sp|Q1C3X6|BTUF_YERPA Vitamin B12-binding protein OS=Yersinia pe...  173     1e-50
+  sp|B1JK18|BTUF_YERPY Vitamin B12-binding protein OS=Yersinia ps...  172     2e-50
+  sp|P44206|Y1472_HAEIN Uncharacterized protein HI_1472 OS=Haemop...  78.7    1e-15
+  sp|Q58282|Y872_METJA Uncharacterized lipoprotein MJ0872 OS=Meth...  77.5    4e-15
+  sp|Q58288|Y878_METJA Uncharacterized lipoprotein MJ0878 OS=Meth...  65.2    6e-11
+  sp|Q58059|Y642_METJA Uncharacterized protein MJ0642 OS=Methanoc...  54.4    3e-07
+
+
+> sp|P07822|FHUD_ECOLI Iron(3+)-hydroxamate-binding protein FhuD 
+OS=Escherichia coli (strain K12) OX=83333 GN=fhuD PE=1 SV=3
+Length=296
+
+ Score = 287 bits (735),  Expect = 8e-95, Method: Composition-based stats.
+ Identities = 261/262 (99%), Positives = 261/262 (99%), Gaps = 0/262 (0%)
+
+Query  1    GIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+             IDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL
+Sbjct  32   AIDPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  91
+
+Query  61   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA
+Sbjct  92   LTEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  151
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ
+Sbjct  152  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  211
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  240
+            GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA
+Sbjct  212  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  271
+
+Query  241  VWFYGATLSAMHFVRVLDNAIG  262
+            VWFYGATLSAMHFVRVLDNAIG
+Sbjct  272  VWFYGATLSAMHFVRVLDNAIG  293
+
+
+> sp|O34348|YFMC_BACSU Fe(3+)-citrate-binding protein YfmC OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=yfmC PE=2 SV=1
+Length=315
+
+ Score = 218 bits (554),  Expect = 2e-67, Method: Composition-based stats.
+ Identities = 59/250 (24%), Positives = 102/250 (41%), Gaps = 10/250 (4%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+V LE   ++ +  LGI P G+AD     +             VG R+EPNLE+++ 
+Sbjct  58   PKRVVVLELSFLDAVHNLGITPVGIADDNKKDMIKKLVGSSIDYTSVGTRSEPNLEVISS  117
+
+Query  64   MKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            +KP  ++  A    +  + L +IAP       +          S T +A  LN +   + 
+Sbjct  118  LKPDLIIADAERHKNIYKQLKKIAPTIELKSREATYDET--IDSFTTIAKALNKEDEGKE  175
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+             LA+++  I  +K    K   R ++L         L    +S   EI    G  +A + +
+Sbjct  176  KLAEHKKVINDLKAELPKDENRNIVLGVARADSFQL-HTSSSYDGEIFKMLGFTHAVKSD  234
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKD-MDALMATPLWQAMPFVRAGRFQRVPAV  241
+                    VS+++L+   D D+L    +  K  +D     PLW+ +  V+ G+       
+Sbjct  235  NA---YQEVSLEQLSKI-DPDILFISANEGKTIVDEWKTNPLWKNLKAVKNGQVYDADRD  290
+
+Query  242  -WFYGATLSA  250
+             W     + +
+Sbjct  291  TWTRFRGIKS  300
+
+
+> sp|Q87SE7|BTUF_VIBPA Vitamin B12-binding protein OS=Vibrio parahaemolyticus 
+serotype O3:K6 (strain RIMD 2210633) OX=223926 
+GN=btuF PE=3 SV=1
+Length=275
+
+ Score = 212 bits (540),  Expect = 6e-66, Method: Composition-based stats.
+ Identities = 34/257 (13%), Positives = 89/257 (35%), Gaps = 19/257 (7%)
+
+Query  3    DP-NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELL  61
+            +P  R+++L     E+  A G+    +A +         P     +  V       LE +
+Sbjct  21   EPVERVISLAPHATEIAYAAGLGDKLIAVSEMSD----YPKEAGELEKVSNYQGIKLERI  76
+
+Query  62   TEMKPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+              ++P  ++      P    E L +      ++ +   + +A   + L++ +D     S 
+Sbjct  77   IALQPDLVIAWPAGNPAKELEKLKQFGVPIYYSTTGTLEDIANNIEQLSQYSD---DPSK  133
+
+Query  120  AETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAW  179
+             +     + + + ++K ++       +     +  + ++     +   E+ +  G  N +
+Sbjct  134  GQKAARDFREELTALKAKY--NTTEKVRYFYQLSEKPIITVAGKNWPSEVFNFCGGENVF  191
+
+Query  180  QGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRV  238
+                  +    VSI+++   +  +VL        D         W+  +P +R      +
+Sbjct  192  ANTAAPYP--QVSIEQVI-TRQPEVLFTSRHAMSDDGMWAQ---WKNELPALRNNHVWSL  245
+
+Query  239  PAVWFYGATLSAMHFVR  255
+             + W    T   ++ + 
+Sbjct  246  NSDWINRPTPRTLNAII  262
+
+
+> sp|C3LQF3|BTUF_VIBCM Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain M66-2) OX=579112 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 208 bits (528),  Expect = 5e-64, Method: Composition-based stats.
+ Identities = 36/253 (14%), Positives = 84/253 (33%), Gaps = 18/253 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             RI++L     E+  A G+    VA +     +   PP    +  V      N+E +  +
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSE----YSDYPPQALELERVANHQTINIEKILTL  81
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++      P      L ++      + +     +A   ++L+  +         + 
+Sbjct  82   KPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVGQK  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+                +   ++ ++ ++     +P+     +  + ++         E+    G  N +   
+Sbjct  139  AAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFADS  196
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ-AMPFVRAGRFQRVPAV  241
+               +    VSI+++   K   V+        +     A   WQ  +  V+  +   + A 
+Sbjct  197  EVPYP--QVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALNAD  250
+
+Query  242  WFYGATLSAMHFV  254
+            W    T   +  V
+Sbjct  251  WLNRPTPRTLDAV  263
+
+
+> sp|Q9KPI6|BTUF_VIBCH Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) 
+OX=243277 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 208 bits (528),  Expect = 5e-64, Method: Composition-based stats.
+ Identities = 36/253 (14%), Positives = 84/253 (33%), Gaps = 18/253 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             RI++L     E+  A G+    VA +     +   PP    +  V      N+E +  +
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSE----YSDYPPQALELERVANHQTINIEKILTL  81
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++      P      L ++      + +     +A   ++L+  +         + 
+Sbjct  82   KPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVGQK  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+                +   ++ ++ ++     +P+     +  + ++         E+    G  N +   
+Sbjct  139  AAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFADS  196
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ-AMPFVRAGRFQRVPAV  241
+               +    VSI+++   K   V+        +     A   WQ  +  V+  +   + A 
+Sbjct  197  EVPYP--QVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALNAD  250
+
+Query  242  WFYGATLSAMHFV  254
+            W    T   +  V
+Sbjct  251  WLNRPTPRTLDAV  263
+
+
+> sp|A5F5P5|BTUF_VIBC3 Vitamin B12-binding protein OS=Vibrio cholerae 
+serotype O1 (strain ATCC 39541 / Classical Ogawa 395 
+/ O395) OX=345073 GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 208 bits (528),  Expect = 5e-64, Method: Composition-based stats.
+ Identities = 36/253 (14%), Positives = 84/253 (33%), Gaps = 18/253 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             RI++L     E+  A G+    VA +     +   PP    +  V      N+E +  +
+Sbjct  26   ERIISLAPHATEIAYAAGLGDKLVAVSE----YSDYPPQALELERVANHQTINIEKILTL  81
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++      P      L ++      + +     +A   ++L+  +         + 
+Sbjct  82   KPDLIIAWPAGNPPRELAKLRQLGFTIYDSQTKTLDEIADNIEALSHYS---ANPEVGQK  138
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+                +   ++ ++ ++     +P+     +  + ++         E+    G  N +   
+Sbjct  139  AAHDFRQRLQDLRTQYA--SNQPIRYFYQLSEKPIITLAQGHWPSEVFSLCGGVNIFADS  196
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ-AMPFVRAGRFQRVPAV  241
+               +    VSI+++   K   V+        +     A   WQ  +  V+  +   + A 
+Sbjct  197  EVPYP--QVSIEQVL-VKQPQVIFTSEHAIANGHMWRA---WQAELSAVQNDQVWALNAD  250
+
+Query  242  WFYGATLSAMHFV  254
+            W    T   +  V
+Sbjct  251  WLNRPTPRTLDAV  263
+
+
+> sp|Q6LUR6|BTUF_PHOPR Vitamin B12-binding protein OS=Photobacterium 
+profundum (strain SS9) OX=298386 GN=btuF PE=3 SV=1
+Length=274
+
+ Score = 202 bits (514),  Expect = 6e-62, Method: Composition-based stats.
+ Identities = 36/256 (14%), Positives = 82/256 (32%), Gaps = 24/256 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R+++L     EL  A G+    +A +     +   P     +  V       LE +  ++
+Sbjct  23   RVISLSPHTTELAYAAGLGDALIAASD----YSDYPEAAQKLERVANYRGVKLERIVALQ  78
+
+Query  66   PSFMVWSAGYGPSPE--MLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G  P  E   L ++     ++     + +A    ++ ++       + A   
+Sbjct  79   PDLILAWKGGNPPREMAKLEQLGLNVFYSNPVELEDIA---TTIEQLGQYSPEPTQAIQT  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+              Q+   I + K R      R +     +    ++     S   ++    G  N +    
+Sbjct  136  ANQFRQEISAFKTR--NENQRTVSFFYQLSDSPIITVADGSWPSQVFSLCGGRNIFGDSP  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA----MPFVRAGRFQRVP  239
+              +   +   +     +  +V+           A   T +WQ     +P V       + 
+Sbjct  194  AAYPQVS---EEQVVVRQPEVIFGTPH------ADTKTSIWQNWQGKLPAVDNHHVFTLQ  244
+
+Query  240  AVWFYGATLSAMHFVR  255
+            A W    T   ++ ++
+Sbjct  245  ADWLNRPTPRTINAIK  260
+
+
+> sp|A7MXP0|BTUF_VIBCB Vitamin B12-binding protein OS=Vibrio campbellii 
+(strain ATCC BAA-1116 / BB120) OX=338187 GN=btuF PE=3 
+SV=1
+Length=275
+
+ Score = 200 bits (509),  Expect = 3e-61, Method: Composition-based stats.
+ Identities = 30/253 (12%), Positives = 84/253 (33%), Gaps = 18/253 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             RI++L     E+  + G+    +A +         P     +  V       LE +  +
+Sbjct  24   QRIISLAPHSTEIAYSAGLGDKLIAVSEMSD----YPEQAKDLEKVSNYQGIKLERIIAL  79
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            +P  ++      P    E L +      ++ +   + +A   + L++ ++        + 
+Sbjct  80   QPDLVIAWPAGNPAKELEKLEQFGIPIYYSTTGTLEGIATNIEQLSQYSE---KPEVGQK  136
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+              A++   + ++K ++       +     +  + ++     +   E+    G  N +   
+Sbjct  137  AAAEFRAQLEALKEKY--NTEDKVSYFYQLSEKPIITVAGKNWPSEVFTFCGGENIF--S  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQA-MPFVRAGRFQRVPAV  241
+                    VSI+++   +  +VL        +         W+  +P +       + + 
+Sbjct  193  KGSAPYPQVSIEQVI-TRQPEVLFASRHAMSNDGMWAE---WKNDIPALGNNHVWSLNSD  248
+
+Query  242  WFYGATLSAMHFV  254
+            W    T   ++ +
+Sbjct  249  WINRPTSRTLNAI  261
+
+
+> sp|Q8DEM7|BTUF_VIBVU Vitamin B12-binding protein OS=Vibrio vulnificus 
+(strain CMCP6) OX=216895 GN=btuF PE=3 SV=1
+Length=273
+
+ Score = 193 bits (489),  Expect = 3e-58, Method: Composition-based stats.
+ Identities = 32/252 (13%), Positives = 85/252 (34%), Gaps = 16/252 (6%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     E+  A G+    +A +       +       +  V      NLE +  +
+Sbjct  22   ERVISLAPHATEIAYAAGLGDKLIAVSEMSDYPEA----AKKLEKVSNYKGINLEKIITL  77
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++      P    E L +      ++ +   + +    + L++ +D          
+Sbjct  78   KPDLIIAWPAGNPAKELEKLEQFGFKIYYSQTKSLKDIGDNIEQLSQYSD---DPQIGLN  134
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+            +   Y   + +++ ++             +    ++     +   E+    G  N + G 
+Sbjct  135  NARDYRTHLEALRAKYQNLPK--TRYFYQLSDTPIITVAGQNWPTEVFRFCGGENVFDGA  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+            +  +    VSI+++   K    +       ++      +P  + +P ++   F ++ A W
+Sbjct  193  SAPYP--QVSIEQVI-LKRPQAMFVSPHAIQNNGMW--SPWVEEIPALKNAHFWQLDADW  247
+
+Query  243  FYGATLSAMHFV  254
+                T   +  +
+Sbjct  248  LNRPTPRTLLAI  259
+
+
+> sp|Q7MNT2|BTUF_VIBVY Vitamin B12-binding protein OS=Vibrio vulnificus 
+(strain YJ016) OX=196600 GN=btuF PE=3 SV=1
+Length=273
+
+ Score = 192 bits (487),  Expect = 5e-58, Method: Composition-based stats.
+ Identities = 31/252 (12%), Positives = 85/252 (34%), Gaps = 16/252 (6%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     E+  A G+    +A +       +       +  V      NLE +  +
+Sbjct  22   ERVISLAPHATEIAYAAGLGDKLIAVSEMSDYPEA----AKKLEKVSNYKGINLEKIITL  77
+
+Query  65   KPSFMVWSAGYGP--SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++      P    E L +      ++ +   + +    + L++ +D          
+Sbjct  78   KPDLILAWPAGNPAKELEKLEQFGFKIYYSQTKSLKDIGDNIEQLSQYSD---DPQIGLN  134
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+            +   Y   + +++ ++             +    ++     +   E+    G  N + G 
+Sbjct  135  NARDYRTHLEALRAKYQNLPK--TRYFYQLSDTPIITVAGQNWPTEVFRFCGGENVFDGA  192
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+            +  +    VSI+++   K    +       ++      +P  + +P ++   F ++ + W
+Sbjct  193  SAPYP--QVSIEQVI-LKRPQAMFVSPHAIQNNGMW--SPWVEEIPALKNAHFWQLNSDW  247
+
+Query  243  FYGATLSAMHFV  254
+                T   +  +
+Sbjct  248  LNRPTPRTLLAI  259
+
+
+> sp|O31567|YFIY_BACSU Probable siderophore-binding lipoprotein 
+YfiY OS=Bacillus subtilis (strain 168) OX=224308 GN=yfiY PE=1 
+SV=1
+Length=325
+
+ Score = 193 bits (489),  Expect = 1e-57, Method: Composition-based stats.
+ Identities = 58/274 (21%), Positives = 110/274 (40%), Gaps = 25/274 (9%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSE-PPLPDSVIDVGLRTEPNLELL  61
+            +P RIV L     E LLALGI P G   +     W          V +VGL TEPN+E +
+Sbjct  53   NPKRIVVLTNEGTEALLALGIKPVGAVKSWKGDPWYDYLKDDMKGVKNVGLETEPNVEAI  112
+
+Query  62   TEMKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+             E+KP  ++ +        + L  IAP        G       + +LT  A+ +N     
+Sbjct  113  AELKPDLIIGNKVRQEKIYDQLNAIAPTVFAESLAGN-----WKDNLTLYANAVNKADKG  167
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA--  178
+            +  +A ++  +  +K +   +  + + +   +     + +  +S    ILD+ G      
+Sbjct  168  KEVIADFDKRVSDLKNKLGDQTNKTVSVVRFLSGESRIYYT-DSFPGIILDQLGFKRPEK  226
+
+Query  179  ----WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDA-------LMATPLWQAM  227
+                ++ + + +  +  S + +    D DVL +    + +            ++ LW+ +
+Sbjct  227  QVELFKKQKDQFTFSTDSKESIPDM-DADVLFYFTYKADNAKENEKWANQWTSSSLWKNL  285
+
+Query  228  PFVRAGRFQRV-PAVWFYGATLSAMHFVRVLDNA  260
+              V++G    V   VW     + A +++  LD+ 
+Sbjct  286  KAVKSGNAHEVDDVVWTTAGGIKAANYL--LDDI  317
+
+
+> sp|C6DC28|BTUF_PECCP Vitamin B12-binding protein OS=Pectobacterium 
+carotovorum subsp. carotovorum (strain PC1) OX=561230 
+GN=btuF PE=3 SV=1
+Length=276
+
+ Score = 189 bits (479),  Expect = 1e-56, Method: Composition-based stats.
+ Identities = 44/249 (18%), Positives = 78/249 (31%), Gaps = 20/249 (8%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+++L     E+  A G+    +A +     W   PP    +  V      NLE +  
+Sbjct  22   PQRVISLAPHATEMAYAAGMGEQLIAVS----AWSDYPPEAKKLEQVASWQGINLERILA  77
+
+Query  64   MKPSFMVWSAGYGPS--PEMLARIA-PGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++      P    E LA  + P    +        A    SL ++A        A
+Sbjct  78   LKPDLILAWREGNPQRPLEQLANFSIPIVYLDAKTLDDIPA----SLRQLATYSRHPEQA  133
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            E     ++  I  ++     + A  L +      + +      +L  +I+   G  N + 
+Sbjct  134  ERAATDFQQEIGRLRHTGEGQNAASLRVFIQFGTQPLFTSSQATLQSQIVSLCGAENIFS  193
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA  240
+                 W    VS +++   +    +       K          WQ    V       V  
+Sbjct  194  DSPVPWP--QVSREQVLR-RQPQAIIIGGSPDKIA---SVQTFWQPQLAVP---VITVNE  244
+
+Query  241  VWFYGATLS  249
+             WF  +   
+Sbjct  245  DWFSRSGPR  253
+
+
+> sp|C0SP94|YHFQ_BACSU Putative ABC transporter substrate-binding 
+lipoprotein YhfQ OS=Bacillus subtilis (strain 168) OX=224308 
+GN=yhfQ PE=1 SV=1
+Length=323
+
+ Score = 189 bits (480),  Expect = 3e-56, Method: Composition-based stats.
+ Identities = 58/266 (22%), Positives = 109/266 (41%), Gaps = 19/266 (7%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLP--DSVIDVGLRTEPNLELL  61
+            P R+V LE   ++ LL LGI P GVAD    +  +++  L   D    VG R++P++E +
+Sbjct  49   PKRVVVLELGFIDTLLDLGITPVGVADDNKAKQLINKDVLKKIDGYTSVGTRSQPSMEKI  108
+
+Query  62   TEMKPSFMVWSAGYGPS-PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+              +KP  ++          + L +IAP    N  +      +       +A  +  +   
+Sbjct  109  ASLKPDLIIADTTRHKKVYDQLKKIAPTIALNNLNADYQDTIDAS--LTIAKAVGKEKEM  166
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDP---RHMLVFGPNSLFQEILDEYGIPN  177
+            E  L  +E+ +   K +        LL+    D    R    F  + L  ++   Y I  
+Sbjct  167  EKKLTAHEEKLSETKQKISANSQSVLLIGNTNDTIMARDENFFT-SRLLTQVGYRYAIST  225
+
+Query  178  AWQGETNFWGST---AVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPL-----WQAMPF  229
+            +   +++  G +    +++++L    D DV+      + D+DA    P+     W+ +  
+Sbjct  226  SGNSDSSNGGDSVNMKMTLEQLLKT-DPDVIILMTGKTDDLDADGKRPIEKNVLWKKLKA  284
+
+Query  230  VRAGRFQRVP-AVWFYGATLSAMHFV  254
+            V+ G    V  AVW    ++   + +
+Sbjct  285  VKNGHVYHVDRAVWSLRRSVDGANAI  310
+
+
+> sp|Q6D1Z3|BTUF_PECAS Vitamin B12-binding protein OS=Pectobacterium 
+atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 
+GN=btuF PE=3 SV=1
+Length=279
+
+ Score = 185 bits (470),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 45/252 (18%), Positives = 81/252 (32%), Gaps = 23/252 (9%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+++L     E+  A G+    +A +     W   PP    +  V      NLE +  
+Sbjct  22   PQRVISLAPHATEMAYAAGMGEQLIAVS----AWSDYPPEAKKLEQVASWQGINLERILA  77
+
+Query  64   MKPSFMVWSAGYGPS--PEMLARIA-PGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++      P    E LA  + P    +        A    SL ++A        A
+Sbjct  78   LKPDLILAWREGNPQRPLEQLANFSIPIVYLDAKTLDDIPA----SLRQLATYSRHPEQA  133
+
+Query  121  ETHLAQYEDFIRSMK---PRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPN  177
+            E     ++  I  ++    +       PL +      + +      +L  +I+   G  N
+Sbjct  134  ERAATDFQQQIGELQHADEKHKAAHTAPLRVFIQFGTQPLFTSSKATLQSQIVSLCGAEN  193
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+             +   T  W    VS +++   +    +     + K  +       WQ    V       
+Sbjct  194  IFSDSTVPWP--QVSREQVLR-RQPQAIIIGGASDKIAN---TQAFWQPQLTVP---VIT  244
+
+Query  238  VPAVWFYGATLS  249
+            V   WF  +   
+Sbjct  245  VNEDWFSRSGPR  256
+
+
+> sp|P11460|FATB_VIBA7 Ferric-anguibactin-binding protein FatB 
+OS=Vibrio anguillarum (strain ATCC 68554 / 775) OX=882102 GN=fatB 
+PE=1 SV=1
+Length=322
+
+ Score = 186 bits (473),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 49/267 (18%), Positives = 105/267 (39%), Gaps = 13/267 (5%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+ AL+   V+ L  L +   G+               PD + D+G   +PN+E +  
+Sbjct  55   PQRVAALDMNEVDFLDQLNVPIAGMVKDFVPHFLEKYKNTPD-ISDLGAIVQPNMEKIYA  113
+
+Query  64   MKPSFMVWSAGYGPSPEMLARIAPGRGF--NFSDGK-QPLAMARKSLTEMADLLNLQSAA  120
+            +KP  ++ +  +    E L+++AP   F  +F +     + + ++ + ++ ++ N Q+ A
+Sbjct  114  LKPDLVLMTPLHANQYEELSKLAPTVHFDIDFRNSHGHHVDIIKQHVIDLGEIFNKQTLA  173
+
+Query  121  ETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQ  180
+            +  +A+ +  +  ++    +R  +   L  + +      FG  S +  + D  G+  A  
+Sbjct  174  QKKVAEIDAKVDEVQALTAERSEK--ALVVMHNNGSFSSFGIESRYGFVFDVLGVKPAST  231
+
+Query  181  GETNFWGSTAVSIDRLAAYKDVDVLCF------DHDNSKDMDALMATPLWQAMPFVRAGR  234
+                      +S +      + D+L                   +A PL +     + G+
+Sbjct  232  EIAASLHGQPISSE-FINQANPDILYIIDRTAVMEGKPVIDAEHLANPLLRQTKAWKNGK  290
+
+Query  235  FQRVPAVWFYGATLSAMHFVRVLDNAI  261
+               V A  +Y  + S      V+D+ I
+Sbjct  291  VIFVDADAWYITSASITSLKIVIDDII  317
+
+
+> sp|Q47084|CBRA_DICD3 Achromobactin-binding periplasmic protein 
+OS=Dickeya dadantii (strain 3937) OX=198628 GN=cbrA PE=3 SV=1
+Length=305
+
+ Score = 185 bits (470),  Expect = 5e-55, Method: Composition-based stats.
+ Identities = 58/270 (21%), Positives = 111/270 (41%), Gaps = 23/270 (9%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRL-WVSEPPLPDSVIDVGLRTEPNLELLT  62
+            P R++ L     +  +ALGI P GV D+ + +  +         V  VGL T+P+LE + 
+Sbjct  35   PQRVITLFQGATDTAVALGITPAGVVDSWSEKPMYRYLRQALAGVPHVGLETQPSLEDIV  94
+
+Query  63   EMKPSFMVWSAGYGPSPE-MLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             +KP  +V S       E +L++IAP    +       +   +K++  M   L  Q+ A+
+Sbjct  95   LLKPDAIVASRFRHQRLEPLLSQIAPVVMLD------EIYQFKKTVQVMGQALQRQAVAD  148
+
+Query  122  THLAQYEDFIRSMKPRFVKR--GARPLLLTTL-IDPRHMLVFGPNSLFQEILDEYGIPNA  178
+              L  ++  +  ++ +  ++  G  P  ++ L I   H+  + P S    +L E G    
+Sbjct  149  QLLQNWQLRVNGLREQLQRKFGGDWPPTVSILDIREDHIRSYLPGSFPGSVLSELGF--G  206
+
+Query  179  WQGETNFWGSTAVSIDRLAAYK--DVDVLCF-----DHDNSKDMDALMATPLWQAMPFVR  231
+            W   +      ++ +    +    D D+             ++ ++L+  PLWQ +   R
+Sbjct  207  WSDASRAQPGVSLKLTNKESIPVVDADIFFIFLRSESPSVQRNYESLIRHPLWQQLRAPR  266
+
+Query  232  AGRFQRVPAV-WFYGATLSAMHFVRVLDNA  260
+              +   V  V W     +   + +  LD+ 
+Sbjct  267  RNQVWVVNGVTWSLSGGILGANMM--LDDI  294
+
+
+> sp|Q7N842|BTUF_PHOLL Vitamin B12-binding protein OS=Photorhabdus 
+luminescens subsp. laumondii (strain DSM 15139 / CIP 105565 
+/ TT01) OX=243265 GN=btuF PE=3 SV=1
+Length=275
+
+ Score = 183 bits (463),  Expect = 2e-54, Method: Composition-based stats.
+ Identities = 39/250 (16%), Positives = 84/250 (34%), Gaps = 20/250 (8%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+++L     EL  A G+    +A +     +   PP    +  V      NLE +  
+Sbjct  29   PLRVISLSPSTTELAYAAGLGDNLIAAS----AYSDYPPQARKLEQVANWQGINLERIIT  84
+
+Query  64   MKPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            +KP  ++   G  P    E LA       ++     + +A   + L  +A+       A+
+Sbjct  85   LKPELILAWRGGNPQRPLEQLAAFGIKIFYSDPTTTEQIA---QDLERLAEYSPHPEQAK  141
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                +      +++ ++     +P  L        +      +L  E+L   G  N +  
+Sbjct  142  KSATELRQRFANLQQQYATTTPKPAFLQF--GTYPLFTTSGQTLQSEVLSICGGRNIFAN  199
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAV  241
+                W    VS +++   +  +++       +    L+       +      +   +   
+Sbjct  200  SPVPWP--QVSREQVL-IRKPEIIVISGGQEQV--KLIENFWHPQLRA----KVITLHED  250
+
+Query  242  WFYGATLSAM  251
+            WF+ A    +
+Sbjct  251  WFHRAGPRII  260
+
+
+> sp|P15028|FECB_ECOLI Fe(3+) dicitrate-binding periplasmic protein 
+OS=Escherichia coli (strain K12) OX=83333 GN=fecB PE=2 
+SV=3
+Length=300
+
+ Score = 181 bits (458),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 43/254 (17%), Positives = 93/254 (37%), Gaps = 10/254 (4%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSE-PPLPDSVIDVGLRTEPNLELLT  62
+            P RIV LE    + L A+ ++P G+AD  + +  + E          VG R +P+LE + 
+Sbjct  37   PQRIVVLELSFADALAAVDVIPIGIADDNDAKRILPEVRAHLKPWQSVGTRAQPSLEAIA  96
+
+Query  63   EMKPSFMVWSAGYGP-SPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             +KP  ++  +         L +IAP       +     A   +S   + +++  +   +
+Sbjct  97   ALKPDLIIADSSRHAGVYIALQQIAPVLLLKSRNETY--AENLQSAAIIGEMVGKKREMQ  154
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+              L Q+++ +     +  K     +   T  + +   +    +    +L   G+      
+Sbjct  155  ARLEQHKERMAQWASQLPKGT--RVAFGTSREQQF-NLHTQETWTGSVLASLGLNVPAAM  211
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPA-  240
+                    ++ +++L A     +L   +     +      PLWQ +   +  +   V + 
+Sbjct  212  AGASMP--SIGLEQLLAVNPAWLLVAHYREESIVKRWQQDPLWQMLTAAQKQQVASVDSN  269
+
+Query  241  VWFYGATLSAMHFV  254
+             W     + A   +
+Sbjct  270  TWARMRGIFAAERI  283
+
+
+> sp|Q6GHV3|ISDE_STAAR High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 180 bits (456),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 42/248 (17%), Positives = 87/248 (35%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKD------MDALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +              +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMSEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q5PD47|BTUF_SALPA Vitamin B12-binding protein OS=Salmonella 
+paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=btuF 
+PE=3 SV=1
+Length=266
+
+ Score = 179 bits (454),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 48/258 (19%), Positives = 92/258 (36%), Gaps = 22/258 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  +V   G         L  +     +  +   + +A A   L ++A        A+  
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVSIEQIADA---LRQLAVWSPQPEKAQQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 +   ++K  +  +  + + L   ++P  +   G  S+  ++L   G  N +    
+Sbjct  136  AQTLLNEYAALKVEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENIFADSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVWF  243
+              W    VS +++ A +    +       K  + L     W  +  +       + + WF
+Sbjct  194  VPWP--QVSREQVLA-RHPQAIIV---AGKAGEILKIEQYWGNLLKIP---VIPLNSDWF  244
+
+Query  244  YGATLSAMHFVRVLDNAI  261
+              A+   +   + L NA+
+Sbjct  245  ERASPRIILAAKQLCNAL  262
+
+
+> sp|Q57T49|BTUF_SALCH Vitamin B12-binding protein OS=Salmonella 
+choleraesuis (strain SC-B67) OX=321314 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 179 bits (453),  Expect = 5e-53, Method: Composition-based stats.
+ Identities = 47/258 (18%), Positives = 91/258 (35%), Gaps = 22/258 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  MK
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVAMK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  +V   G         L  +     +  +   + +A    +L ++A        A+  
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVSIEQIAD---TLRQLAAWSPQPEKAQQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 +   ++   +  +  + + L   ++P  +   G  S+  ++L   G  N +    
+Sbjct  136  AQTLLNEYAALNAEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVWF  243
+              W    VS +++ A +    +       K  + L     W  +  +       + + WF
+Sbjct  194  VPWP--QVSREQVLA-RHPQAIIV---AGKAGEILKIEQYWGNLLKIP---VIPLNSDWF  244
+
+Query  244  YGATLSAMHFVRVLDNAI  261
+              A+   +   + L NA+
+Sbjct  245  ERASPRIILAAKQLCNAL  262
+
+
+> sp|Q8ZRP7|BTUF_SALTY Vitamin B12-binding protein OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 178 bits (452),  Expect = 6e-53, Method: Composition-based stats.
+ Identities = 46/258 (18%), Positives = 91/258 (35%), Gaps = 22/258 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  +V   G         L  +     +  +   + +A    +L ++A        A+  
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVTIEQIAD---TLRQLAAWSPQPEKAQQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 +   ++   +  +  + + L   ++P  +   G  S+  ++L   G  N +    
+Sbjct  136  AQTLLNEYAALNAEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVWF  243
+              W    VS +++ A +    +       K  + L     W  +  +       + + WF
+Sbjct  194  VPWP--QVSREQVLA-RHPQAIIV---AGKAGEILKIEQYWGNLLKIP---VIPLNSDWF  244
+
+Query  244  YGATLSAMHFVRVLDNAI  261
+              A+   +   + L NA+
+Sbjct  245  ERASPRIILAAKQLCNAL  262
+
+
+> sp|Q7A150|ISDE_STAAW High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MW2) OX=196620 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q6GA82|ISDE_STAAS High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain MSSA476) OX=282459 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q7A652|ISDE_STAAN High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain N315) OX=158879 GN=isdE 
+PE=1 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q99UX1|ISDE_STAAM High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Mu50 / ATCC 700699) OX=158878 
+GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|A6QG34|ISDE_STAAE High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Newman) OX=426430 GN=isdE 
+PE=1 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q5HGV1|ISDE_STAAC High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain COL) OX=93062 GN=isdE 
+PE=3 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q2FZE6|ISDE_STAA8 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain NCTC 8325) OX=93061 GN=isdE 
+PE=1 SV=2
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q2FHU8|ISDE_STAA3 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain USA300) OX=367830 GN=isdE 
+PE=3 SV=2
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|A7X153|ISDE_STAA1 High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain Mu3 / ATCC 700698) OX=418127 
+GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 179 bits (454),  Expect = 8e-53, Method: Composition-based stats.
+ Identities = 44/248 (18%), Positives = 89/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ +  K+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAAKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|Q2YX92|ISDE_STAAB High-affinity heme uptake system protein 
+IsdE OS=Staphylococcus aureus (strain bovine RF122 / ET3-1) 
+OX=273036 GN=isdE PE=3 SV=1
+Length=292
+
+ Score = 178 bits (452),  Expect = 1e-52, Method: Composition-based stats.
+ Identities = 45/248 (18%), Positives = 90/248 (36%), Gaps = 24/248 (10%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            RIV         L  L +   G         + + P     V ++G   EPN+E + ++K
+Sbjct  35   RIVPTTVALTMTLDKLDLPIVG-----KPTSYKTLPNRYKDVPEIGQPMEPNVEAVKKLK  89
+
+Query  66   PSFMVWSA----GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+            P+ ++  +       P  + L        F+   G Q      KS+T++ D  N ++ A+
+Sbjct  90   PTHVLSVSTIKDEMQPFYKQLNMKGYFYDFDSLKGMQ------KSITQLGDQFNRKAQAK  143
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+                      + ++ + VK+   P +L  +  P   LV    S   +++   G  N  + 
+Sbjct  144  ELNDHLNSVKQKIENKAVKQKKHPKVLILMGVPGSYLVATDKSYIGDLVKIAGGENVIKV  203
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLC----FDHDNSKDM--DALMATPLWQAMPFVRAGRF  235
+            +   + S+  + + L    + D++        +  K M         +W+    V+    
+Sbjct  204  KDRQYISS--NTENLLNI-NPDIILRLPHGMPEEVKKMFQKEFKQNDIWKHFKAVKNNHV  260
+
+Query  236  QRVPAVWF  243
+              +  V F
+Sbjct  261  YDLEEVPF  268
+
+
+> sp|P94421|YCLQ_BACSU Uncharacterized ABC transporter solute-binding 
+protein YclQ OS=Bacillus subtilis (strain 168) OX=224308 
+GN=yclQ PE=1 SV=1
+Length=317
+
+ Score = 178 bits (451),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 45/264 (17%), Positives = 98/264 (37%), Gaps = 11/264 (4%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPD-SVIDVGLRTEPNLELL  61
+            +P ++V  ++  ++ L  LG+    VA      L        D    DVG   EP+ + +
+Sbjct  53   NPKKVVVFDFGSLDTLDKLGLDDI-VAGLPKQVLPKYLSKFKDDKYADVGSLKEPDFDKV  111
+
+Query  62   TEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             E+ P  ++ SA    S +  ++IAP         K      +     +  + + +   +
+Sbjct  112  AELDPDLIIISARQSESYKEFSKIAPTIYLGVDTAKYM-ESFKSDAETIGKIFDKEDKVK  170
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG  181
+              LA  +  I  +K +  ++  +  L+    D + +  FGP S +  I D +G+  A Q 
+Sbjct  171  DELANIDHSIADVK-KTAEKLNKNGLVIMANDGK-ISAFGPKSRYGLIHDVFGVAPADQN  228
+
+Query  182  ETNFWGSTAVSIDRLAAYKDVDVLCF-----DHDNSKDMDALMATPLWQAMPFVRAGRFQ  236
+                    +VS + ++   + D L           +     ++     + +  V+ G   
+Sbjct  229  IKASTHGQSVSYEYISKT-NPDYLFVIDRGTAIGETSSTKQVVENDYVKNVNAVKNGHVI  287
+
+Query  237  RVPAVWFYGATLSAMHFVRVLDNA  260
+             + +  +Y +        +++   
+Sbjct  288  YLDSATWYLSGGGLESMTQMIKEV  311
+
+
+> sp|Q8Z9B2|BTUF_SALTI Vitamin B12-binding protein OS=Salmonella 
+typhi OX=90370 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 176 bits (446),  Expect = 6e-52, Method: Composition-based stats.
+ Identities = 47/258 (18%), Positives = 90/258 (35%), Gaps = 22/258 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A  I P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAEITPVGVSSYSDY------PPEAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  +V   G         L  +     +  +   + +A A   L ++A        A+  
+Sbjct  79   PDLVVAWRGGNAERQVNQLTSLGIKVMWVDAVTIEQIADA---LRQLAAWSPQPEKAQQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                     ++K  +  +  + + L   ++P  +   G  S+  ++L   G  N +    
+Sbjct  136  AQTLLKEYAALKVEYAGKAKKRVFLQFGMNP--LFTSGKGSIQHQVLTTCGGENVFADSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVWF  243
+              W    VS +++ A +    +       K  + L     W  +  +       + + WF
+Sbjct  194  VPWP--QVSREQVLA-RHPQAIIV---AGKAGEILKIEQYWGNLLKIP---VIPLNSDWF  244
+
+Query  244  YGATLSAMHFVRVLDNAI  261
+              A+   +   + L NA+
+Sbjct  245  ERASPRIILAAKQLCNAL  262
+
+
+> sp|P37028|BTUF_ECOLI Vitamin B12-binding protein OS=Escherichia 
+coli (strain K12) OX=83333 GN=btuF PE=1 SV=2
+Length=266
+
+ Score = 174 bits (440),  Expect = 4e-51, Method: Composition-based stats.
+ Identities = 49/259 (19%), Positives = 93/259 (36%), Gaps = 24/259 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A A   L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIANA---LRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINP--PFTSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLW-QAMPFVRAGRFQRVPAVW  242
+              W    VS +++ A +    +       +          W + +          + + W
+Sbjct  194  VPWP--QVSREQVLA-RSPQAIVITGGPDQIPKI---KQYWGEQLKIP----VIPLTSDW  243
+
+Query  243  FYGATLSAMHFVRVLDNAI  261
+            F  A+   +   + L NA+
+Sbjct  244  FERASPRIILAAQQLCNAL  262
+
+
+> sp|Q66EE7|BTUF_YERPS Vitamin B12-binding protein OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 GN=btuF 
+PE=3 SV=1
+Length=280
+
+ Score = 173 bits (439),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|B2K552|BTUF_YERPB Vitamin B12-binding protein OS=Yersinia 
+pseudotuberculosis serotype IB (strain PB1/+) OX=502801 GN=btuF 
+PE=3 SV=1
+Length=280
+
+ Score = 173 bits (439),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|A7FM05|BTUF_YERP3 Vitamin B12-binding protein OS=Yersinia 
+pseudotuberculosis serotype O:1b (strain IP 31758) OX=349747 
+GN=btuF PE=3 SV=1
+Length=280
+
+ Score = 173 bits (439),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|A4TPX1|BTUF_YERPP Vitamin B12-binding protein OS=Yersinia 
+pestis (strain Pestoides F) OX=386656 GN=btuF PE=3 SV=1
+Length=280
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|Q1CLU2|BTUF_YERPN Vitamin B12-binding protein OS=Yersinia 
+pestis bv. Antiqua (strain Nepal516) OX=377628 GN=btuF PE=3 
+SV=1
+Length=280
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|A9R1E1|BTUF_YERPG Vitamin B12-binding protein OS=Yersinia 
+pestis bv. Antiqua (strain Angola) OX=349746 GN=btuF PE=3 SV=1
+Length=280
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|Q8ZBM3|BTUF_YERPE Vitamin B12-binding protein OS=Yersinia 
+pestis OX=632 GN=btuF PE=3 SV=1
+Length=280
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|Q1C3X6|BTUF_YERPA Vitamin B12-binding protein OS=Yersinia 
+pestis bv. Antiqua (strain Antiqua) OX=360102 GN=btuF PE=3 SV=1
+Length=280
+
+ Score = 173 bits (438),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 38/249 (15%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +++   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSREQVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|Q8X8Z0|BTUF_ECO57 Vitamin B12-binding protein OS=Escherichia 
+coli O157:H7 OX=83334 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 173 bits (437),  Expect = 1e-50, Method: Composition-based stats.
+ Identities = 49/259 (19%), Positives = 93/259 (36%), Gaps = 24/259 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A A   L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATNIEQIANA---LRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINP--PFTSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLW-QAMPFVRAGRFQRVPAVW  242
+              W    VS +++ A +    +       +          W + +          + + W
+Sbjct  194  VPWP--QVSREQVLA-RSPQAIVITGGPDQIPKI---KQYWGEQLKIP----VIPLTSDW  243
+
+Query  243  FYGATLSAMHFVRVLDNAI  261
+            F  A+   +   + L NA+
+Sbjct  244  FERASPRIILAAQQLCNAL  262
+
+
+> sp|Q83MD7|BTUF_SHIFL Vitamin B12-binding protein OS=Shigella 
+flexneri OX=623 GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 172 bits (436),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 49/259 (19%), Positives = 93/259 (36%), Gaps = 24/259 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      PP    +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PPQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A A   L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIANA---LRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYVQLKAQYADKPKKRVFLQFGINP--PFTSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLW-QAMPFVRAGRFQRVPAVW  242
+              W    VS +++ A +    +       +          W + +          + + W
+Sbjct  194  VPWP--QVSREQVLA-RSPQAIVITGGPDQIPKI---KQYWGEQLKIP----VIPLTSDW  243
+
+Query  243  FYGATLSAMHFVRVLDNAI  261
+            F  A+   +   + L NA+
+Sbjct  244  FERASPRIILAAQQLCNAL  262
+
+
+> sp|B1JK18|BTUF_YERPY Vitamin B12-binding protein OS=Yersinia 
+pseudotuberculosis serotype O:3 (strain YPIII) OX=502800 GN=btuF 
+PE=3 SV=1
+Length=280
+
+ Score = 172 bits (436),  Expect = 2e-50, Method: Composition-based stats.
+ Identities = 39/249 (16%), Positives = 82/249 (33%), Gaps = 20/249 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             R+++L     EL  A G+    VA +       S       +  V      N+E +  +
+Sbjct  29   ERVISLSPSTTELAYAAGLGDKLVAVSAYSDYPES----AKKLEHVASWQGINVERILAL  84
+
+Query  65   KPSFMVWSAGYGPS--PEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAET  122
+            KP  ++   G  P    + LA +     ++       +A     L + +        A  
+Sbjct  85   KPDLILAWRGGNPQRPLDQLAALGIPIFYSDPTHIDQIASDLDKLAQYSP---HPEQAHQ  141
+
+Query  123  HLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGE  182
+               Q+   + +++ R+ +   +   L      + +     ++L  E++   G  N +   
+Sbjct  142  AAEQFRQHVNTLRDRYARSQPKRTFLQF--GTQPLFTSSGHTLQSEVVSLCGGENIFADS  199
+
+Query  183  TNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVW  242
+               W    VS +R+   +   V+      S+  +    +  W     V       +   W
+Sbjct  200  RVPWP--QVSRERVM-TRKPQVIVVSGTQSQVDNV---SAFWLPQLVVP---VIALNEDW  250
+
+Query  243  FYGATLSAM  251
+            F  A+   +
+Sbjct  251  FNRASPRIL  259
+
+
+> sp|Q8CWD2|BTUF_ECOL6 Vitamin B12-binding protein OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=btuF PE=3 SV=1
+Length=266
+
+ Score = 171 bits (432),  Expect = 6e-50, Method: Composition-based stats.
+ Identities = 48/259 (19%), Positives = 92/259 (36%), Gaps = 24/259 (9%)
+
+Query  6    RIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMK  65
+            R++ L     EL  A GI P GV+   +Y      P     +  V      NLE +  +K
+Sbjct  25   RVITLSPANTELAFAAGITPVGVSSYSDY------PLQAQKIEQVSTWQGMNLERIVALK  78
+
+Query  66   PSFMVWSAGYG--PSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            P  ++   G       + LA +     +  +   + +A A   L ++A        AE  
+Sbjct  79   PDLVIAWRGGNAERQVDQLASLGIKVMWVDATSIEQIANA---LRQLAPWSPQPDKAEQA  135
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+                 D    +K ++  +  + + L   I+P      G  S+  ++L+  G  N ++   
+Sbjct  136  AQSLLDQYAQLKAQYADKPKKRVFLQFGINP--PFTSGKESIQNQVLEVCGGENIFKDSR  193
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLW-QAMPFVRAGRFQRVPAVW  242
+              W    VS +++ A +    +       +          W + +          + + W
+Sbjct  194  VPWP--QVSREQVLA-RSPQAIVITGGPDQIPKI---KQYWGEQLKIP----VIPLTSDW  243
+
+Query  243  FYGATLSAMHFVRVLDNAI  261
+            F  A+   +   + L NA+
+Sbjct  244  FERASPRIILAAQQLCNAL  262
+
+
+> sp|P0AEL6|FEPB_ECOLI Ferrienterobactin-binding periplasmic protein 
+OS=Escherichia coli (strain K12) OX=83333 GN=fepB PE=1 
+SV=1
+Length=318
+
+ Score = 172 bits (436),  Expect = 6e-50, Method: Composition-based stats.
+ Identities = 55/278 (20%), Positives = 98/278 (35%), Gaps = 27/278 (10%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYG---------VADTINYRLWVSEPPLPDSVIDVGLR  53
+             P RIV+        LLA+               VAD   +    S+      +  +   
+Sbjct  45   QPQRIVSTSVTLTGSLLAIDAPVIASGATTPNNRVADDQGFLRQWSKVAKERKLQRL-YI  103
+
+Query  54   TEPNLELLTEMKPSFMVWSAGYGPS----PEMLARIAPGRGFNFSDGKQPLAMARKSLTE  109
+             EP+ E +    P  ++ SA  G S     + L+ IAP    N           +  LT+
+Sbjct  104  GEPSAEAVAAQMPDLILISATGGDSALALYDQLSTIAPTLIIN-----YDDKSWQSLLTQ  158
+
+Query  110  MADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEI  169
+            + ++   +  A   +AQ++  + + K +          +          ++ P S   ++
+Sbjct  159  LGEITGHEKQAAERIAQFDKQLAAAKEQIKLPPQPVTAIVYTAAAHSANLWTPESAQGQM  218
+
+Query  170  LDEYGIP--------NAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMAT  221
+            L++ G          NA Q +        +  + LAA  + + L     + KD DA+ A 
+Sbjct  219  LEQLGFTLAKLPAGLNASQSQGKRHDIIQLGGENLAAGLNGESLFLFAGDQKDADAIYAN  278
+
+Query  222  PLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFVRVLDN  259
+            PL   +P V+  +   +    F     SAM  +  L  
+Sbjct  279  PLLAHLPAVQNKQVYALGTETFRLDYYSAMQVLDRLKA  316
+
+
+> sp|P0AEL7|FEPB_ECOL6 Ferrienterobactin-binding periplasmic protein 
+OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 
+/ UPEC) OX=199310 GN=fepB PE=3 SV=1
+Length=318
+
+ Score = 172 bits (436),  Expect = 6e-50, Method: Composition-based stats.
+ Identities = 55/278 (20%), Positives = 98/278 (35%), Gaps = 27/278 (10%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVPYG---------VADTINYRLWVSEPPLPDSVIDVGLR  53
+             P RIV+        LLA+               VAD   +    S+      +  +   
+Sbjct  45   QPQRIVSTSVTLTGSLLAIDAPVIASGATTPNNRVADDQGFLRQWSKVAKERKLQRL-YI  103
+
+Query  54   TEPNLELLTEMKPSFMVWSAGYGPS----PEMLARIAPGRGFNFSDGKQPLAMARKSLTE  109
+             EP+ E +    P  ++ SA  G S     + L+ IAP    N           +  LT+
+Sbjct  104  GEPSAEAVAAQMPDLILISATGGDSALALYDQLSTIAPTLIIN-----YDDKSWQSLLTQ  158
+
+Query  110  MADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEI  169
+            + ++   +  A   +AQ++  + + K +          +          ++ P S   ++
+Sbjct  159  LGEITGHEKQAAERIAQFDKQLAAAKEQIKLPPQPVTAIVYTAAAHSANLWTPESAQGQM  218
+
+Query  170  LDEYGIP--------NAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMAT  221
+            L++ G          NA Q +        +  + LAA  + + L     + KD DA+ A 
+Sbjct  219  LEQLGFTLAKLPAGLNASQSQGKRHDIIQLGGENLAAGLNGESLFLFAGDQKDADAIYAN  278
+
+Query  222  PLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFVRVLDN  259
+            PL   +P V+  +   +    F     SAM  +  L  
+Sbjct  279  PLLAHLPAVQNKQVYALGTETFRLDYYSAMQVLDRLKA  316
+
+
+> sp|Q57550|Y085_METJA Uncharacterized lipoprotein MJ0085 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / 
+JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0085 PE=3 SV=1
+Length=373
+
+ Score = 168 bits (425),  Expect = 8e-48, Method: Composition-based stats.
+ Identities = 36/266 (14%), Positives = 79/266 (30%), Gaps = 23/266 (9%)
+
+Query  5    NRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEP-----PLPDSVIDVGLR---T  54
+            NRIV      + L++ L       GV DT       + P     P   ++  +G      
+Sbjct  57   NRIVCCGPGCLRLIVYLNATDKVVGVEDTEKKWTPWTRPYRIAHPELANLPTIGQGGPCP  116
+
+Query  55   EPNLELLTEMKPSFMVWSAGYGPSPEMLARIA--PGRGFNFSD-GKQPLAMARKSLTEMA  111
+            +PN E + ++KP  +  +       + L +    P    ++            KSL    
+Sbjct  117  KPNPEAIIQVKPDVIFVTYMPKDEVDALQQKTGIPVVVLSYGQLATFNNEDLFKSLELAG  176
+
+Query  112  DLLNLQSAAETHLAQYEDFIRSMKPR---FVKRGARPLLL-TTLIDPRHMLVFGPNSLFQ  167
+             +L  +  A+  +   ++    +  R           + +        H +         
+Sbjct  177  KILGKEERAKEVIEFIKNCQNDLNERTKDIPDDKKPSVYVGGIGYKGLHGIDSTECKYPP  236
+
+Query  168  EILDEYGIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMAT--PLWQ  225
+             +            E    G   V+ +++  + + D++  D    K +          + 
+Sbjct  237  FVAVNA---KNVADELGKEGHVFVTKEQILKW-NPDIIFIDEGGLKLVVEDYKRNKEFYN  292
+
+Query  226  AMPFVRAGRFQRVPAVWFYGATLSAM  251
+            ++   + G    +    FY   +   
+Sbjct  293  SLKAFKNGDVYGLLPYNFYTTNIGTA  318
+
+
+> sp|P37580|FHUD_BACSU Iron(3+)-hydroxamate-binding protein FhuD 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=fhuD PE=1 SV=1
+Length=315
+
+ Score = 165 bits (417),  Expect = 4e-47, Method: Composition-based stats.
+ Identities = 42/254 (17%), Positives = 94/254 (37%), Gaps = 15/254 (6%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTE  63
+            P R+V +          LGI   G  + +    +       + V ++G  T  ++E + +
+Sbjct  58   PKRVVVMADGYYGYFKTLGINVVGAPENVFKNPYYKGK--TNGVENIGDGT--SVEKVID  113
+
+Query  64   MKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETH  123
+            + P  ++     G   + L +IAP         K       + L E A +   +  AE  
+Sbjct  114  LNPDLIIVWTTQGADIKKLEKIAPTVAV-----KYDKLDNIEQLKEFAKMTGTEDKAEKW  168
+
+Query  124  LAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGP--NSLFQEILDEYGIP----N  177
+            LA+++  + + K +  K      +     + + + VFG         I  + G+      
+Sbjct  169  LAKWDKKVAAAKTKIKKAVGDKTISIMQTNGKDIYVFGKDFGRGGSIIYKDLGLQATKLT  228
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+              +      G T++S+++L  +    +      +  D   +  + +W+ +  V+ G   +
+Sbjct  229  KEKAIDQGPGYTSISLEKLPDFAGDYIFAGPWQSGGDDGGVFESSIWKNLNAVKNGHVYK  288
+
+Query  238  VPAVWFYGATLSAM  251
+            +  + FY     ++
+Sbjct  289  MDPIGFYFTDPISL  302
+
+
+> sp|O34805|YVRC_BACSU Uncharacterized ABC transporter substrate-binding 
+lipoprotein YvrC OS=Bacillus subtilis (strain 168) 
+OX=224308 GN=yvrC PE=3 SV=1
+Length=314
+
+ Score = 161 bits (406),  Expect = 2e-45, Method: Composition-based stats.
+ Identities = 45/268 (17%), Positives = 93/268 (35%), Gaps = 25/268 (9%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P +IV+L     E+  ALG+     GV     Y      P     V  VG     N+E 
+Sbjct  56   EPKKIVSLMPSNTEITYALGLGDKVVGVTTNDTY------PKEVKKVEKVGD-MNVNVEK  108
+
+Query  61   LTEMKPSFMVWS----AGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNL  116
+            +  +KP  ++      +    + + L            +  Q  +   KS+  + +    
+Sbjct  109  VISLKPDLVLAHESSMSASADAIKQLKDAGITVL--TVNDAQSFSEVYKSIEMIGEAGGA  166
+
+Query  117  QSAAETHLAQYEDFIRSMKPR---FVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEY  173
+            +  A+  +   +  ++ ++ +     K   + + +    DP  +   G ++   E+L+  
+Sbjct  167  EKKADQLVKSMKSDLKDIQEKAKTISKDEEKSVFIEVSPDPD-IYTTGKDTFMNEMLNVI  225
+
+Query  174  GIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAG  233
+               NA   +T +   T  +I +L    + D +     +     A+     W  +  V+  
+Sbjct  226  HAKNAAADQTGWVQMTDEAIVKL----NPDAIVTT--DGVKAKAVEKRDGWSEINAVKHH  279
+
+Query  234  RFQRVPAVWFYGATLSAMHFVRVLDNAI  261
+            R   V       +    +  V  L  +I
+Sbjct  280  RVYDVDPDLVTRSGPRLIEGVEELAESI  307
+
+
+> sp|P40408|BTR_BACSU HTH-type transcriptional activator Btr OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=btr PE=1 SV=1
+Length=529
+
+ Score = 161 bits (406),  Expect = 5e-44, Method: Composition-based stats.
+ Identities = 48/249 (19%), Positives = 87/249 (35%), Gaps = 18/249 (7%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVA-----DTINYRLWVSEPPLPDSVIDVGLRTEPNLE  59
+             +I A     +  L+ L  +P+  A      +  Y+ + ++ P+  S      + E NL 
+Sbjct  267  KKIAAYGRGTMGHLIPLHHIPFAAALHPKWTSYYYQHYSTDIPVQLSAYRFNEKWEENLY  326
+
+Query  60   LLTEMKPSFMVW-SAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQS  118
+             L++ +P  +V   +      + L RIA        +        R    + A  L  +S
+Sbjct  327  TLSQAEPDVIVSMDSISPEEQDRLNRIAEVMYLPSEES------WRTHFLQTASFLKEES  380
+
+Query  119  AAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+             AE  LA Y+    + K           L   L      L     S+ +    + G  +A
+Sbjct  381  EAEKWLADYDQQTTAAKKTLQHVQGLRFLFLRLHKQNFYLAHN-RSVREVFFGDLGFSSA  439
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKD---MDALMATPLWQAMPFVRAGRF  235
+               +T      A+S++ +A Y+   ++ F     +       L  T  WQ +  VR  R 
+Sbjct  440  TTADTPSE--QAISLENIANYQADCMMLFLFKEPETIAYYQQLQQTEAWQNLSAVRDNRV  497
+
+Query  236  QRVPAVWFY  244
+              +    + 
+Sbjct  498  YLLSLDPWN  506
+
+
+> sp|P40409|FEUA_BACSU Iron-uptake system-binding protein OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=feuA PE=1 SV=1
+Length=317
+
+ Score = 142 bits (358),  Expect = 1e-38, Method: Composition-based stats.
+ Identities = 43/263 (16%), Positives = 94/263 (36%), Gaps = 21/263 (8%)
+
+Query  8    VALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMKPS  67
+            +      +E    L + P G A + + +       + D     G + EPN+E + EMKP 
+Sbjct  59   ITGSVESMEDAKLLDVHPQG-AISFSGKFPDMFKDITDKAEPTGEKMEPNIEKILEMKPD  117
+
+Query  68   FMVWSA-GYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETHLAQ  126
+             ++ S      + + ++        +           ++++  +A L   +  A+  +A 
+Sbjct  118  VILASTKFPEKTLQKISTAGTTIPVSHISSN-----WKENMMLLAQLTGKEKKAKKIIAD  172
+
+Query  127  YEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILD-EYGIP--NAWQGET  183
+            YE  ++ +K +   +      L   I   ++ ++     F   L  + G+   N  +   
+Sbjct  173  YEQDLKEIKTKINDKAKDSKALVIRIRQGNIYIYPEQVYFNSTLYGDLGLKAPNEVKAAK  232
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCF------DHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+                S+   +  +    + D +        + D    +  L   P+W+++  V+      
+Sbjct  233  AQELSSLEKLSEM----NPDHIFVQFSDDENADKPDALKDLEKNPIWKSLKAVKEDHVY-  287
+
+Query  238  VPAVWFYGATLSAMHFVRVLDNA  260
+            V +V       +A   VR L  A
+Sbjct  288  VNSVDPLAQGGTAWSKVRFLKAA  310
+
+
+> sp|Q56991|HMUT_YERPE Hemin-binding periplasmic protein HmuT OS=Yersinia 
+pestis OX=632 GN=hmuT PE=1 SV=2
+Length=279
+
+ Score = 139 bits (351),  Expect = 7e-38, Method: Composition-based stats.
+ Identities = 46/256 (18%), Positives = 86/256 (34%), Gaps = 20/256 (8%)
+
+Query  5    NRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLELLTEM  64
+             RIV +     E+  ALG     VA     +    +P     + DVG     N E +  M
+Sbjct  27   ERIVTIGGDVTEIAYALGAGDEIVARDSTSQ----QPQAAQKLPDVGYMRTLNAEGILAM  82
+
+Query  65   KPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAETHL  124
+            KP+ ++ S    PS  +    + G       G+         +  +A  L+     +  +
+Sbjct  83   KPTMLLVSELAQPSLVLTQIASSGVNVVTVPGQTTPESVAMKINAVATALHQTEKGQKLI  142
+
+Query  125  AQYEDFIRSM-KPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQGET  183
+              Y+  + ++ K     +    +L          +  G N+    ++   G  NA QG +
+Sbjct  143  EDYQQRLAAVNKTPLPVK----VLFVMSHGGLTPMAAGQNTAADAMIRAAGGSNAMQGFS  198
+
+Query  184  NFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQ-----AMPFVRAGRFQRV  238
+             +   +   +   A     D+L    D  K + +  +  +W+       P  +  R   V
+Sbjct  199  RYRPLSQEGVIASA----PDLLLITTDGVKALGS--SENIWKLPGMALTPAGKHKRLLVV  252
+
+Query  239  PAVWFYGATLSAMHFV  254
+              +   G  L     +
+Sbjct  253  DDMALLGFGLETPQVL  268
+
+
+> sp|Q9HQ20|BTUFA_HALSA Cobalamin-binding protein OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=btuF PE=1 SV=1
+Length=369
+
+ Score = 135 bits (339),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 45/239 (19%), Positives = 79/239 (33%), Gaps = 16/239 (7%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P R+V L     + +  LG      GV+    Y    S+     +V+  G  ++ N+E 
+Sbjct  59   EPERVVTLNPSAAQTMWELGDRDAVVGVSQFGTYLPTASQ----RTVVSGGQPSQTNVEA  114
+
+Query  61   LTEMKPSFMVWS-AGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            +  + P  ++        +   L        F F        +  K+ T +  L    +A
+Sbjct  115  VVGLDPDLVLAPNTVRNTTVTRLRSAGITV-FQFRAATSIDGVVEKTAT-IGRLTGNCAA  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVK-RGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+            A    A+  D + ++         ARP +   L D       GPN+     ++  G  N 
+Sbjct  173  AAATTAEMRDRVAAIADAVPDTDSARPRVYYHLGDG---YTAGPNTFIGAAIEAAGGHNI  229
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+                        +S + +   +D DV+      S D     A+ L      VR      
+Sbjct  230  AADVNTTSSYPQLS-EEVIVSQDPDVVV--TGVSADRLDATASALVAPSSVVRNTTAYA  285
+
+
+> sp|B0R5G2|BTUFA_HALS3 Cobalamin-binding protein OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 GN=btuF 
+PE=3 SV=1
+Length=369
+
+ Score = 135 bits (339),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 45/239 (19%), Positives = 79/239 (33%), Gaps = 16/239 (7%)
+
+Query  3    DPNRIVALEWLPVELLLALGIVP--YGVADTINYRLWVSEPPLPDSVIDVGLRTEPNLEL  60
+            +P R+V L     + +  LG      GV+    Y    S+     +V+  G  ++ N+E 
+Sbjct  59   EPERVVTLNPSAAQTMWELGDRDAVVGVSQFGTYLPTASQ----RTVVSGGQPSQTNVEA  114
+
+Query  61   LTEMKPSFMVWS-AGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSA  119
+            +  + P  ++        +   L        F F        +  K+ T +  L    +A
+Sbjct  115  VVGLDPDLVLAPNTVRNTTVTRLRSAGITV-FQFRAATSIDGVVEKTAT-IGRLTGNCAA  172
+
+Query  120  AETHLAQYEDFIRSMKPRFVK-RGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNA  178
+            A    A+  D + ++         ARP +   L D       GPN+     ++  G  N 
+Sbjct  173  AAATTAEMRDRVAAIADAVPDTDSARPRVYYHLGDG---YTAGPNTFIGAAIEAAGGHNI  229
+
+Query  179  WQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQR  237
+                        +S + +   +D DV+      S D     A+ L      VR      
+Sbjct  230  AADVNTTSSYPQLS-EEVIVSQDPDVVV--TGVSADRLDATASALVAPSSVVRNTTAYA  285
+
+
+> sp|P54941|YXEB_BACSU Iron(3+)-hydroxamate-binding protein YxeB 
+OS=Bacillus subtilis (strain 168) OX=224308 GN=yxeB PE=1 SV=2
+Length=321
+
+ Score = 129 bits (325),  Expect = 9e-34, Method: Composition-based stats.
+ Identities = 39/253 (15%), Positives = 85/253 (34%), Gaps = 26/253 (10%)
+
+Query  4    PNRIVALEWLPVELLLALGIVPYGVADTINYRLWVSEPP-LPDSVIDVGLRTEP-NLELL  61
+            P RIV   +     LL++G    G         W  + P L   + +V    +P ++E +
+Sbjct  56   PKRIVTDFYA--GELLSVGANVVG------SGSWSFDNPFLKSKLKNVKDVGDPISVEKV  107
+
+Query  62   TEMKPSFMVWSAGYGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLLNLQSAAE  121
+             E++P  +V       + + L +IAP     ++  K        +++   D+   +  A+
+Sbjct  108  MELQPDLIVV--MNEENVDKLKKIAPTVVIPYNTAK----NVEDTVSMFGDIAGAKDQAK  161
+
+Query  122  THLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVF----GPNSLFQEILDEYGIPN  177
+            + +A +     + K +      +        +      +          Q + +  G+  
+Sbjct  162  SFMADFNKKAEAAKKKIAGVIDKDATFGIYENTDKGEFWVFNDNGGRGGQAVYNALGLKA  221
+
+Query  178  AWQGETNFWGSTAVSIDRLAAYKD--VDVLCFD----HDNSKDMDALMATPLWQAMPFVR  231
+              + E +      +         +   D +          SK +D L  + +W+ +  V+
+Sbjct  222  PEKIEQDVIKKGEMKQLSQEVIPEYAADYMFITDYNPKGESKTLDKLENSSIWKNLDAVK  281
+
+Query  232  AGRFQRVPAVWFY  244
+              R        FY
+Sbjct  282  HNRVFINDFDSFY  294
+
+
+> sp|P44206|Y1472_HAEIN Uncharacterized protein HI_1472 OS=Haemophilus 
+influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) 
+OX=71421 GN=HI_1472 PE=1 SV=1
+Length=351
+
+ Score = 78.7 bits (192),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 32/260 (12%), Positives = 82/260 (32%), Gaps = 27/260 (10%)
+
+Query  5    NRIVALEWLPVELLLALGIV--PYGVADTINYRLWVSEPPLPDSVIDV---GLRTEPNLE  59
+            NR V L+   + + + L       GV      +L  +   L   + ++   G     N+E
+Sbjct  40   NRAVVLQHQTLNIAVQLDATKQIVGVLSNWKKQLGKNYVRLAPELENMAMPGDLNSVNIE  99
+
+Query  60   LLTEMKPSFMVW-SAGYGPSPEMLARIA-PGRGFNFSDG----------------KQPLA  101
+             L  +KP  +   +       + ++ +  P    +   G                K    
+Sbjct  100  SLLALKPDVVFVTNYAPSEMIKQISDVNIPVVAISLRTGEVGEKGKLNPTLTDEDKAYND  159
+
+Query  102  MARKSLTEMADLLNLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFG  161
+              ++ +  +A++   +   +  +       + +  R     A   + T + +P     +G
+Sbjct  160  GLKQGIELIAEVFEKKQQGDELVKAAFANRKLLADRLGDVSADKRVRTYMANPDLG-TYG  218
+
+Query  162  PNSLFQEILDEYGIPNAWQGETNFWGSTAVSIDRLAAYKDVDVLCFDHDNSKDMDALMAT  221
+                   +++  G  N         G   VS++ +  + +  V+         +  ++  
+Sbjct  219  SGKYTGLMMEHAGAYNVAAA--TIKGFKQVSLENVLEW-NPAVILVQDRYPDVVPQILND  275
+
+Query  222  PLWQAMPFVRAGRFQRVPAV  241
+              W  +  ++  +   +P  
+Sbjct  276  QGWANIQALKDKKVFLMPEY  295
+
+
+> sp|Q58282|Y872_METJA Uncharacterized lipoprotein MJ0872 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / 
+JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0872 PE=3 SV=2
+Length=391
+
+ Score = 77.5 bits (189),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 33/253 (13%), Positives = 76/253 (30%), Gaps = 14/253 (6%)
+
+Query  5    NRIVALEW----LPVELLLALGIVPYGVADTINYRLWV-SEPPLPDSVIDVGLRT-EPNL  58
+             RIV   +       ++L A      G       +     E      V+D+G  +   N 
+Sbjct  103  KRIVTDFYCPIISAADILNAYHHTIVGAPKYAVEKSPKLKELFDEGKVVDIGSPSKGVNY  162
+
+Query  59   ELLTEMKPSFMVW--SAGYGPSPEMLARIAPGR--GFNFSDGKQPLAMARKSLTEMADLL  114
+            EL+  + P  +            E L  +       + + +      +            
+Sbjct  163  ELIVNLTPDIVFLGDWKSEDVVEEKLKELGVTVSRFYTYQEPTYMGRVEWIKFAAAFWGS  222
+
+Query  115  NLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHML--VFGPNSLFQEILDE  172
+            N    A+           ++  +       P ++         +  ++G +S + +++ E
+Sbjct  223  NAYKKADKWFENVVKVRENILKKVQNVTNEPTVVIFSWSKTKNMPGIYGNDSYYSKMIAE  282
+
+Query  173  YGIPNAWQGETNFWGST-AVSIDRLAAYKDVDVLCFDHDNSKDMDALMA-TPLWQAMPFV  230
+            +   N +      +      +    A   DV +L + + + K  + L+   P +      
+Sbjct  283  FKGKNVFDDYNRGYQYVDKETFYERAMNADVVILIWFYGDVKTKEDLLKINPNFAEFKAF  342
+
+Query  231  RAGRFQRVPAVWF  243
+            + GRF      ++
+Sbjct  343  KTGRFYVSHPDYY  355
+
+
+> sp|Q58288|Y878_METJA Uncharacterized lipoprotein MJ0878 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / 
+JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0878 PE=3 SV=1
+Length=414
+
+ Score = 65.2 bits (157),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 34/268 (13%), Positives = 81/268 (30%), Gaps = 13/268 (5%)
+
+Query  6    RIVALEWLPVELLLALGIV------PYGVADTINYRLWVSEPP---LPDSVIDVGLRTEP  56
+            R++ +    + L+ A+           G+    +Y+ +  +         +IDVG  + P
+Sbjct  119  RVIVMSSTEIALMEAINDDGSVIGSVKGIMWGKSYKWYFKDINKSLAEGKIIDVGSSSNP  178
+
+Query  57   NLELLTEMKPSFMVWSAG--YGPSPEMLARIAPGRGFNFSDGKQPLAMARKSLTEMADLL  114
+            N + + E+ P  +    G            +      +    +       + +   A   
+Sbjct  179  NWDKIIEINPQVIFVYPGYDGDKIIAKCKELGITYVADAEYLENDPLGRCEWVKMFAAFY  238
+
+Query  115  NLQSAAETHLAQYEDFIRSMKPRFVKRGARPLLLTTLIDPRHMLVFGPNSLFQEILDEYG  174
+            N +  A+ +  + ED    +  +        +           +    + + +EI+    
+Sbjct  239  NKEPEAKRYFEKVEDNCLKVINKTKNCPKVTVAWGYNSQWGCYVPENNSYVAKEIMFYCN  298
+
+Query  175  IPNAWQGETNFWGSTAVSIDRLA-AYKDVDVLCFDHDNSKDMDALMATPLWQAMPFVRAG  233
+                ++      GS  ++ +  A   KD DV       +         P ++    V+ G
+Sbjct  299  GDYIFKDLNGT-GSAKINYETFAERAKDADVWVVPSSTAWLSTFKEDNPGYETFKAVKNG  357
+
+Query  234  RFQRVPAVWFYGATLSAMHFVRVLDNAI  261
+            R       ++    L     +  L   +
+Sbjct  358  RVFCESDDYWQLGLLKTDEVIMDLATIL  385
+
+
+> sp|Q58059|Y642_METJA Uncharacterized protein MJ0642 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0642 PE=4 SV=1
+Length=333
+
+ Score = 54.4 bits (129),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 30/231 (13%), Positives = 64/231 (28%), Gaps = 12/231 (5%)
+
+Query  33   NYRLWVSEPPLPDSVIDVGLRTEPNLELLTEMKPSFM--VWSAGYGPSPEMLARIAPGRG  90
+                 +    L   + +VG   + N   +  + P  +  +    + P  + L +      
+Sbjct  80   KKYYPLYSDYLKGKISNVGTDGKINYGEILNINPDMIFLIDWNIFNPLSKWLDKNNIPY-  138
+
+Query  91   FNFSDGKQPLAMAR---KSLTEMADLLNLQSAAETHLAQYEDFIRSMKPRFVKRG--ARP  145
+                 G           + +   A   N    AE    +  +  R +      R    +P
+Sbjct  139  --TKTGNYKEPKFLGKMEWIKFYASFYNKYKKAEKVFNKIIEEKRRILKSLNSRSIKYKP  196
+
+Query  146  LLLTTLIDPRHMLVFGPNSLFQEILDEYGIPNAWQG-ETNFWGSTAVSIDRL-AAYKDVD  203
+            ++           ++G +      + E      ++  E   +      I    A Y DV 
+Sbjct  197  VVAFFGYHKNQPYIYGKSHYIPNWIREIKGNYLFENVEGTNYHYIDRKIFNSRAKYADVC  256
+
+Query  204  VLCFDHDNSKDMDALMATPLWQAMPFVRAGRFQRVPAVWFYGATLSAMHFV  254
+            +L    ++    + L   P +      +  RF      +    TL     +
+Sbjct  257  ILDTMGEDIDIKELLKNNPHFLKFRAYKNKRFYITTKDYLKFETLKCSEVM  307
+
+
+
+Lambda      K        H        a         alpha
+   0.306    0.123    0.284    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0381    0.140     1.90     42.6     43.6 
+
+Effective search space used: 19935754713
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

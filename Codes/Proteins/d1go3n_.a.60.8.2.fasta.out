@@ -1,0 +1,123 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d1go3n_.a.60.8.2
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q60351|Y039_METJA Uncharacterized protein MJ0039 OS=Methanoc...  206     7e-68
+
+
+> sp|Q60351|Y039_METJA Uncharacterized protein MJ0039 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0039 PE=1 SV=1
+Length=115
+
+ Score = 206 bits (523),  Expect = 7e-68, Method: Compositional matrix adjust.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS  60
+            IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS
+Sbjct  10   IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS  69
+
+Query  61   LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI  106
+            LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI
+Sbjct  70   LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI  115
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.137    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4894601749
+Results from round 2
+
+
+Query= d1go3n_.a.60.8.2
+
+Length=106
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q60351|Y039_METJA Uncharacterized protein MJ0039 OS=Methanoc...  184     3e-59
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q60351|Y039_METJA Uncharacterized protein MJ0039 OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 
+/ JCM 10045 / NBRC 100440) OX=243232 GN=MJ0039 PE=1 SV=1
+Length=115
+
+ Score = 184 bits (466),  Expect = 3e-59, Method: Composition-based stats.
+ Identities = 106/106 (100%), Positives = 106/106 (100%), Gaps = 0/106 (0%)
+
+Query  1    IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS  60
+            IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS
+Sbjct  10   IGKKILGERYVTVSEAAEIMYNRAQIGELSYEQGCALDYLQKFAKLDKEEAKKLVEELIS  69
+
+Query  61   LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI  106
+            LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI
+Sbjct  70   LGIDEKTAVKIADILPEDLDDLRAIYYKRELPENAEEILEIVRKYI  115
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.137    0.363    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0427    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4894601749
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

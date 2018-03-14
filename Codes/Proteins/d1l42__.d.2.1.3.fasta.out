@@ -1,0 +1,861 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d1l42__.d.2.1.3
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10...  333     3e-116
+  sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostel...  163     1e-49 
+  sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostel...  139     5e-40 
+  sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 ...  124     6e-32 
+  sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomon...  58.5    4e-09 
+  sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=1075...  45.1    3e-05 
+
+
+> sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10665 
+GN=E PE=1 SV=2
+Length=164
+
+ Score = 333 bits (853),  Expect = 3e-116, Method: Compositional matrix adjust.
+ Identities = 161/164 (98%), Positives = 162/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+            MNIFEMLRIDE LRL+IYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK
+Sbjct  1    MNIFEMLRIDERLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+
+Query  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+            DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM
+Sbjct  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+
+Query  121  LQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+            LQQKRWDEAAVNLAKS WYNQTPNRAKRVITTFRTGTWDAYKNL
+Sbjct  121  LQQKRWDEAAVNLAKSIWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+
+
+> sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274831 PE=3 SV=1
+Length=170
+
+ Score = 163 bits (413),  Expect = 1e-49, Method: Compositional matrix adjust.
+ Identities = 79/167 (47%), Positives = 109/167 (65%), Gaps = 6/167 (4%)
+
+Query  2    NIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNC------N  55
+            +I +ML+ DEG +LE+YKDTEGYYTIGIGHL+T+    NAA   L++ IG          
+Sbjct  4    SIKDMLKYDEGEKLEMYKDTEGYYTIGIGHLITRIKERNAAILSLEEKIGHKVKMDSKNE  63
+
+Query  56   GVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+             +IT  E+E LF +D+  A + I  N  L  +Y +LD +R+ A+INMVFQMG   V  F 
+Sbjct  64   PIITSSESEALFEKDLSVATKSIESNPTLSTIYKNLDNIRKMAIINMVFQMGVNNVLTFK  123
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+             SL+++++K+W EAA  +  S W +QTPNR+ RVI+   TGT +AYK
+Sbjct  124  MSLKLIEEKKWAEAAKEMKNSTWNHQTPNRSNRVISVIETGTLNAYK  170
+
+
+> sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274291 PE=2 SV=1
+Length=170
+
+ Score = 139 bits (349),  Expect = 5e-40, Method: Compositional matrix adjust.
+ Identities = 75/164 (46%), Positives = 104/164 (63%), Gaps = 6/164 (4%)
+
+Query  5    EMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCN------GVI  58
+            +ML+ DEG +LE+YKDTEG YTIGIGHL+TK+   N A   L+  IG            I
+Sbjct  7    DMLKYDEGEKLEMYKDTEGNYTIGIGHLITKNKDKNEAIKILEGEIGHTVKLNSKKEPEI  66
+
+Query  59   TKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSL  118
+            +  E+E LF +D   A+  I  ++ L  +Y++LD+ R+ AL NMVFQMG + V+ F  SL
+Sbjct  67   SSSESESLFEKDKSVAINSIENSSTLSTIYNNLDSNRKMALANMVFQMGASNVSKFKKSL  126
+
+Query  119  RMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+            +++++K+W EAA+ L  S W  QTP R+ RVI+ F TGT   YK
+Sbjct  127  KLIEEKKWAEAAIELKNSTWNTQTPKRSNRVISVFETGTLKEYK  170
+
+
+> sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 
+OS=Enterobacteria phage T4 OX=10665 GN=5 PE=1 SV=2
+Length=575
+
+ Score = 124 bits (310),  Expect = 6e-32, Method: Compositional matrix adjust.
+ Identities = 72/166 (43%), Positives = 96/166 (58%), Gaps = 5/166 (3%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAK--SELDKAIGRNCNG--  56
+            M++ EMLR DEGLRL++Y DTEGY TIGIGHL+ K P  + A+    L K +GR   G  
+Sbjct  174  MSMAEMLRRDEGLRLKVYWDTEGYPTIGIGHLIMKQPVRDMAQINKVLSKQVGREITGNP  233
+
+Query  57   -VITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+              IT +EA  LF +D+    R I  ++K+ PV+ +++  R+ AL NM FQMG  GVA F 
+Sbjct  234  GSITMEEATTLFERDLADMQRDIKSHSKVGPVWQAVNRSRQMALENMAFQMGVGGVAKFN  293
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAY  161
+              L  +    W++A      S WY QT  RA RV     TG  ++Y
+Sbjct  294  TMLTAMLAGDWEKAYKAGRDSLWYQQTKGRASRVTMIILTGNLESY  339
+
+
+> sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomonas 
+phage phiKMV OX=204270 GN=gp36 PE=1 SV=1
+Length=898
+
+ Score = 58.5 bits (140),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 42/140 (30%), Positives = 66/140 (47%), Gaps = 18/140 (13%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            E  R E YKD +GY ++G+GH L    S NA                +T ++A + F +D
+Sbjct  753  EAYRGEAYKDADGY-SVGLGHYLG---SGNAG-----------AGTTVTPEQAAQWFAED  797
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+             D A+   +R A    V ++   +    L  M FQMGE     F N+ + ++ +  +   
+Sbjct  798  TDRALDQGVRLADELGVTNNASIL---GLAGMAFQMGEGRARQFRNTFQAIKDRNKEAFE  854
+
+Query  131  VNLAKSRWYNQTPNRAKRVI  150
+              +  S+WY QTP+RA+  I
+Sbjct  855  AGVRNSKWYTQTPDRAEAFI  874
+
+
+> sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=10754 
+GN=19 PE=1 SV=1
+Length=146
+
+ Score = 45.1 bits (105),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 40/127 (31%), Positives = 63/127 (50%), Gaps = 24/127 (19%)
+
+Query  7    LRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKL  66
+            L+ +EG RL+ Y D+ G  TIG+GH  T     N+  S +           IT +++ +L
+Sbjct  12   LKREEGERLKAYSDSRGIPTIGVGH--TGKVDGNSVASGM----------TITAEKSSEL  59
+
+Query  67   FNQD---VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQ  123
+              +D   V+ A+  ++R    +  YD+L     C+LI   F +G++  AG T  LR L  
+Sbjct  60   LKEDLQWVEDAISSLVRVPLNQNQYDAL-----CSLI---FNIGKSAFAGST-VLRQLNL  110
+
+Query  124  KRWDEAA  130
+            K +  AA
+Sbjct  111  KNYQAAA  117
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.134    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7642708095
+Results from round 2
+
+
+Query= d1l42__.d.2.1.3
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10...  244     2e-81
+  sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostel...  204     1e-65
+  sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 ...  208     1e-62
+  sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostel...  176     1e-54
+  sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomon...  135     3e-35
+  sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=1075...  97.2    3e-24
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q9T1T5|LYS_BPAPS Probable lysozyme OS=Acyrthosiphon pisum se...  51.4    1e-07
+  sp|Q37896|ENLYS_BPB03 Endolysin OS=Bacillus phage B103 OX=10778...  49.9    2e-06
+  sp|P11187|ENLYS_BPPH2 Endolysin OS=Bacillus phage phi29 OX=1075...  46.8    2e-05
+  sp|P07540|ENLYS_BPPZA Endolysin OS=Bacillus phage PZA OX=10757 ...  46.8    2e-05
+  sp|Q7Y5N4|EXLYS_BPSP6 Peptidoglycan hydrolase gp36 OS=Enterobac...  42.5    8e-04
+
+
+> sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10665 
+GN=E PE=1 SV=2
+Length=164
+
+ Score = 244 bits (623),  Expect = 2e-81, Method: Composition-based stats.
+ Identities = 161/164 (98%), Positives = 162/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+            MNIFEMLRIDE LRL+IYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK
+Sbjct  1    MNIFEMLRIDERLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+
+Query  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+            DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM
+Sbjct  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+
+Query  121  LQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+            LQQKRWDEAAVNLAKS WYNQTPNRAKRVITTFRTGTWDAYKNL
+Sbjct  121  LQQKRWDEAAVNLAKSIWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+
+
+> sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274831 PE=3 SV=1
+Length=170
+
+ Score = 204 bits (519),  Expect = 1e-65, Method: Composition-based stats.
+ Identities = 79/167 (47%), Positives = 109/167 (65%), Gaps = 6/167 (4%)
+
+Query  2    NIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNC------N  55
+            +I +ML+ DEG +LE+YKDTEGYYTIGIGHL+T+    NAA   L++ IG          
+Sbjct  4    SIKDMLKYDEGEKLEMYKDTEGYYTIGIGHLITRIKERNAAILSLEEKIGHKVKMDSKNE  63
+
+Query  56   GVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+             +IT  E+E LF +D+  A + I  N  L  +Y +LD +R+ A+INMVFQMG   V  F 
+Sbjct  64   PIITSSESEALFEKDLSVATKSIESNPTLSTIYKNLDNIRKMAIINMVFQMGVNNVLTFK  123
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+             SL+++++K+W EAA  +  S W +QTPNR+ RVI+   TGT +AYK
+Sbjct  124  MSLKLIEEKKWAEAAKEMKNSTWNHQTPNRSNRVISVIETGTLNAYK  170
+
+
+> sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 
+OS=Enterobacteria phage T4 OX=10665 GN=5 PE=1 SV=2
+Length=575
+
+ Score = 208 bits (529),  Expect = 1e-62, Method: Composition-based stats.
+ Identities = 72/166 (43%), Positives = 96/166 (58%), Gaps = 5/166 (3%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAK--SELDKAIGRNCNG--  56
+            M++ EMLR DEGLRL++Y DTEGY TIGIGHL+ K P  + A+    L K +GR   G  
+Sbjct  174  MSMAEMLRRDEGLRLKVYWDTEGYPTIGIGHLIMKQPVRDMAQINKVLSKQVGREITGNP  233
+
+Query  57   -VITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+              IT +EA  LF +D+    R I  ++K+ PV+ +++  R+ AL NM FQMG  GVA F 
+Sbjct  234  GSITMEEATTLFERDLADMQRDIKSHSKVGPVWQAVNRSRQMALENMAFQMGVGGVAKFN  293
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAY  161
+              L  +    W++A      S WY QT  RA RV     TG  ++Y
+Sbjct  294  TMLTAMLAGDWEKAYKAGRDSLWYQQTKGRASRVTMIILTGNLESY  339
+
+
+> sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274291 PE=2 SV=1
+Length=170
+
+ Score = 176 bits (447),  Expect = 1e-54, Method: Composition-based stats.
+ Identities = 75/167 (45%), Positives = 106/167 (63%), Gaps = 6/167 (4%)
+
+Query  2    NIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCN------  55
+            ++ +ML+ DEG +LE+YKDTEG YTIGIGHL+TK+   N A   L+  IG          
+Sbjct  4    SLKDMLKYDEGEKLEMYKDTEGNYTIGIGHLITKNKDKNEAIKILEGEIGHTVKLNSKKE  63
+
+Query  56   GVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+              I+  E+E LF +D   A+  I  ++ L  +Y++LD+ R+ AL NMVFQMG + V+ F 
+Sbjct  64   PEISSSESESLFEKDKSVAINSIENSSTLSTIYNNLDSNRKMALANMVFQMGASNVSKFK  123
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+             SL+++++K+W EAA+ L  S W  QTP R+ RVI+ F TGT   YK
+Sbjct  124  KSLKLIEEKKWAEAAIELKNSTWNTQTPKRSNRVISVFETGTLKEYK  170
+
+
+> sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomonas 
+phage phiKMV OX=204270 GN=gp36 PE=1 SV=1
+Length=898
+
+ Score = 135 bits (339),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 42/140 (30%), Positives = 66/140 (47%), Gaps = 18/140 (13%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            E  R E YKD +GY ++G+GH L    S NA                +T ++A + F +D
+Sbjct  753  EAYRGEAYKDADGY-SVGLGHYLG---SGNAG-----------AGTTVTPEQAAQWFAED  797
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+             D A+   +R A    V ++   +    L  M FQMGE     F N+ + ++ +  +   
+Sbjct  798  TDRALDQGVRLADELGVTNNASIL---GLAGMAFQMGEGRARQFRNTFQAIKDRNKEAFE  854
+
+Query  131  VNLAKSRWYNQTPNRAKRVI  150
+              +  S+WY QTP+RA+  I
+Sbjct  855  AGVRNSKWYTQTPDRAEAFI  874
+
+
+> sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=10754 
+GN=19 PE=1 SV=1
+Length=146
+
+ Score = 97.2 bits (240),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 40/127 (31%), Positives = 63/127 (50%), Gaps = 24/127 (19%)
+
+Query  7    LRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKL  66
+            L+ +EG RL+ Y D+ G  TIG+GH  T     N+  S +           IT +++ +L
+Sbjct  12   LKREEGERLKAYSDSRGIPTIGVGH--TGKVDGNSVASGM----------TITAEKSSEL  59
+
+Query  67   FNQD---VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQ  123
+              +D   V+ A+  ++R    +  YD+L     C+LI   F +G++  AG T  LR L  
+Sbjct  60   LKEDLQWVEDAISSLVRVPLNQNQYDAL-----CSLI---FNIGKSAFAGST-VLRQLNL  110
+
+Query  124  KRWDEAA  130
+            K +  AA
+Sbjct  111  KNYQAAA  117
+
+
+> sp|Q9T1T5|LYS_BPAPS Probable lysozyme OS=Acyrthosiphon pisum 
+secondary endosymbiont phage 1 OX=67571 GN=13 PE=3 SV=1
+Length=146
+
+ Score = 51.4 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 31/133 (23%), Positives = 54/133 (41%), Gaps = 29/133 (22%)
+
+Query  6    MLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEK  65
+            +++  EGLRL+ Y+   G +T+G GH                     N   VIT+++AE 
+Sbjct  10   LIKRYEGLRLKAYQCRAGRWTLGYGH-----------------THNLNIGDVITQEQAEA  52
+
+Query  66   LFNQDVD---AAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+               +D+    A +   ++    +  YD        A+ ++VF +G T     T  L+ L 
+Sbjct  53   FLREDIAQVTALLNTQIKVPLTQNQYD--------AICSLVFNIGMTAFTTST-LLKKLN  103
+
+Query  123  QKRWDEAAVNLAK  135
+               +  A+    K
+Sbjct  104  VGDYSGASAEFMK  116
+
+
+> sp|Q37896|ENLYS_BPB03 Endolysin OS=Bacillus phage B103 OX=10778 
+GN=15 PE=3 SV=1
+Length=263
+
+ Score = 49.9 bits (117),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 42/159 (26%), Positives = 68/159 (43%), Gaps = 29/159 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGLR + YK   TE YYTIG GH                 +    C  VI++++
+Sbjct  9    NLIKSFEGLRTKAYKAVPTEKYYTIGYGHY---------------GSDVHPCQ-VISEEK  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AEKL   DV   V G+ +  K+      +   +  AL++  + +G   +   +  L+ L 
+Sbjct  53   AEKLLRDDVQEFVDGVDKLLKV-----DVTQSQFDALVSFAYNVGLGAL-KSSTLLQYLN  106
+
+Query  123  QKRWDEAAVNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+               + +AA    K      + YN    R ++  T F TG
+Sbjct  107  AGNFQKAANEFLKWNKSGGKVYNGLVKRREQERTLFLTG  145
+
+
+> sp|P11187|ENLYS_BPPH2 Endolysin OS=Bacillus phage phi29 OX=10756 
+GN=15 PE=1 SV=1
+Length=258
+
+ Score = 46.8 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 41/160 (26%), Positives = 64/160 (40%), Gaps = 29/160 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGL+L+ YK   TE +YTIG GH  +                      VIT  +
+Sbjct  9    NLIKSFEGLQLKAYKAVPTEKHYTIGYGHYGSDVSPRQ----------------VITAKQ  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AE +   DV A V G+ +  K+    +  D     AL++  + +G       ++ L  L 
+Sbjct  53   AEDMLRDDVQAFVDGVNKALKVSVTQNQFD-----ALVSFAYNVGLGAFR-SSSLLEYLN  106
+
+Query  123  QKRWDEAAVNLAK-----SRWYNQTPNRAKRVITTFRTGT  157
+            + R   AA    K      + Y    NR  +    F +GT
+Sbjct  107  EGRTALAAAEFPKWNKSGGKVYQGLINRRAQEQALFNSGT  146
+
+
+> sp|P07540|ENLYS_BPPZA Endolysin OS=Bacillus phage PZA OX=10757 
+GN=15 PE=3 SV=1
+Length=258
+
+ Score = 46.8 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 40/160 (25%), Positives = 64/160 (40%), Gaps = 29/160 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGL+L+ YK   TE +YTIG GH  +                      VIT  +
+Sbjct  9    NLIKSFEGLQLKAYKAVPTEKHYTIGYGHYGSDVSPRQ----------------VITAKQ  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AE +   DV A V G+ +  K+    +  D     AL++  + +G       ++ L  L 
+Sbjct  53   AEDMLRDDVQAFVDGVNKALKVSVTQNQFD-----ALVSFAYNVGLGAFR-SSSLLEYLN  106
+
+Query  123  QKRWDEAAVNL-----AKSRWYNQTPNRAKRVITTFRTGT  157
+            + R   AA        +  + Y    NR  +    F +GT
+Sbjct  107  EGRTALAAAEFPRWNKSGGKVYQGLVNRRAQEQALFNSGT  146
+
+
+> sp|Q7Y5N4|EXLYS_BPSP6 Peptidoglycan hydrolase gp36 OS=Enterobacteria 
+phage SP6 OX=194966 GN=36 PE=4 SV=1
+Length=978
+
+ Score = 42.5 bits (98),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 19/117 (16%), Positives = 47/117 (40%), Gaps = 5/117 (4%)
+
+Query  18   YKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGV-ITKDEAEKLFNQDVDAAVR  76
+            YKD  G  ++G GH LT+    N   +  +  +        +T + A +L  QD      
+Sbjct  773  YKDAHG-QSVGYGHFLTEEEKKNGYITIGEDKVPFAPGQSQLTPERAMRLLEQD---MKS  828
+
+Query  77   GILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNL  133
+             +         +D++    +  L+++ + +G+ G+     +    +  ++ +  + +
+Sbjct  829  HVPSTKDWAVPFDAMHPGVQRGLMDLSYNLGKDGIKNAPKAYAAFKAGKFTDGFIEM  885
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.119    0.294    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0364    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7642708095
+Results from round 3
+
+
+Query= d1l42__.d.2.1.3
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10...  235     1e-77
+  sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostel...  197     7e-63
+  sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 ...  198     5e-59
+  sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostel...  170     3e-52
+  sp|P11187|ENLYS_BPPH2 Endolysin OS=Bacillus phage phi29 OX=1075...  130     7e-36
+  sp|P07540|ENLYS_BPPZA Endolysin OS=Bacillus phage PZA OX=10757 ...  130     1e-35
+  sp|Q37896|ENLYS_BPB03 Endolysin OS=Bacillus phage B103 OX=10778...  125     6e-34
+  sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomon...  123     5e-31
+  sp|Q9T1T5|LYS_BPAPS Probable lysozyme OS=Acyrthosiphon pisum se...  110     2e-29
+  sp|Q7Y5N4|EXLYS_BPSP6 Peptidoglycan hydrolase gp36 OS=Enterobac...  116     8e-29
+  sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=1075...  106     8e-28
+
+Sequences not found previously or not previously below threshold:
+
+  sp|O80292|LYS_BPPS1 Lysozyme OS=Bacteriophage PS119 OX=83128 GN...  63.0    1e-11
+  sp|O80288|LYS_BPPS3 Lysozyme OS=Bacteriophage PS34 OX=83127 GN=...  59.2    3e-10
+  sp|P78285|LYSD_ECOLI Lysozyme RrrD OS=Escherichia coli (strain ...  57.6    9e-10
+  sp|P62693|LYS_BPPHV Lysozyme OS=Lactococcus phage phivML3 OX=10...  58.4    1e-09
+  sp|P62692|LYS_BPLC2 Lysozyme OS=Lactococcus phage c2 OX=31537 G...  58.4    1e-09
+  sp|P27359|LYS_BPP21 Lysozyme OS=Enterobacteria phage P21 OX=107...  56.1    3e-09
+  sp|P10439|LYS_BPPA2 Lysozyme OS=Enterobacteria phage PA-2 OX=10...  55.3    6e-09
+  sp|Q6XQ98|ENLYS_BPT1 Endolysin OS=Escherichia phage T1 OX=19210...  53.0    4e-08
+
+
+> sp|P00720|ENLYS_BPT4 Endolysin OS=Enterobacteria phage T4 OX=10665 
+GN=E PE=1 SV=2
+Length=164
+
+ Score = 235 bits (598),  Expect = 1e-77, Method: Composition-based stats.
+ Identities = 161/164 (98%), Positives = 162/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+            MNIFEMLRIDE LRL+IYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK
+Sbjct  1    MNIFEMLRIDERLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITK  60
+
+Query  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+            DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM
+Sbjct  61   DEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRM  120
+
+Query  121  LQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+            LQQKRWDEAAVNLAKS WYNQTPNRAKRVITTFRTGTWDAYKNL
+Sbjct  121  LQQKRWDEAAVNLAKSIWYNQTPNRAKRVITTFRTGTWDAYKNL  164
+
+
+> sp|Q556F2|LYST1_DICDI Probable T4-type lysozyme 1 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274831 PE=3 SV=1
+Length=170
+
+ Score = 197 bits (501),  Expect = 7e-63, Method: Composition-based stats.
+ Identities = 79/167 (47%), Positives = 109/167 (65%), Gaps = 6/167 (4%)
+
+Query  2    NIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNC------N  55
+            +I +ML+ DEG +LE+YKDTEGYYTIGIGHL+T+    NAA   L++ IG          
+Sbjct  4    SIKDMLKYDEGEKLEMYKDTEGYYTIGIGHLITRIKERNAAILSLEEKIGHKVKMDSKNE  63
+
+Query  56   GVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+             +IT  E+E LF +D+  A + I  N  L  +Y +LD +R+ A+INMVFQMG   V  F 
+Sbjct  64   PIITSSESEALFEKDLSVATKSIESNPTLSTIYKNLDNIRKMAIINMVFQMGVNNVLTFK  123
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+             SL+++++K+W EAA  +  S W +QTPNR+ RVI+   TGT +AYK
+Sbjct  124  MSLKLIEEKKWAEAAKEMKNSTWNHQTPNRSNRVISVIETGTLNAYK  170
+
+
+> sp|P16009|BP5_BPT4 Baseplate central spike complex protein gp5 
+OS=Enterobacteria phage T4 OX=10665 GN=5 PE=1 SV=2
+Length=575
+
+ Score = 198 bits (503),  Expect = 5e-59, Method: Composition-based stats.
+ Identities = 72/166 (43%), Positives = 96/166 (58%), Gaps = 5/166 (3%)
+
+Query  1    MNIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAK--SELDKAIGRNCNG--  56
+            M++ EMLR DEGLRL++Y DTEGY TIGIGHL+ K P  + A+    L K +GR   G  
+Sbjct  174  MSMAEMLRRDEGLRLKVYWDTEGYPTIGIGHLIMKQPVRDMAQINKVLSKQVGREITGNP  233
+
+Query  57   -VITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+              IT +EA  LF +D+    R I  ++K+ PV+ +++  R+ AL NM FQMG  GVA F 
+Sbjct  234  GSITMEEATTLFERDLADMQRDIKSHSKVGPVWQAVNRSRQMALENMAFQMGVGGVAKFN  293
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAY  161
+              L  +    W++A      S WY QT  RA RV     TG  ++Y
+Sbjct  294  TMLTAMLAGDWEKAYKAGRDSLWYQQTKGRASRVTMIILTGNLESY  339
+
+
+> sp|Q86AA1|LYST2_DICDI Probable T4-type lysozyme 2 OS=Dictyostelium 
+discoideum OX=44689 GN=DDB_G0274291 PE=2 SV=1
+Length=170
+
+ Score = 170 bits (430),  Expect = 3e-52, Method: Composition-based stats.
+ Identities = 75/167 (45%), Positives = 106/167 (63%), Gaps = 6/167 (4%)
+
+Query  2    NIFEMLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCN------  55
+            ++ +ML+ DEG +LE+YKDTEG YTIGIGHL+TK+   N A   L+  IG          
+Sbjct  4    SLKDMLKYDEGEKLEMYKDTEGNYTIGIGHLITKNKDKNEAIKILEGEIGHTVKLNSKKE  63
+
+Query  56   GVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFT  115
+              I+  E+E LF +D   A+  I  ++ L  +Y++LD+ R+ AL NMVFQMG + V+ F 
+Sbjct  64   PEISSSESESLFEKDKSVAINSIENSSTLSTIYNNLDSNRKMALANMVFQMGASNVSKFK  123
+
+Query  116  NSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK  162
+             SL+++++K+W EAA+ L  S W  QTP R+ RVI+ F TGT   YK
+Sbjct  124  KSLKLIEEKKWAEAAIELKNSTWNTQTPKRSNRVISVFETGTLKEYK  170
+
+
+> sp|P11187|ENLYS_BPPH2 Endolysin OS=Bacillus phage phi29 OX=10756 
+GN=15 PE=1 SV=1
+Length=258
+
+ Score = 130 bits (327),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 41/160 (26%), Positives = 64/160 (40%), Gaps = 29/160 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGL+L+ YK   TE +YTIG GH  +                      VIT  +
+Sbjct  9    NLIKSFEGLQLKAYKAVPTEKHYTIGYGHYGSDVSPR----------------QVITAKQ  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AE +   DV A V G+ +  K+    +  D     AL++  + +G       ++ L  L 
+Sbjct  53   AEDMLRDDVQAFVDGVNKALKVSVTQNQFD-----ALVSFAYNVGLGAFR-SSSLLEYLN  106
+
+Query  123  QKRWDEAAVNLAK-----SRWYNQTPNRAKRVITTFRTGT  157
+            + R   AA    K      + Y    NR  +    F +GT
+Sbjct  107  EGRTALAAAEFPKWNKSGGKVYQGLINRRAQEQALFNSGT  146
+
+
+> sp|P07540|ENLYS_BPPZA Endolysin OS=Bacillus phage PZA OX=10757 
+GN=15 PE=3 SV=1
+Length=258
+
+ Score = 130 bits (326),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 40/160 (25%), Positives = 64/160 (40%), Gaps = 29/160 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGL+L+ YK   TE +YTIG GH  +                      VIT  +
+Sbjct  9    NLIKSFEGLQLKAYKAVPTEKHYTIGYGHYGSDVSPR----------------QVITAKQ  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AE +   DV A V G+ +  K+    +  D     AL++  + +G       ++ L  L 
+Sbjct  53   AEDMLRDDVQAFVDGVNKALKVSVTQNQFD-----ALVSFAYNVGLGAFR-SSSLLEYLN  106
+
+Query  123  QKRWDEAAVNLAK-----SRWYNQTPNRAKRVITTFRTGT  157
+            + R   AA    +      + Y    NR  +    F +GT
+Sbjct  107  EGRTALAAAEFPRWNKSGGKVYQGLVNRRAQEQALFNSGT  146
+
+
+> sp|Q37896|ENLYS_BPB03 Endolysin OS=Bacillus phage B103 OX=10778 
+GN=15 PE=3 SV=1
+Length=263
+
+ Score = 125 bits (314),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 42/159 (26%), Positives = 68/159 (43%), Gaps = 29/159 (18%)
+
+Query  5    EMLRIDEGLRLEIYK--DTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EGLR + YK   TE YYTIG GH                 +    C  VI++++
+Sbjct  9    NLIKSFEGLRTKAYKAVPTEKYYTIGYGHY---------------GSDVHPC-QVISEEK  52
+
+Query  63   AEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+            AEKL   DV   V G+ +  K+      +   +  AL++  + +G   +   +  L+ L 
+Sbjct  53   AEKLLRDDVQEFVDGVDKLLKV-----DVTQSQFDALVSFAYNVGLGAL-KSSTLLQYLN  106
+
+Query  123  QKRWDEAAVNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+               + +AA    K      + YN    R ++  T F TG
+Sbjct  107  AGNFQKAANEFLKWNKSGGKVYNGLVKRREQERTLFLTG  145
+
+
+> sp|Q7Y2C9|EXLYS_BPKMV Peptidoglycan hydrolase gp36 OS=Pseudomonas 
+phage phiKMV OX=204270 GN=gp36 PE=1 SV=1
+Length=898
+
+ Score = 123 bits (307),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 43/144 (30%), Positives = 67/144 (47%), Gaps = 18/144 (13%)
+
+Query  7    LRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKL  66
+            L   E  R E YKD +GY ++G+GH L    S NA                +T ++A + 
+Sbjct  749  LAQFEAYRGEAYKDADGY-SVGLGHYLG---SGNAG-----------AGTTVTPEQAAQW  793
+
+Query  67   FNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRW  126
+            F +D D A+   +R A    V ++   +    L  M FQMGE     F N+ + ++ +  
+Sbjct  794  FAEDTDRALDQGVRLADELGVTNNASIL---GLAGMAFQMGEGRARQFRNTFQAIKDRNK  850
+
+Query  127  DEAAVNLAKSRWYNQTPNRAKRVI  150
+            +     +  S+WY QTP+RA+  I
+Sbjct  851  EAFEAGVRNSKWYTQTPDRAEAFI  874
+
+
+> sp|Q9T1T5|LYS_BPAPS Probable lysozyme OS=Acyrthosiphon pisum 
+secondary endosymbiont phage 1 OX=67571 GN=13 PE=3 SV=1
+Length=146
+
+ Score = 110 bits (275),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 33/162 (20%), Positives = 60/162 (37%), Gaps = 38/162 (23%)
+
+Query  6    MLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEK  65
+            +++  EGLRL+ Y+   G +T+G GH                     N   VIT+++AE 
+Sbjct  10   LIKRYEGLRLKAYQCRAGRWTLGYGH-----------------THNLNIGDVITQEQAEA  52
+
+Query  66   LFNQDVD---AAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQ  122
+               +D+    A +   ++    +  YD        A+ ++VF +G T     T  L+ L 
+Sbjct  53   FLREDIAQVTALLNTQIKVPLTQNQYD--------AICSLVFNIGMTAFTTST-LLKKLN  103
+
+Query  123  QKRWDEAAVNLA---KSRWYN------QTPNRAKRVITTFRT  155
+               +  A+       K++             R +     F +
+Sbjct  104  VGDYSGASAEFMKWSKAKVNGKRTPLPGLIKRRQAEKALFES  145
+
+
+> sp|Q7Y5N4|EXLYS_BPSP6 Peptidoglycan hydrolase gp36 OS=Enterobacteria 
+phage SP6 OX=194966 GN=36 PE=4 SV=1
+Length=978
+
+ Score = 116 bits (291),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 21/145 (14%), Positives = 54/145 (37%), Gaps = 10/145 (7%)
+
+Query  18   YKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGV-ITKDEAEKLFNQDVDAAVR  76
+            YKD  G  ++G GH LT+    N   +  +  +        +T + A +L  QD      
+Sbjct  773  YKDAHG-QSVGYGHFLTEEEKKNGYITIGEDKVPFAPGQSQLTPERAMRLLEQD---MKS  828
+
+Query  77   GILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLA--  134
+             +         +D++    +  L+++ + +G+ G+     +    +  ++ +  + +   
+Sbjct  829  HVPSTKDWAVPFDAMHPGVQRGLMDLSYNLGKDGIKNAPKAYAAFKAGKFTDGFIEMLST  888
+
+Query  135  ---KSRWYNQTPNRAKRVITTFRTG  156
+               + +  +    R        ++G
+Sbjct  889  ASTEGKRSSGLLVRRAEAYNLAQSG  913
+
+
+> sp|P09963|ENLYS_BPP22 Endolysin OS=Salmonella phage P22 OX=10754 
+GN=19 PE=1 SV=1
+Length=146
+
+ Score = 106 bits (264),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 42/156 (27%), Positives = 71/156 (46%), Gaps = 28/156 (18%)
+
+Query  7    LRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKL  66
+            L+ +EG RL+ Y D+ G  TIG+GH  T     N+  S +           IT +++ +L
+Sbjct  12   LKREEGERLKAYSDSRGIPTIGVGH--TGKVDGNSVASGM----------TITAEKSSEL  59
+
+Query  67   FNQD---VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQ  123
+              +D   V+ A+  ++R    +  YD        AL +++F +G++  AG T  LR L  
+Sbjct  60   LKEDLQWVEDAISSLVRVPLNQNQYD--------ALCSLIFNIGKSAFAGST-VLRQLNL  110
+
+Query  124  KRWDEAAVNLAKSRWYNQTPN----RAKRVITTFRT  155
+            K +  AA      +   + P+    R +R    F +
+Sbjct  111  KNYQAAADAFLLWKKAGKDPDILLPRRRRERALFLS  146
+
+
+> sp|O80292|LYS_BPPS1 Lysozyme OS=Bacteriophage PS119 OX=83128 
+GN=19 PE=3 SV=1
+Length=167
+
+ Score = 63.0 bits (151),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 31/151 (21%), Positives = 48/151 (32%), Gaps = 27/151 (18%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            EG+R + YKD  G  T+  GH                           T+ E + L N+D
+Sbjct  37   EGVRYKPYKDVVGVLTVCYGHTGKDIM----------------PGKTYTEAECKALLNKD  80
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+            +    R I    K+      +    R AL + V+ +G       T  LR + Q     A 
+Sbjct  81   LITVARQINPYIKV-----DIPETTRGALYSFVYNVGAGNFRTST-LLRKINQGDIKGAC  134
+
+Query  131  VNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+              L +      + +     R +        G
+Sbjct  135  DQLRRWTYAGGKQWKGLMTRREVERDVCLWG  165
+
+
+> sp|O80288|LYS_BPPS3 Lysozyme OS=Bacteriophage PS34 OX=83127 GN=19 
+PE=3 SV=1
+Length=167
+
+ Score = 59.2 bits (141),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 29/151 (19%), Positives = 47/151 (31%), Gaps = 27/151 (18%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            EG+R + YKD  G  T+  GH                           T+ E + L N+D
+Sbjct  37   EGVRYKPYKDVVGVLTVCYGHTGKDIM----------------PGKTYTEAECKALLNKD  80
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+            +    R I    K+      +    R  + + V+ +G       T  LR + Q     A 
+Sbjct  81   LATVARQINPYIKV-----DIPETTRGGIYSFVYNVGAGNFETST-LLRKINQVDIKGAC  134
+
+Query  131  VNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+              L +      + +     R +        G
+Sbjct  135  DQLRRWTYAGGKQWKGLMTRREIEREVCLWG  165
+
+
+> sp|P78285|LYSD_ECOLI Lysozyme RrrD OS=Escherichia coli (strain 
+K12) OX=83333 GN=rrrD PE=1 SV=1
+Length=165
+
+ Score = 57.6 bits (137),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 31/151 (21%), Positives = 47/151 (31%), Gaps = 27/151 (18%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            EG+    YKD  G +T+  GH                           TK E + L N+D
+Sbjct  35   EGVSYIPYKDIVGVWTVCHGHTGKDIM----------------LGKTYTKAECKALLNKD  78
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+            +    R I    K+      +    R AL + V+ +G       T  LR + Q     A 
+Sbjct  79   LATVARQINPYIKV-----DIPETTRGALYSFVYNVGAGNFRTST-LLRKINQGDIKGAC  132
+
+Query  131  VNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+              L +      + +     R +        G
+Sbjct  133  DQLRRWTYAGGKQWKGLMTRREIEREVCLWG  163
+
+
+> sp|P62693|LYS_BPPHV Lysozyme OS=Lactococcus phage phivML3 OX=10746 
+GN=L3 PE=3 SV=1
+Length=226
+
+ Score = 58.4 bits (139),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 28/160 (18%), Positives = 51/160 (32%), Gaps = 41/160 (26%)
+
+Query  5    EMLRIDEGLRLEIYKDT--EGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EG RL  YK    E  YTIG GH                   G       T+ +
+Sbjct  9    NLIKEFEGCRLTAYKPVPWEQMYTIGWGHY------------------GVTAGTTWTQAQ  50
+
+Query  63   AEKLFNQDV----DAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMG----ETGVAGF  114
+            A+     D+       V   ++    +  +D        AL+++ +  G      G A F
+Sbjct  51   ADSQLEIDINNKYAPMVDAYVKGKANQNEFD--------ALVSLAYNCGNVFVADGWAPF  102
+
+Query  115  TNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFR  154
+            +++       ++  A       +       R +  +  F 
+Sbjct  103  SHAYCASMIPKYRNAG-----GQVLQGLVRRRQAELNLFN  137
+
+
+> sp|P62692|LYS_BPLC2 Lysozyme OS=Lactococcus phage c2 OX=31537 
+GN=L3 PE=3 SV=1
+Length=226
+
+ Score = 58.4 bits (139),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 28/160 (18%), Positives = 51/160 (32%), Gaps = 41/160 (26%)
+
+Query  5    EMLRIDEGLRLEIYKDT--EGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDE  62
+             +++  EG RL  YK    E  YTIG GH                   G       T+ +
+Sbjct  9    NLIKEFEGCRLTAYKPVPWEQMYTIGWGHY------------------GVTAGTTWTQAQ  50
+
+Query  63   AEKLFNQDV----DAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMG----ETGVAGF  114
+            A+     D+       V   ++    +  +D        AL+++ +  G      G A F
+Sbjct  51   ADSQLEIDINNKYAPMVDAYVKGKANQNEFD--------ALVSLAYNCGNVFVADGWAPF  102
+
+Query  115  TNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFR  154
+            +++       ++  A       +       R +  +  F 
+Sbjct  103  SHAYCASMIPKYRNAG-----GQVLQGLVRRRQAELNLFN  137
+
+
+> sp|P27359|LYS_BPP21 Lysozyme OS=Enterobacteria phage P21 OX=10711 
+GN=R PE=1 SV=1
+Length=165
+
+ Score = 56.1 bits (133),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 48/151 (32%), Gaps = 27/151 (18%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            EG+    YKD  G +T+  GH                           TK E + L N+D
+Sbjct  35   EGVSYIPYKDIVGVWTVCHGHTGKDIM----------------LGKTYTKAECKALLNKD  78
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+            +    R I    K+      +    R AL ++++ +G       T  LR + Q     A 
+Sbjct  79   LATVARQINPYIKV-----DIPETMRGALYSLLYNVGAGNFRTST-LLRKINQGDIKGAC  132
+
+Query  131  VNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+              L +      + +     R +        G
+Sbjct  133  DQLRRWTYAGGKQWKGLMTRREIEREICLWG  163
+
+
+> sp|P10439|LYS_BPPA2 Lysozyme OS=Enterobacteria phage PA-2 OX=10738 
+GN=15 PE=3 SV=1
+Length=165
+
+ Score = 55.3 bits (131),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 30/151 (20%), Positives = 46/151 (30%), Gaps = 27/151 (18%)
+
+Query  11   EGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQD  70
+            EG+    YKD  G +T+  GH                           TK E + L N+D
+Sbjct  35   EGVSYIPYKDIVGVWTVCHGHTGKDIM----------------LGKTYTKAECKALLNKD  78
+
+Query  71   VDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAA  130
+            +    R I    K+      +    R  L + V+ +G       T  LR + Q     A 
+Sbjct  79   LATVARQINPYIKV-----DIPETTRGPLYSFVYNVGAGNFRTST-LLRKINQGDIKGAC  132
+
+Query  131  VNLAK-----SRWYNQTPNRAKRVITTFRTG  156
+              L +      + +     R +        G
+Sbjct  133  DQLRRWTYAGGKQWKGLMTRREIEREVCLWG  163
+
+
+> sp|Q6XQ98|ENLYS_BPT1 Endolysin OS=Escherichia phage T1 OX=1921008 
+GN=12 PE=3 SV=1
+Length=162
+
+ Score = 53.0 bits (125),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 30/146 (21%), Positives = 54/146 (37%), Gaps = 23/146 (16%)
+
+Query  6    MLRIDEGLRLEIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEK  65
+            +L   EG+  E+Y D  G  T+  G                            TK E + 
+Sbjct  22   LLERIEGIEYEVYYDIAGVPTVCSGITGPDVIPGKKY----------------TKRECDA  65
+
+Query  66   LFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKR  125
+            L  + +  A R + +  K+      +    R +L +  F +G     G +  L+++ Q++
+Sbjct  66   LLIKHIGVAQRYVDKKVKV-----DIPVTMRASLYSFTFNVGTGAF-GSSTMLKLINQRK  119
+
+Query  126  WDEAAVNLAKSRWYNQTPNRAKRVIT  151
+              EA   L +  +Y   P   KR ++
+Sbjct  120  HKEACNQLWRWVYYYN-PKTKKREVS  144
+
+
+
+Lambda      K        H        a         alpha
+   0.302    0.114    0.267    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0354    0.140     1.90     42.6     43.6 
+
+Effective search space used: 7642708095
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

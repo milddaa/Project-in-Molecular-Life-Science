@@ -1,0 +1,354 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d8cho__.d.17.4.3
+
+Length=125
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testo...  251     2e-85
+  sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides si...  80.1    2e-18
+  sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas put...  73.6    7e-16
+
+
+> sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testosteroni 
+OX=285 GN=ksi PE=1 SV=2
+Length=125
+
+ Score = 251 bits (642),  Expect = 2e-85, Method: Compositional matrix adjust.
+ Identities = 124/125 (99%), Positives = 124/125 (99%), Gaps = 0/125 (0%)
+
+Query  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+            MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK
+Sbjct  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+
+Query  61   LPLAVELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+            LPLAVELTQEVRAVANEAAFAF VSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN
+Sbjct  61   LPLAVELTQEVRAVANEAAFAFTVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+
+Query  121  IHAGA  125
+            IHAGA
+Sbjct  121  IHAGA  125
+
+
+> sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides 
+simplex OX=2045 GN=ksdI PE=3 SV=1
+Length=123
+
+ Score = 80.1 bits (196),  Expect = 2e-18, Method: Compositional matrix adjust.
+ Identities = 48/116 (41%), Positives = 68/116 (59%), Gaps = 1/116 (1%)
+
+Query  6    HMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLAV  65
+             + A V RY+ A+  G    I AL+A DAT+EDPVG++   G AAI EFY       ++ 
+Sbjct  4    EVKAAVARYLDAVAGGSPAAIAALYAPDATLEDPVGADLVRGRAAIEEFYGALAGAKVST  63
+
+Query  66   ELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKNI  121
+            EL   VRAVA  AAF+F V+ +   ++ VV PID   F+  G++ SMRA +   ++
+Sbjct  64   ELLA-VRAVAGHAAFSFRVTTDAGDQQYVVEPIDVMTFDADGQITSMRAFWAPGDM  118
+
+
+> sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas putida 
+OX=303 GN=ksi PE=1 SV=1
+Length=131
+
+ Score = 73.6 bits (179),  Expect = 7e-16, Method: Compositional matrix adjust.
+ Identities = 44/125 (35%), Positives = 66/125 (53%), Gaps = 4/125 (3%)
+
+Query  1    MNTP--EHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANS  58
+            MN P  + +  ++ RY+  ++ GD++ IV ++ADDATVEDP G  P  G   I  FY   
+Sbjct  1    MNLPTAQEVQGLMARYIELVDVGDIEAIVQMYADDATVEDPFGQPPIHGREQIAAFYRQG  60
+
+Query  59   L-KLPLAVELTQEVRAVANEA-AFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALF  116
+            L    +   LT  VRA  N   A  F V   + G+   +  ID  RF+  G++ +M+A +
+Sbjct  61   LGGGKVRACLTGPVRASHNGCGAMPFRVEMVWNGQPCALDVIDVMRFDEHGRIQTMQAYW  120
+
+Query  117  GEKNI  121
+             E N+
+Sbjct  121  SEVNL  125
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.133    0.373    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4898003682
+Results from round 2
+
+
+Query= d8cho__.d.17.4.3
+
+Length=125
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testo...  182     5e-58
+  sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas put...  174     8e-55
+  sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides si...  136     4e-40
+
+Sequences not found previously or not previously below threshold:
+
+  sp|B6ZK72|LSD19_STRLS Epoxide hydrolase LasB OS=Streptomyces la...  45.8    2e-05
+
+
+> sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testosteroni 
+OX=285 GN=ksi PE=1 SV=2
+Length=125
+
+ Score = 182 bits (461),  Expect = 5e-58, Method: Composition-based stats.
+ Identities = 124/125 (99%), Positives = 124/125 (99%), Gaps = 0/125 (0%)
+
+Query  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+            MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK
+Sbjct  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+
+Query  61   LPLAVELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+            LPLAVELTQEVRAVANEAAFAF VSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN
+Sbjct  61   LPLAVELTQEVRAVANEAAFAFTVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+
+Query  121  IHAGA  125
+            IHAGA
+Sbjct  121  IHAGA  125
+
+
+> sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas putida 
+OX=303 GN=ksi PE=1 SV=1
+Length=131
+
+ Score = 174 bits (440),  Expect = 8e-55, Method: Composition-based stats.
+ Identities = 44/125 (35%), Positives = 66/125 (53%), Gaps = 4/125 (3%)
+
+Query  1    MNTP--EHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANS  58
+            MN P  + +  ++ RY+  ++ GD++ IV ++ADDATVEDP G  P  G   I  FY   
+Sbjct  1    MNLPTAQEVQGLMARYIELVDVGDIEAIVQMYADDATVEDPFGQPPIHGREQIAAFYRQG  60
+
+Query  59   L-KLPLAVELTQEVRAVANEA-AFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALF  116
+            L    +   LT  VRA  N   A  F V   + G+   +  ID  RF+  G++ +M+A +
+Sbjct  61   LGGGKVRACLTGPVRASHNGCGAMPFRVEMVWNGQPCALDVIDVMRFDEHGRIQTMQAYW  120
+
+Query  117  GEKNI  121
+             E N+
+Sbjct  121  SEVNL  125
+
+
+> sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides 
+simplex OX=2045 GN=ksdI PE=3 SV=1
+Length=123
+
+ Score = 136 bits (342),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 48/116 (41%), Positives = 68/116 (59%), Gaps = 1/116 (1%)
+
+Query  6    HMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLAV  65
+             + A V RY+ A+  G    I AL+A DAT+EDPVG++   G AAI EFY       ++ 
+Sbjct  4    EVKAAVARYLDAVAGGSPAAIAALYAPDATLEDPVGADLVRGRAAIEEFYGALAGAKVST  63
+
+Query  66   ELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKNI  121
+            EL   VRAVA  AAF+F V+ +   ++ VV PID   F+  G++ SMRA +   ++
+Sbjct  64   ELLA-VRAVAGHAAFSFRVTTDAGDQQYVVEPIDVMTFDADGQITSMRAFWAPGDM  118
+
+
+> sp|B6ZK72|LSD19_STRLS Epoxide hydrolase LasB OS=Streptomyces 
+lasaliensis OX=324833 GN=lsd19 PE=1 SV=1
+Length=282
+
+ Score = 45.8 bits (107),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 52/118 (44%), Gaps = 5/118 (4%)
+
+Query  8    TAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLAVEL  67
+              V   Y   +NAG+L+G++ LFA DA + DP+G+EP  G AA+    A +L+  +  E 
+Sbjct  8    KEVALEYCRRVNAGELEGVLQLFAPDALLVDPLGTEPVVGRAALAARLAPALRGAVHEEP  67
+
+Query  68   TQEVRAVANEA-AFAFIVSFEYQG----RKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+             +   A    +      V+    G    R+     +        G +  MR ++G  +
+Sbjct  68   GRPYAAHDGTSVVLPATVTVGAPGAPPQRRGRTRVMGVIEVGEDGLIREMRVMWGVTD  125
+
+
+ Score = 42.4 bits (98),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 30/139 (22%), Positives = 52/139 (37%), Gaps = 22/139 (16%)
+
+Query  5    EHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLA  64
+            E    + + +   +N GD+DG++ L++     EDPVGS  R+G  A+R     ++   + 
+Sbjct  137  ERRKELAREHCLRINDGDVDGLLKLYSPRIRFEDPVGSWTRTGLEALRAHATMAVGSNVR  196
+
+Query  65   VELTQEVRAVAN-EAAFAFIVSFEY---------QGRKTVVAPID------------HFR  102
+                  V       AA     + +Y             T+ AP D               
+Sbjct  197  ETAGLTVAGQDGRHAAVTVSATMDYLPSGPLLARHHLMTLPAPADPHRALIGIEYVMVIG  256
+
+Query  103  FNGAGKVVSMRALFGEKNI  121
+             +  G +  MRA +G  ++
+Sbjct  257  VDADGLIDEMRAYWGATDV  275
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.353    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0411    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4898003682
+Results from round 3
+
+
+Query= d8cho__.d.17.4.3
+
+Length=125
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testo...  181     1e-57
+  sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas put...  171     1e-53
+  sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides si...  132     8e-39
+  sp|B6ZK72|LSD19_STRLS Epoxide hydrolase LasB OS=Streptomyces la...  121     1e-32
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P00947|SDIS_COMTE Steroid Delta-isomerase OS=Comamonas testosteroni 
+OX=285 GN=ksi PE=1 SV=2
+Length=125
+
+ Score = 181 bits (459),  Expect = 1e-57, Method: Composition-based stats.
+ Identities = 124/125 (99%), Positives = 124/125 (99%), Gaps = 0/125 (0%)
+
+Query  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+            MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK
+Sbjct  1    MNTPEHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLK  60
+
+Query  61   LPLAVELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+            LPLAVELTQEVRAVANEAAFAF VSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN
+Sbjct  61   LPLAVELTQEVRAVANEAAFAFTVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+
+Query  121  IHAGA  125
+            IHAGA
+Sbjct  121  IHAGA  125
+
+
+> sp|P07445|SDIS_PSEPU Steroid Delta-isomerase OS=Pseudomonas putida 
+OX=303 GN=ksi PE=1 SV=1
+Length=131
+
+ Score = 171 bits (433),  Expect = 1e-53, Method: Composition-based stats.
+ Identities = 44/125 (35%), Positives = 66/125 (53%), Gaps = 4/125 (3%)
+
+Query  1    MNTP--EHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANS  58
+            MN P  + +  ++ RY+  ++ GD++ IV ++ADDATVEDP G  P  G   I  FY   
+Sbjct  1    MNLPTAQEVQGLMARYIELVDVGDIEAIVQMYADDATVEDPFGQPPIHGREQIAAFYRQG  60
+
+Query  59   L-KLPLAVELTQEVRAVANEA-AFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALF  116
+            L    +   LT  VRA  N   A  F V   + G+   +  ID  RF+  G++ +M+A +
+Sbjct  61   LGGGKVRACLTGPVRASHNGCGAMPFRVEMVWNGQPCALDVIDVMRFDEHGRIQTMQAYW  120
+
+Query  117  GEKNI  121
+             E N+
+Sbjct  121  SEVNL  125
+
+
+> sp|P77816|SDIS_NOCSI Steroid Delta-isomerase OS=Nocardioides 
+simplex OX=2045 GN=ksdI PE=3 SV=1
+Length=123
+
+ Score = 132 bits (333),  Expect = 8e-39, Method: Composition-based stats.
+ Identities = 48/116 (41%), Positives = 68/116 (59%), Gaps = 1/116 (1%)
+
+Query  6    HMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLAV  65
+             + A V RY+ A+  G    I AL+A DAT+EDPVG++   G AAI EFY       ++ 
+Sbjct  4    EVKAAVARYLDAVAGGSPAAIAALYAPDATLEDPVGADLVRGRAAIEEFYGALAGAKVST  63
+
+Query  66   ELTQEVRAVANEAAFAFIVSFEYQGRKTVVAPIDHFRFNGAGKVVSMRALFGEKNI  121
+            EL   VRAVA  AAF+F V+ +   ++ VV PID   F+  G++ SMRA +   ++
+Sbjct  64   ELLA-VRAVAGHAAFSFRVTTDAGDQQYVVEPIDVMTFDADGQITSMRAFWAPGDM  118
+
+
+> sp|B6ZK72|LSD19_STRLS Epoxide hydrolase LasB OS=Streptomyces 
+lasaliensis OX=324833 GN=lsd19 PE=1 SV=1
+Length=282
+
+ Score = 121 bits (303),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 31/119 (26%), Positives = 52/119 (44%), Gaps = 5/119 (4%)
+
+Query  7    MTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLAVE  66
+               V   Y   +NAG+L+G++ LFA DA + DP+G+EP  G AA+    A +L+  +  E
+Sbjct  7    RKEVALEYCRRVNAGELEGVLQLFAPDALLVDPLGTEPVVGRAALAARLAPALRGAVHEE  66
+
+Query  67   LTQEVRAVANEA-AFAFIVSFEYQG----RKTVVAPIDHFRFNGAGKVVSMRALFGEKN  120
+              +   A    +      V+    G    R+     +        G +  MR ++G  +
+Sbjct  67   PGRPYAAHDGTSVVLPATVTVGAPGAPPQRRGRTRVMGVIEVGEDGLIREMRVMWGVTD  125
+
+
+ Score = 66.7 bits (161),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 26/139 (19%), Positives = 49/139 (35%), Gaps = 22/139 (16%)
+
+Query  5    EHMTAVVQRYVAALNAGDLDGIVALFADDATVEDPVGSEPRSGTAAIREFYANSLKLPLA  64
+            E    + + +   +N GD+DG++ L++     EDPVGS  R+G  A+R     ++   + 
+Sbjct  137  ERRKELAREHCLRINDGDVDGLLKLYSPRIRFEDPVGSWTRTGLEALRAHATMAVGSNVR  196
+
+Query  65   VELTQEVRAVAN-EAAFAFIVSFEY-----------------QGRKTV----VAPIDHFR  102
+                  V       AA     + +Y                           +  +    
+Sbjct  197  ETAGLTVAGQDGRHAAVTVSATMDYLPSGPLLARHHLMTLPAPADPHRALIGIEYVMVIG  256
+
+Query  103  FNGAGKVVSMRALFGEKNI  121
+             +  G +  MRA +G  ++
+Sbjct  257  VDADGLIDEMRAYWGATDV  275
+
+
+
+Lambda      K        H        a         alpha
+   0.304    0.127    0.319    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0395    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4898003682
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
