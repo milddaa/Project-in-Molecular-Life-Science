@@ -139,5 +139,21 @@ Trying out different parameters to optimize the model.
 
 2018-03-13
 
-Wrote a code Cross_val_parameters.py which runs the cross validation on linear SVC with different C-scores and window sizes. The highest prediction accuracy was obtained at window size 19 and C-score of 0.3. These parameters were selected to build the model.
+Wrote a code Cross_val_parameters.py which runs the cross validation on linear SVC with different C-scores and window sizes. The highest prediction accuracy was obtained at window size 19 and C-score of 0.3. These parameters were selected to build the model with the training dataset (70% of the original dataset).
+
+The built model was then tested on a testing dataset (remaining 30% of the full dataset) and the accuracy of the prediction was measured. (Code: Prediction_accuracy.py)
+
+2018-03-14
+
+Updated Prediction_accuracy.py code to calculate the confusion matrix, accuracy, sensitivity and Matthew’s correlation coefficient. For linear SVC with parameters C score = 0.3 and window size 19, the following were obtained:
+
+Confusion matrix: 
+ [[10114  3241]
+ [ 3578  6685]]
+Accuracy (precision): 
+ 0.7386795208881098
+Sensitivity (recall): 
+ 0.7573193560464245
+Matthew's correlation coefficient: 
+ 0.41042214848077496
 

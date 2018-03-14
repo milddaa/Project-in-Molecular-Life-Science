@@ -1,7 +1,3 @@
-import numpy as np
-from sklearn import svm
-from sklearn.model_selection import cross_val_score
-
 ############ DEFINITIONS AND DICTIONARIES ###########
 
 name_training= "../Datasets/training_dataset.txt"
@@ -45,41 +41,11 @@ value_list=[value_list[i:i+2] for i in range (0, len(value_list),2)]
 f.close()
 my_dict={x:y for x, y in zip(key_list,value_list)}
 
-############## STAGE 2. SVM INPUT MAKER #############
+################### STAGE 2. FASTA MAKER ##################
 
-def SVM_input(input_dictionary, window_size):
-    X_list_all=[]
-    Y_list_all=[]
-    for x in input_dictionary.values():
-        window_list=[]
-        seq=x[0]
-        add_tails="B"*int(window_size/2)
-        seq=add_tails+seq+add_tails
-        lab=x[1]
-        for x in range (len(seq)):
-            window=seq[x:x+window_size]
-            if len(window)==window_size:
-                window_list.append(window)
-        X_list=[]
-        for x in window_list:
-            new_list=[]
-            for y in x:
-                new_list.extend(amino_acids[y])
-            X_list.append(new_list)
-        Y_list=[]
-        for x in lab:
-            Y_list.append(dictA[x])
-        X_list_all.extend(X_list)
-        Y_list_all.extend(Y_list)
-    return (X_list_all, Y_list_all)
-
-############## STAGE 3. CROSS VALIDATION. #############        
-    
-for c_score in (0.1, 0.3, 1, 3, 10, 30, 100):
-         for window_size in range (1, 30, 2):
-             X_array, Y_array = SVM_input (my_dict, window_size)
-             clf = svm.SVC(C=c_score, kernel='rbf')
-             clf.fit(X_array, Y_array)
-             cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
-             average_score = np.mean(cross_val_scores)
-             print (c_score, window_size, average_score)
+for x in range(len(key_list)):
+    name=key_list[x]
+    fasta_file=open(name+'.fasta','w')
+    fasta_file.write (key_list[x]+'\n')
+    fasta_file.write (value_list[x][0])
+    fasta_file.close()

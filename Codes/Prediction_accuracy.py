@@ -1,10 +1,12 @@
 import numpy as np
-from sklearn import svm
-from sklearn.model_selection import cross_val_score
+import pickle
+import math
 
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_training= "../Datasets/training_dataset.txt"
+name_testing= "../Datasets/testing_dataset.txt"
+
+window_size=19
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -30,10 +32,12 @@ amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 
 dictA={'E':0, 'B':1}
 
+dictB={0:'E', 1:'B'}
+
 ################### STAGE 1. PARSER ##################
 
-f = open(name_training,'r')
-lines = f.readlines()
+f2 = open(name_testing,'r')
+lines = f2.readlines()
 key_list=[]
 value_list=[]
 for x in lines:
@@ -42,8 +46,8 @@ for x in lines:
     else:
         value_list.append(x.strip())
 value_list=[value_list[i:i+2] for i in range (0, len(value_list),2)]
-f.close()
-my_dict={x:y for x, y in zip(key_list,value_list)}
+f2.close()
+my_dict2={x:y for x, y in zip(key_list,value_list)}
 
 ############## STAGE 2. SVM INPUT MAKER #############
 
@@ -72,14 +76,38 @@ def SVM_input(input_dictionary, window_size):
         X_list_all.extend(X_list)
         Y_list_all.extend(Y_list)
     return (X_list_all, Y_list_all)
-
-############## STAGE 3. CROSS VALIDATION. #############        
     
-for c_score in (0.1, 0.3, 1, 3, 10, 30, 100):
-         for window_size in range (1, 30, 2):
-             X_array, Y_array = SVM_input (my_dict, window_size)
-             clf = svm.SVC(C=c_score, kernel='rbf')
-             clf.fit(X_array, Y_array)
-             cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
-             average_score = np.mean(cross_val_scores)
-             print (c_score, window_size, average_score)
+X_array, Y_array = SVM_input (my_dict2, window_size)
+
+############## STAGE 3. PREDICTOR #################
+
+model=pickle.load(open("Model.sav",'rb'))
+predicted_array=model.predict(X_array)
+Y_array=np.asarray(Y_array)
+
+############## STAGE 4. ACCURACY #################
+
+True_Negatives=0
+True_Positives=0
+False_Negatives=0
+False_Positives=0
+for x in range (len(Y_array)):
+    if Y_array[x]==0:
+        if predicted_array[x]==0:
+            True_Negatives+=1
+        elif predicted_array[x]==1:
+            False_Positives+=1
+    if Y_array[x]==1:
+        if predicted_array[x]==0:
+            False_Negatives+=1
+        elif predicted_array[x]==1:
+            True_Positives+=1
+matrix = np.matrix([[True_Positives, False_Negatives],[False_Positives, True_Negatives]])
+accuracy = True_Positives/(True_Positives+False_Positives)
+sensitivity = True_Positives/(True_Positives+False_Negatives)
+matthews_coef= (True_Positives*True_Negatives-False_Positives*False_Negatives)/math.sqrt((True_Positives+False_Positives)*(True_Positives+False_Negatives)*(True_Negatives+False_Positives)*(True_Negatives+False_Negatives))
+
+print ("Confusion matrix:", '\n', matrix)
+print ("Accuracy (precision):",'\n', accuracy)
+print ("Sensitivity (recall):",'\n', sensitivity)
+print ("Matthew's correlation coefficient:",'\n', matthews_coef)

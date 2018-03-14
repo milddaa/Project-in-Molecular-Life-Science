@@ -1,3 +1,5 @@
+import pickle
+
 ############ DEFINITIONS AND DICTIONARIES ###########
 
 name_testing= "../Datasets/sequences.txt"
@@ -69,7 +71,6 @@ X_array = SVM_input_X (my_dict2, window_size)
 
 ############## STAGE 3. PREDICTOR #################
 
-import pickle
 model=pickle.load(open("Model.sav",'rb'))
 predicted_array=model.predict(X_array)
 
