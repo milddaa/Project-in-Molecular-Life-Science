@@ -1,16 +1,11 @@
 import numpy as np
 from itertools import chain
-import pandas as pd
-from pandas import DataFrame
-from pathlib import Path
 from sklearn import svm
-import pickle
+from sklearn.model_selection import cross_val_score
 
 ############ DEFINITIONS AND DICTIONARIES ###########
 
 name_training= "../Datasets/training_dataset.txt"
-
-window_size=19
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -76,12 +71,14 @@ def SVM_input(input_dictionary, window_size):
                 X_list.append(window)
         X_list_all.extend(X_list)
     return (X_list_all, Y_list_all)
+
+############## STAGE 3. CROSS VALIDATION. #############        
     
-X_array, Y_array = SVM_input (my_dict, window_size)
-
-############## STAGE 3. MODEL BUILDER #############
-
-clf = svm.LinearSVC(C=0.3)
-clf.fit(X_array, Y_array)
-
-pickle.dump(clf, open ("Model_PSSM.sav",'wb'))
+for c_score in (0.1, 0.3, 1, 3, 10, 30, 100):
+         for window_size in range (1, 30, 2):
+             X_array, Y_array = SVM_input (my_dict, window_size)
+             clf = svm.LinearSVC(C=c_score)
+             clf.fit(X_array, Y_array)
+             cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
+             average_score = np.mean(cross_val_scores)
+             print (c_score, window_size, average_score)

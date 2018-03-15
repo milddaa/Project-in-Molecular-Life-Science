@@ -81,7 +81,7 @@ X_array, Y_array = SVM_input (my_dict2, window_size)
 
 ############## STAGE 3. PREDICTOR #################
 
-model=pickle.load(open("Model.sav",'rb'))
+model=pickle.load(open("Model_PSSM.sav",'rb'))
 predicted_array=model.predict(X_array)
 Y_array=np.asarray(Y_array)
 

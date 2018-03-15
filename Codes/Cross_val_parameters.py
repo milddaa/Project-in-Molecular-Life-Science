@@ -78,7 +78,7 @@ def SVM_input(input_dictionary, window_size):
 for c_score in (0.1, 0.3, 1, 3, 10, 30, 100):
          for window_size in range (1, 30, 2):
              X_array, Y_array = SVM_input (my_dict, window_size)
-             clf = svm.SVC(C=c_score, kernel='rbf', cache_size=3000)
+             clf = svm.LinearSVC(C=c_score)
              clf.fit(X_array, Y_array)
              cross_val_scores = cross_val_score(clf,X_array,Y_array,cv=3)
              average_score = np.mean(cross_val_scores)
