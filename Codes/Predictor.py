@@ -2,7 +2,7 @@ import pickle
 
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_testing= "../Datasets/sequences.txt"
+name_testing= "../Datasets/example_sequence.txt"
 
 window_size=19
 

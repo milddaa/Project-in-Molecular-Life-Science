@@ -1,0 +1,538 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= d1diqd_.a.3.1.1
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cyt...  157     1e-49
+  sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain ...  38.1    7e-04
+
+
+> sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cytochrome 
+c subunit OS=Pseudomonas putida OX=303 GN=pchC PE=1 
+SV=2
+Length=113
+
+ Score = 157 bits (398),  Expect = 1e-49, Method: Compositional matrix adjust.
+ Identities = 74/74 (100%), Positives = 74/74 (100%), Gaps = 0/74 (0%)
+
+Query  1    SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  60
+            SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE
+Sbjct  35   SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  94
+
+Query  61   SLTQVAEYLSSLPA  74
+            SLTQVAEYLSSLPA
+Sbjct  95   SLTQVAEYLSSLPA  108
+
+
+> sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain 
+PS3) OX=2334 GN=cccA PE=1 SV=1
+Length=111
+
+ Score = 38.1 bits (87),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 23/67 (34%), Positives = 37/67 (55%), Gaps = 7/67 (10%)
+
+Query  9    LYDKVCGHCHKPEV--GVGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDDESLTQ  64
+            ++ + C  CH  ++  GVGP L+  G    +  IK+I+ NG  AM   PA  +  E   +
+Sbjct  46   IFKQNCASCHGQDLSGGVGPNLQKVGSKYSKDEIKNIIANGRGAM---PAGIIKGEDADK  102
+
+Query  65   VAEYLSS  71
+            VAE+L++
+Sbjct  103  VAEWLAA  109
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.137    0.429    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4873072512
+Results from round 2
+
+
+Query= d1diqd_.a.3.1.1
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cyt...  138     7e-42
+  sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain ...  83.2    2e-20
+
+Sequences not found previously or not previously below threshold:
+
+  sp|O34594|CY551_BACSU Cytochrome c-551 OS=Bacillus subtilis (st...  57.4    9e-11
+  sp|P24469|C550_BACSU Cytochrome c-550 OS=Bacillus subtilis (str...  42.4    2e-05
+  sp|P46913|QCRC_BACSU Menaquinol-cytochrome c reductase cytochro...  43.9    2e-05
+  sp|Q45659|QCRC_GEOTD Menaquinol-cytochrome c reductase cytochro...  42.7    6e-05
+  sp|P82599|CY553_SPOPA Cytochrome c-553 OS=Sporosarcina pasteuri...  40.8    6e-05
+
+
+> sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cytochrome 
+c subunit OS=Pseudomonas putida OX=303 GN=pchC PE=1 
+SV=2
+Length=113
+
+ Score = 138 bits (347),  Expect = 7e-42, Method: Composition-based stats.
+ Identities = 74/74 (100%), Positives = 74/74 (100%), Gaps = 0/74 (0%)
+
+Query  1    SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  60
+            SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE
+Sbjct  35   SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  94
+
+Query  61   SLTQVAEYLSSLPA  74
+            SLTQVAEYLSSLPA
+Sbjct  95   SLTQVAEYLSSLPA  108
+
+
+> sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain 
+PS3) OX=2334 GN=cccA PE=1 SV=1
+Length=111
+
+ Score = 83.2 bits (204),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 23/72 (32%), Positives = 39/72 (54%), Gaps = 7/72 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEV--GVGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+             + + ++ + C  CH  ++  GVGP L+  G    +  IK+I+ NG  AM   PA  +  
+Sbjct  41   AAAEQIFKQNCASCHGQDLSGGVGPNLQKVGSKYSKDEIKNIIANGRGAM---PAGIIKG  97
+
+Query  60   ESLTQVAEYLSS  71
+            E   +VAE+L++
+Sbjct  98   EDADKVAEWLAA  109
+
+
+> sp|O34594|CY551_BACSU Cytochrome c-551 OS=Bacillus subtilis (strain 
+168) OX=224308 GN=cccB PE=1 SV=1
+Length=112
+
+ Score = 57.4 bits (137),  Expect = 9e-11, Method: Composition-based stats.
+ Identities = 25/69 (36%), Positives = 36/69 (52%), Gaps = 7/69 (10%)
+
+Query  6    GKNLYDKVCGHCHKPEV-GV-GPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDDES  61
+            G+ LY + C  CH  ++ GV GP L+  G    E  I+ I++NG   M   P   VDD  
+Sbjct  44   GEELYQQSCVGCHGKDLEGVSGPNLQEVGGKYDEHKIESIIKNGRGNM---PKGLVDDNE  100
+
+Query  62   LTQVAEYLS  70
+               +A++LS
+Sbjct  101  AAVIAKWLS  109
+
+
+> sp|P24469|C550_BACSU Cytochrome c-550 OS=Bacillus subtilis (strain 
+168) OX=224308 GN=cccA PE=1 SV=1
+Length=120
+
+ Score = 42.4 bits (98),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 22/73 (30%), Positives = 33/73 (45%), Gaps = 7/73 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEV-GV-GPVLEGRGLPEA--YIKDIVRNGFRAMPAFPASYVDD  59
+             S + +Y   C  CH     GV GP L+G G  +    IK  +  G   M   P+  V  
+Sbjct  50   ASPEEIYKANCIACHGENYEGVSGPSLKGVGDKKDVAEIKTKIEKGGNGM---PSGLVPA  106
+
+Query  60   ESLTQVAEYLSSL  72
+            + L  +AE++S +
+Sbjct  107  DKLDDMAEWVSKI  119
+
+
+> sp|P46913|QCRC_BACSU Menaquinol-cytochrome c reductase cytochrome 
+b/c subunit OS=Bacillus subtilis (strain 168) OX=224308 
+GN=qcrC PE=3 SV=1
+Length=255
+
+ Score = 43.9 bits (102),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 29/77 (38%), Gaps = 9/77 (12%)
+
+Query  4    GSGKNLYD-KVCGHCHKPEV---GVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+              G  ++  + C  CH   +     GP L   GL    IK I   G   M   PA     
+Sbjct  181  AEGYKVFKEQGCISCHGDNLQGGAAGPSLVDSGLKPDEIKKIAVEGKGKM---PAGVFKG  237
+
+Query  60   ES--LTQVAEYLSSLPA  74
+                L ++A+++S   A
+Sbjct  238  NDKQLEELAKFISETTA  254
+
+
+> sp|Q45659|QCRC_GEOTD Menaquinol-cytochrome c reductase cytochrome 
+b/c subunit OS=Geobacillus thermodenitrificans OX=33940 
+GN=qcrC PE=3 SV=1
+Length=250
+
+ Score = 42.7 bits (99),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/57 (33%), Positives = 24/57 (42%), Gaps = 7/57 (12%)
+
+Query  14   CGHCHKPEV--GVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVD--DESLTQVA  66
+            C  CH   +  G GP L G GL    I  I + G  +M   P       DE L ++A
+Sbjct  192  CTSCHGENLSGGAGPSLVGTGLTAEEIAKIAKEGQGSM---PGGIFKGTDEELQKMA  245
+
+
+> sp|P82599|CY553_SPOPA Cytochrome c-553 OS=Sporosarcina pasteurii 
+OX=1474 PE=1 SV=1
+Length=92
+
+ Score = 40.8 bits (94),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 16/66 (24%), Positives = 25/66 (38%), Gaps = 7/66 (11%)
+
+Query  9   LYDKVCGHCHKPEV--GVGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDDESLTQ  64
+           +  + C  CH  ++     P ++  G    E  I DI+ NG   M   P           
+Sbjct  27  VVQQKCISCHGGDLTGASAPAIDKAGANYSEEEILDIILNGQGGM---PGGIAKGAEAEA  83
+
+Query  65  VAEYLS  70
+           VA +L+
+Sbjct  84  VAAWLA  89
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.134    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0397    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4873072512
+Results from round 3
+
+
+Query= d1diqd_.a.3.1.1
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cyt...  111     2e-31
+  sp|P46913|QCRC_BACSU Menaquinol-cytochrome c reductase cytochro...  80.9    1e-18
+  sp|O34594|CY551_BACSU Cytochrome c-551 OS=Bacillus subtilis (st...  74.0    7e-17
+  sp|P24469|C550_BACSU Cytochrome c-550 OS=Bacillus subtilis (str...  73.6    9e-17
+  sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain ...  72.1    3e-16
+  sp|Q45659|QCRC_GEOTD Menaquinol-cytochrome c reductase cytochro...  70.9    4e-15
+  sp|P82599|CY553_SPOPA Cytochrome c-553 OS=Sporosarcina pasteuri...  57.5    6e-11
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q6B941|CYC6_GRATL Cytochrome c6 OS=Gracilaria tenuistipitata...  46.7    8e-07
+  sp|Q9TLW1|CYC6_CYACA Cytochrome c6 OS=Cyanidium caldarium OX=27...  43.2    1e-05
+  sp|P08574|CY1_HUMAN Cytochrome c1, heme protein, mitochondrial ...  42.8    8e-05
+  sp|P29610|CY12_SOLTU Cytochrome c1-2, heme protein, mitochondri...  42.4    1e-04
+  sp|Q5GCA5|CCOP_RUBGE Cbb3-type cytochrome c oxidase subunit Cco...  41.3    2e-04
+  sp|P57736|CYC6_TETOB Cytochrome c6 OS=Tetradesmus obliquus OX=3...  39.0    3e-04
+  sp|P04369|C555_METCA Cytochrome c-555 OS=Methylococcus capsulat...  39.3    3e-04
+  sp|Q3MDW2|CYC6_ANAVT Cytochrome c6 OS=Anabaena variabilis (stra...  38.6    4e-04
+  sp|B7K722|CYC6_CYAP7 Cytochrome c6 OS=Cyanothece sp. (strain PC...  38.6    5e-04
+
+
+> sp|P09787|CY4C_PSEPU 4-cresol dehydrogenase [hydroxylating] cytochrome 
+c subunit OS=Pseudomonas putida OX=303 GN=pchC PE=1 
+SV=2
+Length=113
+
+ Score = 111 bits (278),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 74/74 (100%), Positives = 74/74 (100%), Gaps = 0/74 (0%)
+
+Query  1    SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  60
+            SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE
+Sbjct  35   SQWGSGKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDDE  94
+
+Query  61   SLTQVAEYLSSLPA  74
+            SLTQVAEYLSSLPA
+Sbjct  95   SLTQVAEYLSSLPA  108
+
+
+> sp|P46913|QCRC_BACSU Menaquinol-cytochrome c reductase cytochrome 
+b/c subunit OS=Bacillus subtilis (strain 168) OX=224308 
+GN=qcrC PE=3 SV=1
+Length=255
+
+ Score = 80.9 bits (198),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 20/77 (26%), Positives = 29/77 (38%), Gaps = 9/77 (12%)
+
+Query  4    GSGKNLYD-KVCGHCHKPEV---GVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+              G  ++  + C  CH   +     GP L   GL    IK I   G   M   PA     
+Sbjct  181  AEGYKVFKEQGCISCHGDNLQGGAAGPSLVDSGLKPDEIKKIAVEGKGKM---PAGVFKG  237
+
+Query  60   ES--LTQVAEYLSSLPA  74
+                L ++A+++S   A
+Sbjct  238  NDKQLEELAKFISETTA  254
+
+
+> sp|O34594|CY551_BACSU Cytochrome c-551 OS=Bacillus subtilis (strain 
+168) OX=224308 GN=cccB PE=1 SV=1
+Length=112
+
+ Score = 74.0 bits (180),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 23/72 (32%), Positives = 34/72 (47%), Gaps = 7/72 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEVG--VGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+              G+ LY + C  CH  ++    GP L+  G    E  I+ I++NG   M   P   VDD
+Sbjct  42   SEGEELYQQSCVGCHGKDLEGVSGPNLQEVGGKYDEHKIESIIKNGRGNM---PKGLVDD  98
+
+Query  60   ESLTQVAEYLSS  71
+                 +A++LS 
+Sbjct  99   NEAAVIAKWLSE  110
+
+
+> sp|P24469|C550_BACSU Cytochrome c-550 OS=Bacillus subtilis (strain 
+168) OX=224308 GN=cccA PE=1 SV=1
+Length=120
+
+ Score = 73.6 bits (179),  Expect = 9e-17, Method: Composition-based stats.
+ Identities = 20/73 (27%), Positives = 31/73 (42%), Gaps = 7/73 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEVG--VGPVLEGRGLPEA--YIKDIVRNGFRAMPAFPASYVDD  59
+             S + +Y   C  CH        GP L+G G  +    IK  +  G   M   P+  V  
+Sbjct  50   ASPEEIYKANCIACHGENYEGVSGPSLKGVGDKKDVAEIKTKIEKGGNGM---PSGLVPA  106
+
+Query  60   ESLTQVAEYLSSL  72
+            + L  +AE++S +
+Sbjct  107  DKLDDMAEWVSKI  119
+
+
+> sp|Q56247|CY551_BACP3 Cytochrome c-551 OS=Bacillus sp. (strain 
+PS3) OX=2334 GN=cccA PE=1 SV=1
+Length=111
+
+ Score = 72.1 bits (175),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 23/72 (32%), Positives = 39/72 (54%), Gaps = 7/72 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEV--GVGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+             + + ++ + C  CH  ++  GVGP L+  G    +  IK+I+ NG  AM   PA  +  
+Sbjct  41   AAAEQIFKQNCASCHGQDLSGGVGPNLQKVGSKYSKDEIKNIIANGRGAM---PAGIIKG  97
+
+Query  60   ESLTQVAEYLSS  71
+            E   +VAE+L++
+Sbjct  98   EDADKVAEWLAA  109
+
+
+> sp|Q45659|QCRC_GEOTD Menaquinol-cytochrome c reductase cytochrome 
+b/c subunit OS=Geobacillus thermodenitrificans OX=33940 
+GN=qcrC PE=3 SV=1
+Length=250
+
+ Score = 70.9 bits (172),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 20/68 (29%), Positives = 26/68 (38%), Gaps = 8/68 (12%)
+
+Query  4    GSGKNLYDKV-CGHCHKPEV--GVGPVLEGRGLPEAYIKDIVRNGFRAMPAFPASYVD--  58
+              G  +     C  CH   +  G GP L G GL    I  I + G  +M   P       
+Sbjct  181  AEGYKIAQANTCTSCHGENLSGGAGPSLVGTGLTAEEIAKIAKEGQGSM---PGGIFKGT  237
+
+Query  59   DESLTQVA  66
+            DE L ++A
+Sbjct  238  DEELQKMA  245
+
+
+> sp|P82599|CY553_SPOPA Cytochrome c-553 OS=Sporosarcina pasteurii 
+OX=1474 PE=1 SV=1
+Length=92
+
+ Score = 57.5 bits (137),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 16/70 (23%), Positives = 26/70 (37%), Gaps = 7/70 (10%)
+
+Query  6   GKNLYDKVCGHCHKPEV--GVGPVLE--GRGLPEAYIKDIVRNGFRAMPAFPASYVDDES  61
+            + +  + C  CH  ++     P ++  G    E  I DI+ NG   M   P        
+Sbjct  24  AEAVVQQKCISCHGGDLTGASAPAIDKAGANYSEEEILDIILNGQGGM---PGGIAKGAE  80
+
+Query  62  LTQVAEYLSS  71
+              VA +L+ 
+Sbjct  81  AEAVAAWLAE  90
+
+
+> sp|Q6B941|CYC6_GRATL Cytochrome c6 OS=Gracilaria tenuistipitata 
+var. liui OX=285951 GN=petJ PE=3 SV=1
+Length=108
+
+ Score = 46.7 bits (109),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 22/74 (30%), Positives = 33/74 (45%), Gaps = 10/74 (14%)
+
+Query  5   SGKNLYDKVCGHCHK-PEVGVGP--VLEGRGLPEAYIKDI------VRNGFRAMPAFPAS  55
+           +G+ ++   C  CH      + P   L+   L E  +  I      V+NG  AMPAF   
+Sbjct  28  AGEQIFSANCSACHANGNNAIMPDKTLKSDALSENKMNSIEAITNQVKNGKNAMPAF-GG  86
+
+Query  56  YVDDESLTQVAEYL  69
+            + DE +  VA Y+
+Sbjct  87  RLADEDIENVANYV  100
+
+
+> sp|Q9TLW1|CYC6_CYACA Cytochrome c6 OS=Cyanidium caldarium OX=2771 
+GN=petJ PE=3 SV=2
+Length=109
+
+ Score = 43.2 bits (100),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 22/73 (30%), Positives = 33/73 (45%), Gaps = 11/73 (15%)
+
+Query  6    GKNLYDKVCGHCH-KPEVGVGP--VLEGRGLPEAYIKDI------VRNGFRAMPAFPASY  56
+            G+ ++   C  CH      + P   L+   L    IK+I      V+NG  AMP+F  S 
+Sbjct  31   GEQIFSANCAACHAGGNNVIMPEKTLKAEALEANNIKNISAIANQVKNGKNAMPSF--SR  88
+
+Query  57   VDDESLTQVAEYL  69
+            + D  +  VA Y+
+Sbjct  89   LSDSDIEDVANYV  101
+
+
+> sp|P08574|CY1_HUMAN Cytochrome c1, heme protein, mitochondrial 
+OS=Homo sapiens OX=9606 GN=CYC1 PE=1 SV=3
+Length=325
+
+ Score = 42.8 bits (99),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 19/61 (31%), Gaps = 8/61 (13%)
+
+Query  6    GKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVR--------NGFRAMPAFPASYV  57
+            G  +Y +VC  CH  +      L G    E   K++          N    M   P    
+Sbjct  113  GFQVYKQVCASCHSMDFVAYRHLVGVCYTEDEAKELAAEVEVQDGPNEDGEMFMRPGKLF  172
+
+Query  58   D  58
+            D
+Sbjct  173  D  173
+
+
+> sp|P29610|CY12_SOLTU Cytochrome c1-2, heme protein, mitochondrial 
+(Fragment) OS=Solanum tuberosum OX=4113 GN=CYCL PE=1 SV=1
+Length=260
+
+ Score = 42.4 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 14/61 (23%), Positives = 19/61 (31%), Gaps = 8/61 (13%)
+
+Query  6    GKNLYDKVCGHCHKPEVGVGPVLEGRGLPEAYIKDIVR--------NGFRAMPAFPASYV  57
+            G  +Y +VC  CH   +     L G    E  +K +          N    M   P    
+Sbjct  48   GHQVYQQVCASCHSMSLVSYRDLVGVAYTEEEVKAMAAEIEVEDGPNDEGEMFTRPGKLS  107
+
+Query  58   D  58
+            D
+Sbjct  108  D  108
+
+
+> sp|Q5GCA5|CCOP_RUBGE Cbb3-type cytochrome c oxidase subunit CcoP 
+OS=Rubrivivax gelatinosus OX=28068 GN=ccoP PE=1 SV=1
+Length=304
+
+ Score = 41.3 bits (95),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 20/79 (25%), Positives = 29/79 (37%), Gaps = 8/79 (10%)
+
+Query  4    GSGKNLYDKVCGHCHKPEVGVG---PVLEGR----GLPEAYIKDIVRNGF-RAMPAFPAS  55
+              G+ L+   C  CH  +       P L       G     IK+ +  G    MP   A+
+Sbjct  132  AIGERLFANNCAQCHGADARGSKGFPNLTDNDWLHGGTHDKIKETITGGRVGNMPPMAAA  191
+
+Query  56   YVDDESLTQVAEYLSSLPA  74
+                E +  VA+Y+ SL  
+Sbjct  192  VGTPEDVKNVAQYVLSLSG  210
+
+
+> sp|P57736|CYC6_TETOB Cytochrome c6 OS=Tetradesmus obliquus OX=3088 
+GN=petJ PE=1 SV=1
+Length=89
+
+ Score = 39.0 bits (89),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/78 (29%), Positives = 32/78 (41%), Gaps = 14/78 (18%)
+
+Query  4   GSGKNLYDKVCGHCH-KPEVGVGPV-----------LEGRGLPEAYIKDIVRNGFRAMPA  51
+             GK  ++  C  CH      V P            L+G G     I   V NG  AMPA
+Sbjct  5   ALGKQTFEANCAACHAGGNNSVIPDHTLRKAAMEQFLQG-GFNLEAITYQVENGKGAMPA  63
+
+Query  52  FPASYVDDESLTQVAEYL  69
+           + +  +DD+ +  VA Y+
+Sbjct  64  W-SGTLDDDEIAAVAAYV  80
+
+
+> sp|P04369|C555_METCA Cytochrome c-555 OS=Methylococcus capsulatus 
+(strain ATCC 33009 / NCIMB 11132 / Bath) OX=243233 GN=MCA2618 
+PE=1 SV=2
+Length=123
+
+ Score = 39.3 bits (90),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 27/70 (39%), Gaps = 6/70 (9%)
+
+Query  6    GKNLYDKV-CGHCHK---PEVGVGPVLEGR--GLPEAYIKDIVRNGFRAMPAFPASYVDD  59
+            G  +Y +  C  CH          P L      L +   K++V  G  AMP F A+    
+Sbjct  37   GFKIYKQQRCETCHGATGEGSAAFPNLLNSLKNLSKDQFKEVVLKGRNAMPPFEANKKVA  96
+
+Query  60   ESLTQVAEYL  69
+            E +  +  Y+
+Sbjct  97   EGIDDLYTYI  106
+
+
+> sp|Q3MDW2|CYC6_ANAVT Cytochrome c6 OS=Anabaena variabilis (strain 
+ATCC 29413 / PCC 7937) OX=240292 GN=petJ PE=3 SV=1
+Length=111
+
+ Score = 38.6 bits (88),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 19/75 (25%), Positives = 27/75 (36%), Gaps = 10/75 (13%)
+
+Query  4    GSGKNLYDKVCGHCH--KPEVGVG------PVLEGRG-LPEAYIKDIVRNGFRAMPAFPA  54
+             +G  ++   C  CH     +           LE  G      I   V NG  AMPAF  
+Sbjct  29   ANGAKIFSANCASCHAGGKNLVQAQKTLKKEDLEKFGMYSAEAIIAQVTNGKNAMPAF-K  87
+
+Query  55   SYVDDESLTQVAEYL  69
+              +  + +  VA Y+
+Sbjct  88   GRLKPDQIEDVAAYV  102
+
+
+> sp|B7K722|CYC6_CYAP7 Cytochrome c6 OS=Cyanothece sp. (strain 
+PCC 7424) OX=65393 GN=petJ PE=3 SV=1
+Length=110
+
+ Score = 38.6 bits (88),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 22/75 (29%), Positives = 28/75 (37%), Gaps = 10/75 (13%)
+
+Query  4    GSGKNLYDKVCGHCH--KPEV-GVGPVLEGRGLPE------AYIKDIVRNGFRAMPAFPA  54
+            G+G  ++   C  CH     V      L    L +        IK  V NG  AMPAF  
+Sbjct  29   GNGSKVFSANCNACHLGGKNVVNAAKTLNKSDLEKYAMLDLEAIKTQVTNGKGAMPAFGK  88
+
+Query  55   SYVDDESLTQVAEYL  69
+                D  +  VA Y+
+Sbjct  89   RLTPD-QIEDVATYV  102
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.128    0.354    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0385    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4873072512
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 14, 2018  9:36 AM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

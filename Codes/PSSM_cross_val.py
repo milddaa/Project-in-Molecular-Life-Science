@@ -59,7 +59,7 @@ def SVM_input(input_dictionary, window_size):
         Y_list_all.extend(Y_list)
     for x in input_dictionary.keys():
         x=x.strip('>')
-        data = np.genfromtxt('Proteins/'+ x +'.fasta.pssm', skip_header=3, skip_footer=5, usecols=range(22,42), autostrip=True)/100
+        data = np.genfromtxt('Proteins/PSSM_training/'+ x +'.fasta.pssm', skip_header=3, skip_footer=5, usecols=range(22,42), autostrip=True)/100
         data=data.tolist()
         data=list(chain(*data))
         add_tails=[0]*(20*int(window_size/2))

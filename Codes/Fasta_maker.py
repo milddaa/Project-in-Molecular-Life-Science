@@ -1,6 +1,6 @@
 ############ DEFINITIONS AND DICTIONARIES ###########
 
-name_training= "../Datasets/training_dataset.txt"
+name_testing= "../Datasets/testing_dataset.txt"
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -28,7 +28,7 @@ dictA={'E':0, 'B':1}
 
 ################### STAGE 1. PARSER ##################
 
-f = open(name_training,'r')
+f = open(name_testing,'r')
 lines = f.readlines()
 key_list=[]
 value_list=[]

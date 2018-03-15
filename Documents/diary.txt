@@ -177,6 +177,46 @@ Matthew's correlation coefficient:
 
 The accuracy using PSSM model with the same parameters is worse than with regular model. Optimization needs to be done by cross validation.
 
-—
+--
 
 I realized that I used my PSSM model on input from testing dataset which was not in a format that PSSM model was trained on. The X_array needs to be in the format of PSSM too.
+
+In order to fix that, I will create FASTA files for my testing dataset proteins, run PSIBLAST to retrieve PSSM profiles and create SVM inputs from those.
+
+--
+
+Ran prediction on testing_dataset.txt, this time using input in the required format, using a model with parameters: c-score=0.3 and window size=19. Accuracy report:
+
+Confusion matrix: 
+ [[10344  3011]
+ [ 2889  7374]]
+Accuracy (precision): 
+ 0.7816821582407617
+Sensitivity (recall): 
+ 0.7745413702733058
+Matthew's correlation coefficient: 
+ 0.49239431117444005
+
+---
+
+Cross validation on the training dataset with input to SVM in PSSM format resulted in the best cross validation score of 0.7559044982 for c-score 0.1 and window size 13. These were used to build a model. Ran prediction on testing_dataset.txt in the required format, using the model with these optimized parameters. Accuracy report:
+
+Confusion matrix: 
+ [[10327  3028]
+ [ 2879  7384]]
+Accuracy (precision): 
+ 0.781993033469635
+Sensitivity (recall): 
+ 0.7732684387869712
+Matthew's correlation coefficient: 
+ 0.49195983317451913
+
+---
+
+Updated my predictor so it takes in an example sequence, based on its name finds PSSM profile in a folder and creates an X array (used for SVM input) based on that PSSM profile and uses the before built model to predict the topology. (Predictor_PSSM.py)
+
+To do:
+- Plot the cross validation scores of regular (done) and PSSM models (Optimal parameters regular model: c-score 0.3 window size 19, PSSM model c-score 0.1 window size 13)
+- Make tables comparing the accuracy of optimized regular and PSSM models at predicting;
+- Write a READ_ME file where I explain where the model and the predictor is;
+- Write the report
