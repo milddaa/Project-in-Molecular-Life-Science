@@ -10,7 +10,7 @@ import pickle
 
 name_training= "../Datasets/training_dataset.txt"
 
-window_size=19
+window_size=17
 
 amino_acids={'B':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
@@ -81,7 +81,7 @@ X_array, Y_array = SVM_input (my_dict, window_size)
 
 ############## STAGE 3. MODEL BUILDER #############
 
-clf = svm.LinearSVC(C=0.3)
+clf = svm.LinearSVC(C=10)
 clf.fit(X_array, Y_array)
 
-pickle.dump(clf, open ("Model_PSSM.sav",'wb'))
+pickle.dump(clf, open ("Model_PSSM_new.sav",'wb'))

@@ -177,3 +177,6 @@ Matthew's correlation coefficient:
 
 The accuracy using PSSM model with the same parameters is worse than with regular model. Optimization needs to be done by cross validation.
 
+—
+
+I realized that I used my PSSM model on input from testing dataset which was not in a format that PSSM model was trained on. The X_array needs to be in the format of PSSM too.
