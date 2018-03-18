@@ -2,6 +2,13 @@ import numpy as np
 import pickle
 import math
 from itertools import chain
+from sklearn.metrics import confusion_matrix
+from sklearn import preprocessing
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import matthews_corrcoef
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score
+
 
 ############ DEFINITIONS AND DICTIONARIES ###########
 
@@ -86,7 +93,28 @@ Y_array=np.asarray(Y_array)
 
 ############## STAGE 4. ACCURACY #################
 
-True_Negatives=0
+#Confusion matrix
+confusion_matrix = confusion_matrix (Y_array, predicted_array)
+confusion_matrix_normalized = preprocessing.normalize (confusion_matrix, norm='l1')
+print (confusion_matrix_normalized)
+
+#Accuracy score
+acc_score=accuracy_score(Y_array, predicted_array)
+print (acc_score)
+
+#Matthew's correlation coefficient
+matthew_score=matthews_corrcoef(Y_array, predicted_array)
+print (matthew_score)
+
+#Recall (sensitivity)
+sensitivity=recall_score(Y_array, predicted_array)
+print (sensitivity)
+
+#f1 score
+f1= f1_score(Y_array, predicted_array)
+print (f1)
+
+"""True_Negatives=0
 True_Positives=0
 False_Negatives=0
 False_Positives=0
@@ -109,4 +137,4 @@ matthews_coef= (True_Positives*True_Negatives-False_Positives*False_Negatives)/m
 print ("Confusion matrix:", '\n', matrix)
 print ("Accuracy (precision):",'\n', accuracy)
 print ("Sensitivity (recall):",'\n', sensitivity)
-print ("Matthew's correlation coefficient:",'\n', matthews_coef)
+print ("Matthew's correlation coefficient:",'\n', matthews_coef)"""
