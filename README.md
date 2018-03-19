@@ -19,3 +19,7 @@ This predictor is also located in Codes folder, under the name Predictor_PSSM.py
 - Retrieves its PSSM profile from Codes/Proteins/PSSM_prediction/
 
 - Uses Model_PSSM.sav in Codes folder to predict the feature
+
+#
+
+The models were built using Model_builder.py and Model_builder_PSSM.py (in Codes folder)
